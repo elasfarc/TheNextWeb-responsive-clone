@@ -1,1 +1,47 @@
+/* var */
+:root {
+    --orange: #f42;
+    --white: #fff;
+    --gray-small-text: #555;
+    --gray-currency: #aaa;
+    --gray-social: #333;
+    --footer-background: rgb(7, 7, 7);
+}
+/* reset */
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+a {
+    text-decoration: none;
+}
+
+/* base style */
+body {
+    font-family: '.';
+}
+ .grid {
+    display: grid;
+}
+.flex {
+    display: flex;
+} 
+/* fonts */
+h1 {
+  font-family: "TNW Avalon" !important;
+}
+/* mobile style */
+
+/* iPad */
+@media screen and (min-width: 768px) {
+
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+
+}
+
 
