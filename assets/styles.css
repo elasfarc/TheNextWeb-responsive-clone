@@ -26,10 +26,11 @@
 a:link,
 a:visited {
   text-decoration: none;
-  color: rgb(85, 85, 85);
+  color: black;
 }
 a:hover {
   text-decoration: underline;
+  color: var(--orange);
 }
 
 /* base style */
@@ -187,8 +188,7 @@ h2 {
   /* border: 1px solid green; */
 }
 .latest-news .content-wrap article h2 {
-  font-family: 'ARS';
-  color: rgb(85, 85, 85);
+  font-family: 'Avalon-reg';
   font-size: 0.875rem;
   line-height: 1.125rem;
   margin-bottom: 1px;
@@ -245,6 +245,28 @@ h2 {
 
     /* width: 31.510vw;
     height: 20.052vw; */
+  }
+
+  /* === latest-news section iPad === */
+  .latest-news .content-wrap {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: span 3;
+  }
+  .latest-news .content-wrap article {
+    display: flex;
+    flex-direction: column; 
+  }
+  .latest-news .content-wrap article .left-most { 
+    margin: 0 0.8125rem 0.5125rem 0;
+  }
+  .latest-news .content-wrap article .left-most img {
+    /* border: 1px solid red; */
+    height: auto;
+    max-height: ;
+    width: 100%;
+  }
+  .latest-news .content-wrap article h2 {
+    margin-right: 0.625rem;
   }
 }
 
