@@ -27,6 +27,22 @@ a {
   text-decoration: none;
 }
 
+a:link,
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--orange);
+}
+
+li {
+  list-style: none;
+}
+
+
 /* base style */
 body {
   font-family: '.';
@@ -47,7 +63,7 @@ html {
 }
 
 h2 {
-  font-family: "TNW Avalon", sans-serif;
+  font-family: 'TNW Avalon', sans-serif;
   font-size: 1.25rem;
   line-height: 1.375rem;
   letter-spacing: -0.01875rem;
@@ -55,11 +71,14 @@ h2 {
 }
 /* orange heading text -> latest-... */
 .orange-heading {
-  font-family: "TNW Avalon", sans-serif;
+  font-family: 'TNW Avalon', sans-serif;
   color: var(--orange);
   font-size: 1.75rem;
   letter-spacing: -0.02625rem;
   line-height: 1.875rem;
+  margin-bottom: 0.875rem;
+  margin-left: 0.975rem;
+  margin-top: 3.25rem;
 }
 
 .hero p {
@@ -101,8 +120,7 @@ h2 {
   }  */
 .hero section:first-child {
   /* border: 1px solid blue; */
-  background-image:
-    linear-gradient(
+  background-image: linear-gradient(
       to left top,
       rgba(0, 0, 0, 0.85),
       rgba(0, 0, 0, 0.25)
@@ -112,8 +130,7 @@ h2 {
 
 .hero section:nth-child(2) {
   /* border: 1px solid green; */
-  background-image:
-    linear-gradient(
+  background-image: linear-gradient(
       to left top,
       rgba(0, 0, 0, 0.25),
       rgba(0, 0, 0, 0.25)
@@ -123,8 +140,7 @@ h2 {
 
 .hero section:nth-child(3) {
   /* border: 1px solid green; */
-  background-image:
-    linear-gradient(
+  background-image: linear-gradient(
       to left top,
       rgba(0, 0, 0, 0.85),
       rgba(0, 0, 0, 0.25)
@@ -156,10 +172,206 @@ h2 {
 
 .main-text-sub > div {
   display: inline-block;
-  border: 1px solid white;
+  margin: 0.3rem;
 }
 
 /* .main-text-sub */
+
+/* ======== card-container styles ======= */
+
+.card-container-top {
+  /* margin: 2rem auto; */
+  width: 95%;
+  /* border: 2px solid red; */
+  margin: 0 auto;
+}
+
+.card-container-top .card {
+  /* border: 1px solid purple; */
+  width: 100%;
+  margin: 0 auto;
+}
+
+.card-container-top .card h2 {
+  margin-bottom: 1rem;
+}
+
+.content-wrap .first-row {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20rem;
+}
+
+.first-row-one {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.9),
+      rgba(256, 256, 256, 0.1)
+    ),
+    url('./imgs/catagory7and1.jpg');
+}
+
+.first-row-two {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.9),
+      rgba(256, 256, 256, 0.1)
+    ),
+    url('./imgs/catagory2.png');
+}
+
+.first-row-three {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.9),
+      rgba(256, 256, 256, 0.1)
+    ),
+    url('./imgs/catagory3.jpg');
+}
+
+.first-row-four {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.9),
+      rgba(256, 256, 256, 0.1)
+    ),
+    url('./imgs/Untitled-design-9.jpg');
+}
+
+.first-row-five {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.9),
+      rgba(256, 256, 256, 0.1)
+    ),
+    url('./imgs/catagory5.png');
+}
+
+.first-row-six {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.9),
+      rgba(256, 256, 256, 0.1)
+    ),
+    url('./imgs/catagory6.jpg');
+}
+
+.first-row-seven {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.9),
+      rgba(256, 256, 256, 0.1)
+    ),
+    url('./imgs/catagory7and1.jpg');
+}
+
+.first-row-eight {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.9),
+      rgba(256, 256, 256, 0.1)
+    ),
+    url('./imgs/catagory8.png');
+}
+
+.first-row-nine {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.9),
+      rgba(256, 256, 256, 0.1)
+    ),
+    url('./imgs/catagory9.png');
+}
+
+.last-third-portion {
+  width: 95%;
+  position: relative;
+  bottom: -60%;
+  padding-left: 1rem;
+}
+
+.last-third-portion p {
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.last-third-portion h3 {
+  color: var(--white);
+  font-size: 1.3rem;
+}
+
+.last-third-portion h3 a {
+  color: var(--white);
+}
+
+.main-text-sub {
+  color: var(--gray-currency);
+  margin-top: 0.5rem;
+  width: 90%;
+}
+
+.second-row {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #fff4f2;
+}
+
+.right-most {
+  width: 30%;
+  height: 100%;
+  /* border: 1px solid red; */
+  justify-self: stretch;
+}
+
+.right-most img {
+  width: 100%;
+  height: 100%;
+}
+
+.left-most {
+  width: 67%;
+  padding-left: 1rem;
+}
+
+.left-most p {
+  text-transform: uppercase;
+  color: var(--orange);
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.left-most a {
+  text-decoration: none;
+  color: var(--orange);
+  font-size: 0.8rem;
+}
+
+.content-wrap ul {
+  margin: 2rem 1rem;
+  width: 80%;
+  list-style: none;
+}
+
+.content-wrap li::before {
+  content: '\2022';
+  color: var(--orange);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.content-wrap li {
+  margin: 1rem 0;
+}
+
+.content-wrap li a {
+  text-decoration: none;
+  color: var(--gray-small-text);
+  font-size: 0.9rem;
+}
 
 /* iPad */
 @media screen and (min-width: 768px) {
@@ -198,9 +410,173 @@ h2 {
     /* width: 31.510vw;
     height: 20.052vw; */
   }
+
+  /* ======== card-container styles @768px plus ======= */
+
+  .card-container-top {
+    grid-template: repeat(5, 1fr) / repeat(2, 1fr);
+    grid-template-areas:
+      'card1 card2'
+      'card3 card4'
+      'card5 card6'
+      'card7 card8'
+      'card9 .';
+
+    grid-gap: 1rem;
+  }
+
+  .card1 {
+    grid-area: card1;
+  }
+
+  .card2 {
+    grid-area: card2;
+  }
+
+  .card3 {
+    grid-area: card3;
+  }
+
+  .card4 {
+    grid-area: card4;
+  }
+
+  .card5 {
+    grid-area: card5;
+  }
+
+  .card6 {
+    grid-area: card6;
+  }
+
+  .card7 {
+    grid-area: card7;
+  }
+
+  .card8 {
+    grid-area: card8;
+  }
+
+  .card9 {
+    grid-area: card9;
+  }
+
+  .content-wrap .first-row {
+    height: 15rem;
+  }
+
+  .last-third-portion {
+    bottom: -50%;
+  }
+
+  .last-third-portion h3 {
+    font-size: 1rem;
+    width: 95%;
+    padding-top: 0;
+  }
+
+  .left-most h3 a {
+    font-size: 0.7rem;
+    line-height: 0;
+  }
+
+  .content-wrap li {
+    margin: 0.2rem 0;
+  }
+
+  .content-wrap li a {
+    font-size: 0.7rem;
+  }
 }
 
 /* Desktop */
 @media screen and (min-width: 1024px) {
+  /* ======== card-container styles @1024px plus ======= */
+  .card-container-top {
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    grid-template-areas:
+      'card1 card2 card3'
+      'card4 card5 card6'
+      'card7 card8 card9';
+    grid-gap: 1rem;
+    font-size: 10px;
+  }
 
+  .card-container-top .card .orange-heading {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 0.1rem;
+  }
+
+  .card-container-top .card .orange-heading i{
+    font-size: 0.8rem;
+  }
+
+  .card1 {
+    grid-area: card1;
+  }
+
+  .card2 {
+    grid-area: card2;
+  }
+
+  .card3 {
+    grid-area: card3;
+  }
+
+  .card4 {
+    grid-area: card4;
+  }
+
+  .card5 {
+    grid-area: card5;
+  }
+
+  .card6 {
+    grid-area: card6;
+  }
+
+  .card7 {
+    grid-area: card7;
+  }
+
+  .card8 {
+    grid-area: card8;
+  }
+
+  .card9 {
+    grid-area: card9;
+  }
+
+  .content-wrap .first-row {
+    height: 10rem;
+  }
+
+  .last-third-portion h3 {
+    width: 98%;
+  }
+
+  .last-third-portion h3 a{
+    font-size: 0.8rem;
+  }
+
+  .main-text-sub {
+    font-size: 0.6rem;
+  }
+
+  .left-most p{
+    font-size: 0.5rem;
+  }
+
+  .left-most h3 a {
+    font-size: 0.5rem;
+  }
+
+  .content-wrap ul{
+    margin: 1rem 1rem;
+  }
+
+  .content-wrap li a {
+    font-size: 0.5rem;
+  }
 }
