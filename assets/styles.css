@@ -181,7 +181,7 @@ h2 {
 }
 .latest-news .content-wrap {
   grid-template-columns: 1;
-  grid-template-rows: repeat(8, 1fr);
+  grid-template-rows: sapn 1;
   max-width: 100%;
   /* border: 1px solid green; */
 }
