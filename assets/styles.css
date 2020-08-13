@@ -66,6 +66,9 @@ h2 {
   font-size: 1.75rem;
   letter-spacing: -0.02625rem;
   line-height: 1.875rem;
+  margin-bottom: 0.875rem;
+  margin-left: 0.975rem;
+  margin-top: 3.25rem;
 }
 
 .hero p {
@@ -166,12 +169,12 @@ h2 {
 }
 
   /* === latest news section === */
-.latest-news > h2 {
+/* .latest-news > h2 {
   
   margin-bottom: 0.875rem;
   margin-left: 0.975rem;
   margin-top: 3.25rem;
-}
+} */
 .latest-news > h2 i {
   font-weight: 2px;
    border: 1px solid green; 
@@ -196,7 +199,7 @@ h2 {
 .latest-news .content-wrap article .main-text-sub {
   color:rgb(170, 170, 170);
   font-size: 0.75rem;
-  line-height: 1.3rem;
+  line-height: 1.25rem;
   margin-top: 0.5rem;
 }
 .latest-news .content-wrap article .left-most { 
@@ -273,4 +276,31 @@ h2 {
 /* Desktop */
 @media screen and (min-width: 1024px) {
 
+  /* == latest-news section DESKTOP == */
+
+  .latest-news .content-wrap {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: span 2;
+    border: 0.5px solid tomato;
+    
+  }
+  .latest-news .content-wrap article .left-most { 
+    margin: 0.125rem 0 0.5125rem 0;
+  }
+  .latest-news .content-wrap article .left-most img {
+    /* border: 1px solid red; */
+    height: auto;
+    max-height: ;
+    width: 100%;
+  }
+  .latest-news .content-wrap article h2 {
+    margin-right: 0.625rem;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+  }
+  .latest-news .content-wrap article .main-text-sub {
+    font-size: 13px;
+    line-height: 20px;
+  }
 }
