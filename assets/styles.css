@@ -14,6 +14,9 @@
     box-sizing: border-box;
     /* overflow: hidden; */
 }
+html {
+  font-size: 100%; /* 1rem == 16px */
+}
 a {
     text-decoration: none;
 }
@@ -30,13 +33,19 @@ body {
 } 
 /* fonts */
 h1 {
-  font-family: "TNW Avalon" !important;
+  font-family: "TNW Avalon", sans-serif;
+  font-size: 1.25em;
+  line-height: 1.375em;
+  letter-spacing: -0.01875em;
+  color: var(--white);
 }
 /* mobile style */
 
 /* iPad */
 @media screen and (min-width: 768px) {
-
+  html {
+    font-size: 40px;
+  }
 }
 
 /* Desktop */
