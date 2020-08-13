@@ -1,9 +1,9 @@
 @font-face {
-    font-family: '.';
-    src: url('e2a0832046ef209168158ba7da8a4c9d.woff2') format('woff2'),
-        url('e2a0832046ef209168158ba7da8a4c9d.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: '.';
+  src:
+    url('e2a0832046ef209168158ba7da8a4c9d.woff2') format('woff2'),
+    url('e2a0832046ef209168158ba7da8a4c9d.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
-

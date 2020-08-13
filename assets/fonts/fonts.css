@@ -1,26 +1,27 @@
 
 @font-face {
-    font-family: 'Shentox';
-    src: url('Shentox-Medium.woff2') format('woff2'),
-        url('Shentox-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-}
-
-
-@font-face {
-    font-family: 'TNW Avalon';
-    src: url('TNWAvalon-Bold.woff2') format('woff2'),
-        url('TNWAvalon-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
+  font-family: 'Shentox';
+  src:
+    url('Shentox-Medium.woff2') format('woff2'),
+    url('Shentox-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: '.';
-    src: url('e2a0832046ef209168158ba7da8a4c9d.woff2') format('woff2'),
-        url('e2a0832046ef209168158ba7da8a4c9d.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'TNW Avalon';
+  src:
+    url('TNWAvalon-Bold.woff2') format('woff2'),
+    url('TNWAvalon-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
 }
 
+@font-face {
+  font-family: '.';
+  src:
+    url('e2a0832046ef209168158ba7da8a4c9d.woff2') format('woff2'),
+    url('e2a0832046ef209168158ba7da8a4c9d.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
