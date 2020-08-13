@@ -106,7 +106,7 @@ h1 {
     url(./imgs/hero3.jpg);
   }
   /* .hero section div:last-child { */
-    .hero section .text-wrap{
+    .hero section .text-wrap {
       border: 1px solid yellow;  
     position: absolute;
     /* transform: translatey(50px); */
