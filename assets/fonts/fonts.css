@@ -25,3 +25,11 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+    font-family: 'ARS';
+    src:
+      url('./ARSMaquettePro-Black.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
