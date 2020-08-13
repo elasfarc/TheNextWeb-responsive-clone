@@ -42,6 +42,9 @@ h1 {
   color: var(--white);
 }
 /* mobile style */
+
+  /* === hero === */
+
   .hero {
     height: 550px;
     grid-template-columns: 1;
@@ -82,6 +85,10 @@ h1 {
       rgba(0, 0, 0, 0.25)), 
     url(./imgs/hero3.jpg);
   }
+  .hero section div:last-child {
+    border: 1px solid yellow
+  }
+  /* .main-text-sub */
 /* iPad */
 @media screen and (min-width: 768px) {
   html {
