@@ -14,9 +14,6 @@
     box-sizing: border-box;
     /* overflow: hidden; */
 }
-html {
-  font-size: 100%; /* 1rem == 16px */
-}
 a {
     text-decoration: none;
 }
@@ -24,6 +21,7 @@ a {
 /* base style */
 body {
     font-family: '.';
+    
 }
  .grid {
     display: grid;
@@ -31,7 +29,11 @@ body {
 .flex {
     display: flex;
 } 
+
 /* fonts */
+html {
+  font-size: 100%; /* 1rem == 16px */
+}
 h1 {
   font-family: "TNW Avalon", sans-serif;
   font-size: 1.25em;
@@ -40,11 +42,50 @@ h1 {
   color: var(--white);
 }
 /* mobile style */
+  .hero {
+    height: 550px;
+    grid-template-columns: 1;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 8px;
+  }
+  .hero-logo-box {
+    display: none;
+  }
+  .hero > section {
+    /* border: 1px solid blue; */
+    margin: 0 5px;
+    padding: 4px;
+    background-size: 100% 120%;
+  }
+  .hero section:first-child {
+    /* border: 1px solid blue; */
+    background-image:
+    linear-gradient(to left top,
+		rgba(0, 0, 0, 0.85),
+		rgba(0, 0, 0, 0.25)), 
+  url(./imgs/catagory7and1.jpg); 
 
+  }
+  .hero section:nth-child(2) {
+    /* border: 1px solid green; */
+    background-image: 
+	linear-gradient(to left top,
+		rgba(0, 0, 0, 0.25),
+		rgba(0, 0, 0, 0.25)), 
+  url(./imgs/hero2.jpg); 
+  }
+  .hero section:nth-child(3) {
+    /* border: 1px solid green; */
+    background-image: 
+    linear-gradient(to left top,
+      rgba(0, 0, 0, 0.85),
+      rgba(0, 0, 0, 0.25)), 
+    url(./imgs/hero3.jpg);
+  }
 /* iPad */
 @media screen and (min-width: 768px) {
   html {
-    font-size: 40px;
+    font-size: 20px;
   }
 }
 
