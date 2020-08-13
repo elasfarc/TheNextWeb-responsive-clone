@@ -46,7 +46,8 @@ h1 {
   /* === hero === */
 
   .hero {
-    height: 550px;
+    width: 100vw;
+    height: 100vh;
     grid-template-columns: 1;
     grid-template-rows: 1fr 1fr 1fr;
     row-gap: 8px;
@@ -59,7 +60,11 @@ h1 {
     margin: 0 5px;
     padding: 4px;
     background-size: 100% 120%;
+    position: relative;
   }
+  /* .hero section .dummy-div {
+    height: 50%;
+  } */
   .hero section:first-child {
     /* border: 1px solid blue; */
     background-image:
@@ -86,13 +91,48 @@ h1 {
     url(./imgs/hero3.jpg);
   }
   .hero section div:last-child {
-    border: 1px solid yellow
+    border: 1px solid yellow;
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    height: 40%;
+  }
+  .hero section div div:last-child {
+    border: 1px solid white;
+    
   }
   /* .main-text-sub */
 /* iPad */
 @media screen and (min-width: 768px) {
   html {
     font-size: 20px;
+  }
+  .hero {
+    height: 43.229vw;
+    
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+  }
+  .hero section:first-child {
+    grid-column: 1/3;
+    grid-row: 1/3;
+    font-size: 2em;
+    line-height: -0.03em;
+    /* width: 500px;
+    height: 316px; */
+  }
+  .hero section:nth-child(2) {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    /* width: 31.510vw;
+    height: 20.052vw; */
+  }
+  .hero section:nth-child(3) {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    width: 31.510vw;
+    height: 20.052vw;
   }
 }
 
