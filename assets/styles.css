@@ -83,6 +83,17 @@ h2 {
 }
 
 /* mobile style */
+/* nav */
+
+nav .sticky-nav {
+  height: 30px;
+  background-color: rgb(254, 220, 71) ;
+  color: black;
+  font-family: '.';
+  font-size: 0.675rem;
+  line-height: 1.3125rem;
+  text-indent: 5px;
+}
 
 /* === hero === */
 
@@ -222,7 +233,7 @@ h2 {
 }
 .latest-funding .top ul {
   padding-left: 17px;
-  font-size: 14px;
+  font-size: 14px; 
   line-height: 18px;
 }
 .latest-funding .top ul li {
@@ -339,7 +350,7 @@ color: var(--orange);
     font-size: 20px;
   } */
   .hero {
-    height: 50vh;
+    height: 47vw;
     width: 98vw;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
