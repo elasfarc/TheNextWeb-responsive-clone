@@ -14,7 +14,10 @@
   padding: 0;
   box-sizing: border-box;
 
-  /* overflow: hidden; */
+   /* overflow-x: hidden;  */
+}
+footer {
+  border: 1px solid green;
 }
 
 *,
@@ -36,9 +39,25 @@ li {
   list-style: none;
 }
 
+a:link,
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--orange);
+}
+
+li {
+  list-style: none;
+}
+
+
 /* base style */
 body {
-  font-family: '.';
+  font-family: '.', sans-serif;
 }
 
 .grid {
@@ -56,15 +75,16 @@ html {
 }
 
 h2 {
-  font-family: "TNW Avalon", sans-serif;
+  font-family: 'TNW Avalon', sans-serif;
   font-size: 1.25rem;
   line-height: 1.375rem;
   letter-spacing: -0.01875rem;
   color: var(--white);
 }
+
 /* orange heading text -> latest-... */
 .orange-heading {
-  font-family: "TNW Avalon", sans-serif;
+  font-family: 'TNW Avalon', sans-serif;
   color: var(--orange);
   font-size: 1.75rem;
   letter-spacing: -0.02625rem;
@@ -176,17 +196,18 @@ nav .sticky-nav .sub {
   padding: 0.875rem 0.75rem;
 }
 
+/* .main-text-sub */
+.main-text-sub > div {
+  display: inline-block;
+  margin: 0.3rem;
+}
+
 .hero section div div:last-child {
   /* border: 1px solid white; */
   height: 100%;
   color: hsla(0, 0%, 100%, 0.6);
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.main-text-sub > div {
-  display: inline-block;
-  border: 1px solid white;
 }
 
   /* === latest news section === */
@@ -348,10 +369,284 @@ color: var(--orange);
   line-height: 18px;
   color: var(--gray-small-text);
 }
-     /* ================================ 
-      ============= iPad ===========
-     ================================  */
+/* end of latest-funding mobile */
 
+/* ======== ==========================
+======= card-container styles ========
+====================================== */
+
+.card-container-top {
+  /* margin: 2rem auto; */
+  width: 95%;
+
+  /* border: 2px solid red; */
+  margin: 0 auto;
+}
+
+.card-container-top .card {
+  /* border: 1px solid purple; */
+  width: 100%;
+  margin: 0 auto;
+}
+
+.card-container-top .card h2 {
+  margin-bottom: 1rem;
+}
+
+.categories-content-wrap .categories-first-row {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20rem;
+}
+
+.first-row-one {
+  background-image:
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.9),
+      rgba(256, 256, 256, 0.1)
+    ),
+    url('./imgs/catagory7and1.jpg');
+}
+
+.first-row-two {
+  background-image:
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.9),
+      rgba(256, 256, 256, 0.1)
+    ),
+    url('./imgs/catagory2.png');
+}
+
+.first-row-three {
+  background-image:
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.9),
+      rgba(256, 256, 256, 0.1)
+    ),
+    url('./imgs/catagory3.jpg');
+}
+
+.first-row-four {
+  background-image:
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.9),
+      rgba(256, 256, 256, 0.1)
+    ),
+    url('./imgs/Untitled-design-9.jpg');
+}
+
+.first-row-five {
+  background-image:
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.9),
+      rgba(256, 256, 256, 0.1)
+    ),
+    url('./imgs/catagory5.png');
+}
+
+.first-row-six {
+  background-image:
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.9),
+      rgba(256, 256, 256, 0.1)
+    ),
+    url('./imgs/catagory6.jpg');
+}
+
+.first-row-seven {
+  background-image:
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.9),
+      rgba(256, 256, 256, 0.1)
+    ),
+    url('./imgs/catagory7and1.jpg');
+}
+
+.first-row-eight {
+  background-image:
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.9),
+      rgba(256, 256, 256, 0.1)
+    ),
+    url('./imgs/catagory8.png');
+}
+
+.first-row-nine {
+  background-image:
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.9),
+      rgba(256, 256, 256, 0.1)
+    ),
+    url('./imgs/catagory9.png');
+}
+
+.last-third-portion {
+  width: 95%;
+  position: relative;
+  bottom: -60%;
+  padding-left: 1rem;
+}
+
+.last-third-portion p {
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.last-third-portion h3 {
+  color: var(--white);
+  font-size: 1.3rem;
+}
+
+.last-third-portion h3 a {
+  color: var(--white);
+}
+
+.main-text-sub {
+  color: var(--gray-currency);
+  margin-top: 0.5rem;
+  width: 90%;
+}
+
+.categories-second-row {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #fff4f2;
+}
+
+.categories-second-row .right-most {
+  width: 30%;
+  height: 100%;
+
+  /* border: 1px solid red; */
+  justify-self: stretch;
+}
+
+.categories-second-row .right-most img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.categories-second-row .left-most {
+  width: 67%;
+  padding-left: 1rem;
+}
+
+.categories-second-row .left-most p {
+  text-transform: uppercase;
+  color: var(--orange);
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.categories-second-row .left-most h3 a{
+  color: var(--orange);
+}
+
+.categories-content-wrap ul {
+  margin: 2rem 1rem;
+  width: 80%;
+  list-style: none;
+}
+
+.categories-content-wrap li::before {
+  content: '\2022';
+  color: var(--orange);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+.categories-content-wrap li {
+  margin: 1rem 0;
+}
+
+.categories-content-wrap li a {
+  text-decoration: none;
+  color: var(--gray-small-text);
+  font-size: 0.9rem;
+}
+
+/* ======== ================================================
+======= End of mobile view of card-container styles ========
+============================================================ */
+/* ======== ==========================
+======= .latest-deals styles mobile =========
+====================================== */
+
+.latest-deals {
+  width: 95%;
+  margin: 0.5rem auto;
+}
+
+.latest-deals .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+}
+
+.latest-deals .header h2{
+  margin: 1.5rem 0.2rem;
+}
+
+.latest-deals .header i{
+  font-size: 1.2rem;
+}
+
+.latest-deals .header a{
+  color: var(--orange);
+}
+
+.latest-deals-card {
+  display: flex;
+  width: 95%;
+  justify-content: space-around;
+  margin-bottom: 1.2rem;
+}
+
+.latest-deals-card .img-box {
+  width: 20%;
+}
+
+.latest-deals-card .img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.latest-deals-card .content-box {
+  width: 75%;
+}
+
+.latest-deals-card .content-box p{
+  margin-top: 0.5rem;
+}
+
+.latest-deals-card .content-box p span{
+  color: var(--gray-currency);
+  margin-right: 0.5rem;
+  text-decoration: line-through;
+}
+
+/* ======== ================================================
+======= End of mobile view of latest-deals styles ========
+============================================================ */
+
+/* ======== ================================================
+======================== iPad ================ ========
+============================================================ */
 @media screen and (min-width: 768px) {
   /* html {
     font-size: 20px;
@@ -432,11 +727,141 @@ color: var(--orange);
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1;
     }
+  /* ======== ===========================================
+========= card-container styles @768px and above ========
+========================================================= */
+
+  .card-container-top {
+    grid-template: repeat(5, 1fr) / repeat(2, 1fr);
+    grid-template-areas:
+      'card1 card2'
+      'card3 card4'
+      'card5 card6'
+      'card7 card8'
+      'card9 .';
+    grid-gap: 1rem;
+  }
+
+  .card1 {
+    grid-area: card1;
+  }
+
+  .card2 {
+    grid-area: card2;
+  }
+
+  .card3 {
+    grid-area: card3;
+  }
+
+  .card4 {
+    grid-area: card4;
+  }
+
+  .card5 {
+    grid-area: card5;
+  }
+
+  .card6 {
+    grid-area: card6;
+  }
+
+  .card7 {
+    grid-area: card7;
+  }
+
+  .card8 {
+    grid-area: card8;
+  }
+
+  .card9 {
+    grid-area: card9;
+  }
+
+  .categories-content-wrap .categories-first-row {
+    height: 15rem;
+  }
+
+  .last-third-portion {
+    bottom: -50%;
+  }
+
+  .last-third-portion h3 {
+    font-size: 1rem;
+    width: 95%;
+    padding-top: 0;
+  }
+
+  .categories-second-row .left-most a {
+    text-decoration: none;
+    color: var(--orange);
+    font-size: 0.8rem;
+  }
+
+  .categories-second-row .left-most h3 a{
+    font-size: 0.7rem;
+  }
+
+  .categories-second-row .left-most p {
+    padding: 0;
+    margin: 0;
+  }
+
+  .categories-second-row .left-most h3{
+    line-height: 0.6rem;
+  }
+
+  .categories-content-wrap li {
+    margin: 0.2rem 0;
+  }
+
+  .categories-content-wrap li a {
+    font-size: 0.7rem;
+  }
+
+  /* ======== ===========================================
+====== End of card-container styles @768px and above ======
+========================================================= */
+
+/* ======== ===========================================
+========= latest-deals styles @768px and above ========
+======================================================= */
+
+.card-container-bottom {
+  grid-template: repeat(3, 1fr)/ repeat(3, 1fr);
+  grid-template-areas: 
+  "card1 card2 card3"
+  "card4 card5 card6"
+  "card7 card8 .";
+  grid-gap: 0.3rem;
+  font-size: 10px;
 }
+
+.latest-deals-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 auto;
+}
+
+.latest-deals-card .img-box{
+  width: 100%;
+}
+
+.latest-deals-card .content-box{
+  width: 99%;
+  font-size: 0.8rem;
+}
+
+/* ======== ===========================================
+====== End of card-container styles @768px and above ======
+========================================================= */
+
+}
+
 
 /* Desktop */
 @media screen and (min-width: 1024px) {
-
   /* == latest-news section DESKTOP == */
 
   .latest-news .content-wrap {
@@ -475,4 +900,138 @@ color: var(--orange);
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-template-rows: 1;
     }
+      /* ======== ===========================================
+========= card-container styles @1024px and above ========
+========================================================= */
+
+  .card-container-top {
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    grid-template-areas:
+      'card1 card2 card3'
+      'card4 card5 card6'
+      'card7 card8 card9';
+    grid-gap: 1rem;
+  }
+
+  .card-container-top .card .orange-heading {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 0.1rem;
+  }
+
+  .card-container-top .card .orange-heading i {
+    font-size: 0.8rem;
+  }
+
+  .card1 {
+    grid-area: card1;
+  }
+
+  .card2 {
+    grid-area: card2;
+  }
+
+  .card3 {
+    grid-area: card3;
+  }
+
+  .card4 {
+    grid-area: card4;
+  }
+
+  .card5 {
+    grid-area: card5;
+  }
+
+  .card6 {
+    grid-area: card6;
+  }
+
+  .card7 {
+    grid-area: card7;
+  }
+
+  .card8 {
+    grid-area: card8;
+  }
+
+  .card9 {
+    grid-area: card9;
+  }
+
+  .categories-content-wrap .categories-first-row {
+    height: 12rem;
+  }
+
+  .last-third-portion h3 {
+    width: 98%;
+  }
+
+  .last-third-portion h3 a {
+    font-size: 0.8rem;
+  }
+
+  .main-text-sub {
+    font-size: 0.6rem;
+  }
+
+  .categories-second-row .left-most p {
+    font-size: 0.5rem;
+  }
+
+  .categories-second-row .left-most h3 a {
+    font-size: 0.5rem;
+  }
+
+  .categories-content-wrap ul {
+    margin: 1rem 1rem;
+  }
+
+  .categories-content-wrap li a {
+    font-size: 0.5rem;
+  }
+
+  /* ======== ===========================================
+====== End of card-container styles @1024px and above =====
+========================================================= */
+
+/* ======== ===========================================
+========= latest-deals styles @1024px and above ========
+========================================================= */
+
+.latest-deals {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.card-container-bottom {
+  grid-template: repeat(2, 1fr)/ repeat(4, 1fr);
+  grid-template-areas: 
+  "card1 card2 card3 card4"
+  "card5 card6 card7 card8";
+  grid-gap: 0.3rem;
+}
+
+.latest-deals .header{
+  width: 98%;
+}
+
+.latest-deals .header i{
+  font-size: 0.8rem;
+}
+
+.latest-deals .orange-heading {
+  font-size: 1.2rem;
+}
+
+.latest-deals a {
+  font-size: 0.6rem;
+}
+
+.latest-deals-card .content-box {
+  font-size: 0.7rem;
+}
+/* ======== ===========================================
+====== End of latest deals styles @1024px and above =====
+========================================================= */
 }
