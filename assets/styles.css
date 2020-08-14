@@ -202,7 +202,7 @@ h2 {
   margin-bottom: 1rem;
 }
 
-.categories-content-wrap .first-row {
+.categories-content-wrap .categories-first-row {
   background-repeat: no-repeat;
   background-size: cover;
   height: 20rem;
@@ -325,7 +325,7 @@ h2 {
   width: 90%;
 }
 
-.second-row {
+.categories-second-row {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-evenly;
@@ -333,7 +333,7 @@ h2 {
   background-color: #fff4f2;
 }
 
-.right-most {
+.categories-second-row .right-most {
   width: 30%;
   height: 100%;
 
@@ -341,22 +341,26 @@ h2 {
   justify-self: stretch;
 }
 
-.right-most img {
+.categories-second-row .right-most img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.left-most {
+.categories-second-row .left-most {
   width: 67%;
   padding-left: 1rem;
 }
 
-.left-most p {
+.categories-second-row .left-most p {
   text-transform: uppercase;
   color: var(--orange);
   font-size: 1rem;
   margin: 0.5rem 0;
+}
+
+.categories-second-row .left-most h3 a{
+  color: var(--orange);
 }
 
 .categories-content-wrap ul {
@@ -540,7 +544,7 @@ h2 {
     grid-area: card9;
   }
 
-  .categories-content-wrap .first-row {
+  .categories-content-wrap .categories-first-row {
     height: 15rem;
   }
 
@@ -554,22 +558,22 @@ h2 {
     padding-top: 0;
   }
 
-  .left-most a {
+  .categories-second-row .left-most a {
     text-decoration: none;
     color: var(--orange);
     font-size: 0.8rem;
   }
 
-  .left-most h3 a{
+  .categories-second-row .left-most h3 a{
     font-size: 0.7rem;
   }
 
-  .left-most p {
+  .categories-second-row .left-most p {
     padding: 0;
     margin: 0;
   }
 
-  .left-most h3{
+  .categories-second-row .left-most h3{
     line-height: 0.6rem;
   }
 
@@ -683,7 +687,7 @@ h2 {
     grid-area: card9;
   }
 
-  .categories-content-wrap .first-row {
+  .categories-content-wrap .categories-first-row {
     height: 12rem;
   }
 
@@ -699,11 +703,11 @@ h2 {
     font-size: 0.6rem;
   }
 
-  .left-most p {
+  .categories-second-row .left-most p {
     font-size: 0.5rem;
   }
 
-  .left-most h3 a {
+  .categories-second-row .left-most h3 a {
     font-size: 0.5rem;
   }
 
