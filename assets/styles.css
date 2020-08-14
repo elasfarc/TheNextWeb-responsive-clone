@@ -134,6 +134,14 @@ h2 {
   );
   position: relative;
 }
+.tnw-box:hover {
+  background-image: 
+  linear-gradient(
+  to right bottom,
+    rgba(22, 49, 444, 1),
+  rgba(153, 44, 44, 1)
+);
+}
 .tnw-box img {
   height: 100%;
   width: 65%;
