@@ -104,8 +104,14 @@ h2 {
 
 /* mobile style */
 /* nav */
+  /* ================================== */
+       /* Nonsticky-top (Black) */
+  /* ================================== */
+  .black-top-nav {
+    display: none;
+  }
 /* ================================== */
-            /* sticky-top */
+       /* sticky-top (white) */
 /* ================================== */
 
 .sticky-top-nav-wraper {
@@ -720,6 +726,17 @@ color: var(--orange);
   /* html {
     font-size: 20px;
   } */
+  /* ================================== */
+            /* NAV iPad */
+  /* ================================== */
+  /* ================================== */
+       /* Nonsticky-top (Black) */
+  /* ================================== */
+  .black-top-nav {
+    display: block;
+  }
+  /* left-most */
+
   .hero {
     height: 47vw;
     width: 98vw;
