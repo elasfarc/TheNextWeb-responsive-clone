@@ -252,7 +252,7 @@ color: var(--orange);
   margin-bottom: 8px;
 }
 .latest-funding .bottom-wrap .card:last-child {
-  display: none !important;
+  display: none;
   border: 1px solid green;
 }
 /* first row */
@@ -399,6 +399,17 @@ color: var(--orange);
        /* ================================ 
       === latest-funding section iPad ===
      ================================  */
+     .latest-funding .top ul {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      border: 1px solid green;
+    }
+    .latest-funding .top ul li {
+      padding: 0;
+      margin: 0;
+      padding-bottom: 0;
+    }
      .latest-funding .bottom-wrap {
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1;
@@ -435,4 +446,15 @@ color: var(--orange);
     font-size: 13px;
     line-height: 20px;
   }
+         /* ================================ 
+      === latest-funding section Desktop ===
+     ================================  */
+     .latest-funding .bottom-wrap .card:last-child {
+      display: block;
+      border: 1px solid green;
+    }
+     .latest-funding .bottom-wrap {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1;
+    }
 }
