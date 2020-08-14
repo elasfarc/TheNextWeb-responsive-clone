@@ -330,7 +330,10 @@ color: var(--orange);
   line-height: 18px;
   color: var(--gray-small-text);
 }
-/* iPad */
+     /* ================================ 
+      ============= iPad ===========
+     ================================  */
+
 @media screen and (min-width: 768px) {
   /* html {
     font-size: 20px;
@@ -368,7 +371,10 @@ color: var(--orange);
     height: 20.052vw; */
   }
 
-  /* === latest-news section iPad === */
+     /* ================================ 
+      === latest-news section iPad ===
+     ================================  */
+
   .latest-news .content-wrap {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: span 3;
@@ -389,6 +395,14 @@ color: var(--orange);
   .latest-news .content-wrap article h2 {
     margin-right: 0.625rem;
   }
+
+       /* ================================ 
+      === latest-funding section iPad ===
+     ================================  */
+     .latest-funding .bottom-wrap {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1;
+    }
 }
 
 /* Desktop */
