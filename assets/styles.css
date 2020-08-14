@@ -85,14 +85,21 @@ h2 {
 /* mobile style */
 /* nav */
 
-nav .sticky-nav {
-  height: 30px;
+nav .sticky-nav .sub {
+  height: 60px;
   background-color: rgb(254, 220, 71) ;
-  color: black;
+  border: 1px solid blue;
+}
+.nav .sticky-nav .sub p {
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 1px solid green;
   font-family: '.';
   font-size: 0.675rem;
   line-height: 1.3125rem;
-  text-indent: 5px;
+  
 }
 
 /* === hero === */
