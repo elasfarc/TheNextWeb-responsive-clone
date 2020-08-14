@@ -45,7 +45,7 @@ li {
 
 /* base style */
 body {
-  font-family: '.';
+  font-family: '.', sans-serif;
 }
 
 .grid {
@@ -69,6 +69,7 @@ h2 {
   letter-spacing: -0.01875rem;
   color: var(--white);
 }
+
 /* orange heading text -> latest-... */
 .orange-heading {
   font-family: 'TNW Avalon', sans-serif;
@@ -120,7 +121,8 @@ h2 {
   }  */
 .hero section:first-child {
   /* border: 1px solid blue; */
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       to left top,
       rgba(0, 0, 0, 0.85),
       rgba(0, 0, 0, 0.25)
@@ -130,7 +132,8 @@ h2 {
 
 .hero section:nth-child(2) {
   /* border: 1px solid green; */
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       to left top,
       rgba(0, 0, 0, 0.25),
       rgba(0, 0, 0, 0.25)
@@ -140,7 +143,8 @@ h2 {
 
 .hero section:nth-child(3) {
   /* border: 1px solid green; */
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       to left top,
       rgba(0, 0, 0, 0.85),
       rgba(0, 0, 0, 0.25)
@@ -162,6 +166,12 @@ h2 {
   padding: 0.875rem 0.75rem;
 }
 
+/* .main-text-sub */
+.main-text-sub > div {
+  display: inline-block;
+  margin: 0.3rem;
+}
+
 .hero section div div:last-child {
   /* border: 1px solid white; */
   height: 100%;
@@ -170,18 +180,14 @@ h2 {
   line-height: 1rem;
 }
 
-.main-text-sub > div {
-  display: inline-block;
-  margin: 0.3rem;
-}
-
-/* .main-text-sub */
-
-/* ======== card-container styles ======= */
+/* ======== ==========================
+======= card-container styles ========
+====================================== */
 
 .card-container-top {
   /* margin: 2rem auto; */
   width: 95%;
+
   /* border: 2px solid red; */
   margin: 0 auto;
 }
@@ -203,7 +209,8 @@ h2 {
 }
 
 .first-row-one {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       to top,
       rgba(0, 0, 0, 0.9),
       rgba(256, 256, 256, 0.1)
@@ -212,7 +219,8 @@ h2 {
 }
 
 .first-row-two {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       to top,
       rgba(0, 0, 0, 0.9),
       rgba(256, 256, 256, 0.1)
@@ -221,7 +229,8 @@ h2 {
 }
 
 .first-row-three {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       to top,
       rgba(0, 0, 0, 0.9),
       rgba(256, 256, 256, 0.1)
@@ -230,7 +239,8 @@ h2 {
 }
 
 .first-row-four {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       to top,
       rgba(0, 0, 0, 0.9),
       rgba(256, 256, 256, 0.1)
@@ -239,7 +249,8 @@ h2 {
 }
 
 .first-row-five {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       to top,
       rgba(0, 0, 0, 0.9),
       rgba(256, 256, 256, 0.1)
@@ -248,7 +259,8 @@ h2 {
 }
 
 .first-row-six {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       to top,
       rgba(0, 0, 0, 0.9),
       rgba(256, 256, 256, 0.1)
@@ -257,7 +269,8 @@ h2 {
 }
 
 .first-row-seven {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       to top,
       rgba(0, 0, 0, 0.9),
       rgba(256, 256, 256, 0.1)
@@ -266,7 +279,8 @@ h2 {
 }
 
 .first-row-eight {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       to top,
       rgba(0, 0, 0, 0.9),
       rgba(256, 256, 256, 0.1)
@@ -275,7 +289,8 @@ h2 {
 }
 
 .first-row-nine {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       to top,
       rgba(0, 0, 0, 0.9),
       rgba(256, 256, 256, 0.1)
@@ -321,6 +336,7 @@ h2 {
 .right-most {
   width: 30%;
   height: 100%;
+
   /* border: 1px solid red; */
   justify-self: stretch;
 }
@@ -340,12 +356,6 @@ h2 {
   color: var(--orange);
   font-size: 1rem;
   margin: 0.5rem 0;
-}
-
-.left-most a {
-  text-decoration: none;
-  color: var(--orange);
-  font-size: 0.8rem;
 }
 
 .content-wrap ul {
@@ -372,6 +382,10 @@ h2 {
   color: var(--gray-small-text);
   font-size: 0.9rem;
 }
+
+/* ======== ================================================
+======= End of mobile view of card-container styles ========
+============================================================ */
 
 /* iPad */
 @media screen and (min-width: 768px) {
@@ -411,7 +425,9 @@ h2 {
     height: 20.052vw; */
   }
 
-  /* ======== card-container styles @768px plus ======= */
+  /* ======== ===========================================
+========= card-container styles @768px and above ========
+========================================================= */
 
   .card-container-top {
     grid-template: repeat(5, 1fr) / repeat(2, 1fr);
@@ -421,7 +437,6 @@ h2 {
       'card5 card6'
       'card7 card8'
       'card9 .';
-
     grid-gap: 1rem;
   }
 
@@ -475,6 +490,12 @@ h2 {
     padding-top: 0;
   }
 
+  .left-most a {
+    text-decoration: none;
+    color: var(--orange);
+    font-size: 0.8rem;
+  }
+
   .left-most h3 a {
     font-size: 0.7rem;
     line-height: 0;
@@ -487,11 +508,18 @@ h2 {
   .content-wrap li a {
     font-size: 0.7rem;
   }
+
+  /* ======== ===========================================
+====== End of card-container styles @768px and above ======
+========================================================= */
 }
 
 /* Desktop */
 @media screen and (min-width: 1024px) {
-  /* ======== card-container styles @1024px plus ======= */
+  /* ======== ===========================================
+========= card-container styles @1024px and above ========
+========================================================= */
+
   .card-container-top {
     grid-template: repeat(3, 1fr) / repeat(3, 1fr);
     grid-template-areas:
@@ -508,7 +536,7 @@ h2 {
     margin-bottom: 0.1rem;
   }
 
-  .card-container-top .card .orange-heading i{
+  .card-container-top .card .orange-heading i {
     font-size: 0.8rem;
   }
 
@@ -556,7 +584,7 @@ h2 {
     width: 98%;
   }
 
-  .last-third-portion h3 a{
+  .last-third-portion h3 a {
     font-size: 0.8rem;
   }
 
@@ -564,7 +592,7 @@ h2 {
     font-size: 0.6rem;
   }
 
-  .left-most p{
+  .left-most p {
     font-size: 0.5rem;
   }
 
@@ -572,11 +600,15 @@ h2 {
     font-size: 0.5rem;
   }
 
-  .content-wrap ul{
+  .content-wrap ul {
     margin: 1rem 1rem;
   }
 
   .content-wrap li a {
     font-size: 0.5rem;
   }
+
+  /* ======== ===========================================
+====== End of card-container styles @1024px and above =====
+========================================================= */
 }
