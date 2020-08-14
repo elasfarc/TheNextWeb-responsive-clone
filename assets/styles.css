@@ -202,7 +202,7 @@ h2 {
   margin-bottom: 1rem;
 }
 
-.content-wrap .first-row {
+.categories-content-wrap .first-row {
   background-repeat: no-repeat;
   background-size: cover;
   height: 20rem;
@@ -344,6 +344,7 @@ h2 {
 .right-most img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .left-most {
@@ -358,13 +359,13 @@ h2 {
   margin: 0.5rem 0;
 }
 
-.content-wrap ul {
+.categories-content-wrap ul {
   margin: 2rem 1rem;
   width: 80%;
   list-style: none;
 }
 
-.content-wrap li::before {
+.categories-content-wrap li::before {
   content: '\2022';
   color: var(--orange);
   font-weight: bold;
@@ -373,11 +374,11 @@ h2 {
   margin-left: -1em;
 }
 
-.content-wrap li {
+.categories-content-wrap li {
   margin: 1rem 0;
 }
 
-.content-wrap li a {
+.categories-content-wrap li a {
   text-decoration: none;
   color: var(--gray-small-text);
   font-size: 0.9rem;
@@ -385,6 +386,69 @@ h2 {
 
 /* ======== ================================================
 ======= End of mobile view of card-container styles ========
+============================================================ */
+
+/* ======== ==========================
+======= .latest-deals styles =========
+====================================== */
+
+.latest-deals {
+  width: 95%;
+  margin: 0.5rem auto;
+}
+
+.latest-deals .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+}
+
+.latest-deals .header h2{
+  margin: 1.5rem 0.2rem;
+}
+
+.latest-deals .header i{
+  font-size: 1.2rem;
+}
+
+.latest-deals .header a{
+  color: var(--orange);
+}
+
+.latest-deals-card {
+  display: flex;
+  width: 95%;
+  justify-content: space-around;
+  margin-bottom: 1.2rem;
+}
+
+.latest-deals-card .img-box {
+  width: 20%;
+}
+
+.latest-deals-card .img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.latest-deals-card .content-box {
+  width: 75%;
+}
+
+.latest-deals-card .content-box p{
+  margin-top: 0.5rem;
+}
+
+.latest-deals-card .content-box p span{
+  color: var(--gray-currency);
+  margin-right: 0.5rem;
+  text-decoration: line-through;
+}
+
+/* ======== ================================================
+======= End of mobile view of latest-deals styles ========
 ============================================================ */
 
 /* iPad */
@@ -476,7 +540,7 @@ h2 {
     grid-area: card9;
   }
 
-  .content-wrap .first-row {
+  .categories-content-wrap .first-row {
     height: 15rem;
   }
 
@@ -496,22 +560,66 @@ h2 {
     font-size: 0.8rem;
   }
 
-  .left-most h3 a {
+  .left-most h3 a{
     font-size: 0.7rem;
-    line-height: 0;
   }
 
-  .content-wrap li {
+  .left-most p {
+    padding: 0;
+    margin: 0;
+  }
+
+  .left-most h3{
+    line-height: 0.6rem;
+  }
+
+  .categories-content-wrap li {
     margin: 0.2rem 0;
   }
 
-  .content-wrap li a {
+  .categories-content-wrap li a {
     font-size: 0.7rem;
   }
 
   /* ======== ===========================================
 ====== End of card-container styles @768px and above ======
 ========================================================= */
+
+/* ======== ===========================================
+========= latest-deals styles @768px and above ========
+======================================================= */
+
+.card-container-bottom {
+  grid-template: repeat(3, 1fr)/ repeat(3, 1fr);
+  grid-template-areas: 
+  "card1 card2 card3"
+  "card4 card5 card6"
+  "card7 card8 .";
+  grid-gap: 0.3rem;
+  font-size: 10px;
+}
+
+.latest-deals-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 auto;
+}
+
+.latest-deals-card .img-box{
+  width: 100%;
+}
+
+.latest-deals-card .content-box{
+  width: 99%;
+  font-size: 0.8rem;
+}
+
+/* ======== ===========================================
+====== End of card-container styles @768px and above ======
+========================================================= */
+
+
 }
 
 /* Desktop */
@@ -527,7 +635,6 @@ h2 {
       'card4 card5 card6'
       'card7 card8 card9';
     grid-gap: 1rem;
-    font-size: 10px;
   }
 
   .card-container-top .card .orange-heading {
@@ -576,8 +683,8 @@ h2 {
     grid-area: card9;
   }
 
-  .content-wrap .first-row {
-    height: 10rem;
+  .categories-content-wrap .first-row {
+    height: 12rem;
   }
 
   .last-third-portion h3 {
@@ -600,15 +707,56 @@ h2 {
     font-size: 0.5rem;
   }
 
-  .content-wrap ul {
+  .categories-content-wrap ul {
     margin: 1rem 1rem;
   }
 
-  .content-wrap li a {
+  .categories-content-wrap li a {
     font-size: 0.5rem;
   }
 
   /* ======== ===========================================
+====== End of card-container styles @1024px and above =====
+========================================================= */
+
+/* ======== ===========================================
+========= latest-deals styles @1024px and above ========
+========================================================= */
+
+.latest-deals {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.card-container-bottom {
+  grid-template: repeat(2, 1fr)/ repeat(4, 1fr);
+  grid-template-areas: 
+  "card1 card2 card3 card4"
+  "card5 card6 card7 card8";
+  grid-gap: 0.3rem;
+}
+
+.latest-deals .header{
+  width: 98%;
+}
+
+.latest-deals .header i{
+  font-size: 0.8rem;
+}
+
+.latest-deals .orange-heading {
+  font-size: 1.2rem;
+}
+
+.latest-deals a {
+  font-size: 0.6rem;
+}
+
+.latest-deals-card .content-box {
+  font-size: 0.7rem;
+}
+
+/* ======== ===========================================
 ====== End of card-container styles @1024px and above =====
 ========================================================= */
 }
