@@ -774,6 +774,9 @@ color: var(--orange);
     display: flex;
     margin-left: 106px;
   }
+  .black-left {
+    max-height: 32px;
+  }
   .black-left li:first-child a {
     color: white;
     
@@ -1055,7 +1058,7 @@ color: var(--orange);
   /* ================================== */
            /* NAV(Desktop) */
   /* ================================== */
-  
+
   .black {
     margin-left: 0;
   }
