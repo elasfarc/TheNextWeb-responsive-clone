@@ -826,7 +826,21 @@ color: var(--orange);
 .nav-icon i:last-child {
   display: none;
 }
-
+  /* ================================== */
+       /* sticky annonc -top (yellow) */
+  /* ================================== */
+  .yellow {
+    top: 48px;
+    height: 33px;
+  }
+  .yellow p {
+    font-size: 12.775px;
+    text-align: left;
+    margin-left: 137px;
+  }
+    /* ================================== */
+       /* Hero (iPad) */
+  /* ================================== */
   .hero {
     height: 47vw;
     width: 98vw;
