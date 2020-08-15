@@ -770,62 +770,54 @@ color: var(--orange);
   /* ================================== */
        /* Nonsticky-top (Black) */
   /* ================================== */
-  .black-top-nav {
-    display: block;
-    background-color: black;
-    color: rgb(156, 156, 156);
+  .black {
+    display: flex;
+    margin-left: 106px;
   }
-    .top-non-sticky-nav {
-    margin-left: 126px;
-    min-width: 100%;
+  .black-left li:first-child a {
+    color: white;
+    
   }
-  .top-non-sticky-nav {
-    margin-left: 126px;
-    min-width: 100%;
-  }
-    /* right-most top black nav */
-    .mostRight-black-nav {
-      display: none;
-      background-color: black;
-      min-width: 100%;
-    }
   /* ================================== */
        /* sticky nav -top (white) */
   /* ================================== */
-  nav{
-    position: relative;
-  }
+  /* white ipad */
+/* logo */
+.tnw-box {
+  position: fixed;
+  top: 0; 
+   z-index: 5; 
+   min-height: 80px;  
+  
+}
+.tnw-box img {
+   width: 65%;
+  height: 100%;
+  
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -65%);
+  z-index: 40; 
 
- .black-top-nav {
+
+
+  /* width: 10%;
+  height: 100%;
+  position: fixed;
+  top: 50%;
+  left:50%;
+  transform: translate(-493%, -85%);
+  z-index: 40; */
+
+  /* width: 60%;
+  height: 100%;
   position: sticky;
-  top: 0;
- }
-  .nav-sections-wrap {
-    display: block; 
+  top: 30%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  z-index: 90; */
 }
-
-.sticky-top-nav {
-   display: flex;
-   min-height: 48px;
-   width: 100%;
-   
-   z-index: 3;
-   background-color: white;
-   justify-content: space-between;
-   align-items: center;
- }
-.nav-sections li {
-  font-family: 'Shentox';
-  font-size: 0.875rem;
-  line-height: 0.875rem;
-  padding: 1.125rem 0.625rem;
-}
-.nav-sections li a:hover {
-  text-decoration: none;
-  color: rgb(189, 189, 189);
-}
-
-  /* left-most */
 
   .hero {
     height: 47vw;
