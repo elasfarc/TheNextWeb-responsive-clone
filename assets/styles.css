@@ -818,6 +818,14 @@ color: var(--orange);
   transform: translate(-50%, -50%);
   z-index: 90; */
 }
+/* sections */
+.nSections {
+  display: flex;
+  margin-left: 126px;
+}
+.nav-icon i:last-child {
+  display: none;
+}
 
   .hero {
     height: 47vw;
