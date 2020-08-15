@@ -905,14 +905,23 @@ color: var(--orange);
      ================================  */
      .latest-funding .top ul {
       display: flex;
-      justify-content: start;
+      width: 40%;
+      justify-content: space-between;
       align-items: center;
-      border: 1px solid green;
+      
     }
     .latest-funding .top ul li {
-      padding: 0;
-      margin: 0;
+      padding: 0 10px 0 0;
+      margin: 0 0 23px;
+      font-size: 16px;
+      border-right: 1px solid var(--orange);
+    }
+    .latest-funding .top ul li:last-child {
       padding-bottom: 0;
+      border-right: none;
+    }
+    .latest-funding .top ul li:first-child {
+      padding-right: 10px;
     }
      .latest-funding .bottom-wrap {
       grid-template-columns: 1fr 1fr 1fr;
