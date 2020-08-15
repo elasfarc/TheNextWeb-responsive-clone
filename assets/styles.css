@@ -179,6 +179,41 @@ h2 {
  color: var(--orange)
 }
 
+/* LOGO */
+/* NAV TNW logo mobile */
+
+.tnw-box {
+  min-height: 55px;
+  max-height: 55px;
+  width: 106px;
+  max-width: 106px;
+  min-width: 106px;
+  background-image: 
+    linear-gradient(
+    to right bottom,
+    rgba(212, 49, 144, 1),
+    rgba(253, 74, 44, 1)
+  );
+}
+.tnw-box:hover {
+  background-image: 
+  linear-gradient(
+  to right bottom,
+    rgba(22, 49, 444, 1),
+  rgba(153, 44, 44, 1)
+);
+}
+
+.tnw-box img {
+  width: 65%;
+  height: 100%;
+  
+  position: relative;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
  /* ================================== */
  /* ================================== */
             /* yellow-sticky */
