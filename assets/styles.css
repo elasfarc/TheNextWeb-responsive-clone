@@ -183,9 +183,23 @@ h2 {
  /* ================================== */
             /* yellow-sticky */
 /* ================================== */
-
-
-
+.yellow {
+  height: 60px;
+  background-color: rgb(254, 220, 71) ;
+  text-align: center;
+  position: sticky;
+  top: 50.5px;
+  z-index: 1;
+}
+.yellow p {
+  position: relative;
+ top: 50%; 
+ transform: translateY(-50%);
+ font-family: '.';
+ font-size: 0.875rem;
+ line-height: 1.3125rem;
+ 
+}
 /* === hero === */
 
 .hero {
