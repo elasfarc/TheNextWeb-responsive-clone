@@ -330,7 +330,6 @@ h2 {
 } */
 .latest-news > h2 i {
   font-weight: 2px;
-   border: 1px solid green; 
 }
 .latest-news .content-wrap {
   grid-template-columns: 1;
@@ -394,7 +393,7 @@ color: var(--orange);
 
 /* bottom-wrap G */
 .latest-funding .bottom-wrap {
- 
+ border: 1px solid green;
 }
 .latest-funding .bottom-wrap .card {
  /* border: 1px solid black;  */
@@ -403,13 +402,14 @@ color: var(--orange);
 }
 .latest-funding .bottom-wrap .card:last-child {
   display: none;
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 /* first row */
 .latest-funding .bottom-wrap .card .first-row {
   display: flex;
   flex-direction: column;
   height: 102px;
+  
   /* border: 5px solid yellow; */
 }
 .latest-funding .bottom-wrap .card .first-row > div:nth-child(1) > h4 ,
@@ -440,8 +440,8 @@ color: var(--orange);
 }
 .latest-funding .bottom-wrap .card .first-row .series-raised p:last-child {
   font-family: 'Shentox';
-  font-size: 0.7875rem;
-  line-height: 1.03rem;
+  font-size: 0.575rem; 
+  line-height: 0.903rem;
   letter-spacing: 0.0275rem;
   color: var(--gray-small-text);
 }
@@ -464,7 +464,7 @@ color: var(--orange);
   height: 53px;
 }
 .latest-funding .bottom-wrap .card .second-row .value {
-  font-size: 0.8125rem;
+  font-size: 0.7125rem;
   line-height: 1.3rem;
   margin-bottom: 0.875rem;
   color: var(--gray-small-text);
@@ -475,7 +475,7 @@ color: var(--orange);
 }
 .latest-funding .bottom-wrap .card .third-row {
   padding: 0.625rem 1rem 1rem;
-  max-height: 17%;
+  max-height: 100%;
   font-size: 12px;
   line-height: 18px;
   color: var(--gray-small-text);
@@ -927,6 +927,9 @@ color: var(--orange);
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1;
     }
+    /* .latest-funding .series-raised  {
+      font-size: 13px;
+    } */
   /* ======== ===========================================
 ========= card-container styles @768px and above ========
 ========================================================= */
@@ -1090,8 +1093,6 @@ color: var(--orange);
   .latest-news .content-wrap {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: span 2;
-    border: 0.5px solid tomato;
-    
   }
   .latest-news .content-wrap article .left-most { 
     margin: 0.125rem 0 0.5125rem 0;
@@ -1117,7 +1118,6 @@ color: var(--orange);
      ================================  */
      .latest-funding .bottom-wrap .card:last-child {
       display: block;
-      border: 1px solid green;
     }
      .latest-funding .bottom-wrap {
       grid-template-columns: 1fr 1fr 1fr 1fr;
