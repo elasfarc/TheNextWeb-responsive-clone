@@ -1052,6 +1052,29 @@ color: var(--orange);
 
 /* Desktop */
 @media screen and (min-width: 1024px) {
+  /* ================================== */
+           /* NAV(Desktop) */
+  /* ================================== */
+  
+  .black {
+    margin-left: 0;
+  }
+  .tnw-box {
+    display: none;
+  }
+  .nSections {
+    margin-left: 19px;
+  }
+  .yellow {
+    text-align: left;
+  }
+  .yellow p {
+    font-size: 12.775px;
+    text-align: left;
+    margin-left: 32px;
+  }
+  
+
   /* == latest-news section DESKTOP == */
 
   .latest-news .content-wrap {
