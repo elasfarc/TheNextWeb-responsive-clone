@@ -268,7 +268,7 @@ h2 {
       rgba(0, 0, 0, 0.85),
       rgba(0, 0, 0, 0.25)
     ),
-    url(./imgs/catagory7and1.jpg);
+    url(./imgs/1-22.jpg);
 }
 
 .hero section:nth-child(2) {
@@ -1087,6 +1087,10 @@ color: var(--orange);
     margin-left: 32px;
   }
   
+ /* ============ hero DESKTOP ============= */
+  .hero section:first-child {
+    background-image: linear-gradient(160deg, rgba(255, 32, 32, 0.5), rgba(0, 0, 0, 1)),url(./imgs/1-22.jpg);
+  }
 
   /* == latest-news section DESKTOP == */
 
