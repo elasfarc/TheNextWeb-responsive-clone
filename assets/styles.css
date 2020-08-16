@@ -5,6 +5,7 @@
   --gray-small-text: #555;
   --gray-currency: #aaa;
   --gray-social: #333;
+  --footer-background-top: #1b1b1b;
   --footer-background: rgb(7, 7, 7);
 }
 
@@ -282,9 +283,9 @@ color: var(--orange);
 }
 
 /* bottom-wrap G */
-.latest-funding .bottom-wrap {
+/* .latest-funding .bottom-wrap {
  
-}
+} */
 .latest-funding .bottom-wrap .card {
  /* border: 1px solid black;  */
   position: relative;
@@ -645,6 +646,97 @@ color: var(--orange);
 ============================================================ */
 
 /* ======== ================================================
+================== Mobile view of the footer ===============
+============================================================ */
+
+footer .top {
+  background-color: var(--footer-background-top);
+  height: 13rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+footer .top .first-row {
+  display: flex;
+  width: 85%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .top .first-row li{
+  background-color: var(--gray-social);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .top .first-row li i{
+  font-size: 18px;
+}
+
+footer .top ul{
+  display: flex;
+  /* height: 4.5rem; */
+  color: #fff;
+}
+
+footer .top .second-row {
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+text-transform: uppercase;
+color: var(--gray-currency);
+}
+
+footer .btm {
+  background-color: var(--footer-background);
+  color: #fff;
+  display: flex;
+  height: 8rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem 0;
+}
+
+footer .btm div{
+  margin: 0.5rem 0;
+}
+
+footer .btm .first-row {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .btm .first-row img {
+  width: 10%;
+  margin-right: 0.4rem;
+}
+
+footer .btm .last-img-box {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+footer .btm .last-img-box img{
+  width: 20%;
+  margin-left: 0.2rem;
+}
+ 
+/* ======== ================================================
+===============End of mobile view of the footer ============
+============================================================ */
+
+/* ======== ================================================
 ======================== iPad ================ ========
 ============================================================ */
 @media screen and (min-width: 768px) {
@@ -702,7 +794,7 @@ color: var(--orange);
   .latest-news .content-wrap article .left-most img {
     /* border: 1px solid red; */
     height: auto;
-    max-height: ;
+    /* max-height: ; */
     width: 100%;
   }
   .latest-news .content-wrap article h2 {
@@ -857,6 +949,39 @@ color: var(--orange);
 ====== End of card-container styles @768px and above ======
 ========================================================= */
 
+/* ======== ================================================
+================ The footer styles @768px plus =============
+============================================================ */
+
+footer .btm {
+  flex-direction: row;
+  font-size: 0.8rem;
+  justify-content: center;
+}
+
+footer .btm .first-row {
+  width: 33%;
+}
+
+footer .btm .last-img-box {
+  margin: 0;
+  width: 20%;
+  padding: 0;
+}
+
+footer .btm .last-img-box img{
+  width: 40%;
+}
+
+footer .made-with {
+  width: 25%;
+  margin: 0;
+}
+
+/* ======== ================================================
+============== End of footer styles @768px plus ============
+============================================================ */
+
 }
 
 
@@ -876,7 +1001,7 @@ color: var(--orange);
   .latest-news .content-wrap article .left-most img {
     /* border: 1px solid red; */
     height: auto;
-    max-height: ;
+    /* max-height: ; */
     width: 100%;
   }
   .latest-news .content-wrap article h2 {
@@ -1034,4 +1159,55 @@ color: var(--orange);
 /* ======== ===========================================
 ====== End of latest deals styles @1024px and above =====
 ========================================================= */
+
+/* ======== ================================================
+================ The footer styles @1024px plus =============
+============================================================ */
+
+footer .top {
+  height: 7rem;
+}
+
+footer .top .first-row {
+  width: 50%;
+}
+
+footer .top .second-row {
+  width: 45%;
+  margin: 0 auto;
+}
+
+footer .top .second-row li {
+  font-size: 0.6rem;
+}
+
+footer .btm {
+  height: 2rem;
+  text-align: center;
+}
+
+footer .btm .first-row {
+  width: 17%;
+}
+
+footer .btm .first-row p {
+  font-size: 0.5rem;
+}
+
+footer .made-with {
+  width: 13%;
+  font-size: 0.5rem;
+} 
+
+footer .btm .last-img-box {
+  width: 10%;
+}
+
+footer .btm .last-img-box p{
+  font-size: 0.5rem;
+}
+
+/* ======== ================================================
+============== End of footer styles @1024px plus ============
+============================================================ */
 }
