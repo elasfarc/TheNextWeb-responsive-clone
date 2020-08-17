@@ -61,52 +61,54 @@
 
     <main>
       <!--== hero  ==-->
-      <div class="hero grid">
-        <section>
-          <div class="hero-logo-box">
-            <img src="./assets/imgs/tnw-hero-logo.jpg" alt="" />
-          </div>
-          <p>Wednesday — August 12, 2020</p>
-          <div class="text-wrap">
-            <p>INSIGHTS</p>
-            <h2>
-              Grayscale’s Bitcoin portfolio is up 90% in 2020, now worth $4.5B
-            </h2>
-            <div class="main-text-sub flex">
-              <div class="author">by David Canellis</div>
-              <div class="time"><i class="far fa-clock"></i> 1 hour ago</div>
-              <div class="share"><i class="fas fa-share-alt"></i> 8</div>
-            </div>
-          </div>
-        </section>
-        <section>
-          <div class="text-wrap">
-            <p></p>
-            <h2>
-              Join our 15th annual flagship event for free
-            </h2>
-            <div class="main-text-sub flex">
-              <div class="author"></div>
-              <div class="time"></div>
-              <div class="share"></div>
-            </div>
-          </div>
-        </section>
-        <section>
-          <!-- <div class="dummy-div"></div> -->
-          <div class="text-wrap">
-            <p>APPS</p>
-            <h2>
-              How to delete your LinkedIn account
-            </h2>
-            <div class="main-text-sub flex">
-              <div class="author">by Rachel Kaser</div>
-              <div class="time"><i class="far fa-clock"></i> 3 hours ago</div>
-              <div class="share"><i class="fas fa-share-alt"></i> 6</div>
-            </div>
-          </div>
-        </section>
+
+ <div class="hero grid">
+  <section class="cover-story">
+    <div class="hero-logo-box">
+      <img src="./assets/imgs/tnw.svg" alt="" />
+    </div>
+    <p class="cover-story-date">Wednesday — August 12, 2020</p>
+    <div class="text-wrap">
+      <p>INSIGHTS</p>
+      <h2>
+        Grayscale’s Bitcoin portfolio is up 90% in 2020, now worth $4.5B
+      </h2>
+      <div class="main-text-sub flex">
+        <div class="author">by David Canellis</div>
+        <div class="time"><i class="far fa-clock"></i> 1 hour ago</div>
+        <div class="share"><i class="fas fa-share-alt"></i> 8</div>
       </div>
+    </div>
+  </section>
+  <section>
+    <div class="text-wrap">
+      <p></p>
+      <h2>
+        Join our 15th annual flagship event for free
+      </h2>
+      <div class="main-text-sub flex">
+        <div class="author"></div>
+        <div class="time"></div>
+        <div class="share"></div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <!-- <div class="dummy-div"></div> -->
+    <div class="text-wrap">
+      <p>APPS</p>
+      <h2>
+        How to delete your LinkedIn account
+      </h2>
+      <div class="main-text-sub flex">
+        <div class="author">by Rachel Kaser</div>
+        <div class="time"><i class="far fa-clock"></i> 3 hours ago</div>
+        <div class="share"><i class="fas fa-share-alt"></i> 6</div>
+      </div>
+    </div>
+  </section>
+</div>
+
       <!--== latest-news  ==-->
       <div id="latest" class="latest-news">
         <h2 class="orange-heading">
@@ -1164,28 +1166,28 @@
       </div>
     </main>
 
-    <!--== footer  ==-->
+     <!--== footer  ==-->
 
-    <footer>
+     <footer>
       <div class="top">
         <ul class="first-row">
           <li>
-            <i class="fab fa-facebook-square"></i>
+            <i class="fa fa-facebook-square"></i>
           </li>
           <li>
-            <i class="fab fa-twitter"></i>
+            <i class="fa fa-twitter"></i>
           </li>
           <li>
-            <i class="fab fa-youtube"></i>
+            <i class="fa fa-youtube"></i>
           </li>
           <li>
-            <i class="fab fa-instagram"></i>
+            <i class="fa fa-instagram"></i>
           </li>
           <li>
-            <i class="fab fa-pinterest-p"></i>
+            <i class="fa fa-pinterest-p"></i>
           </li>
           <li>
-            <i class="fas fa-rss"></i>
+            <i class="fa fa-rss"></i>
           </li>
           <li>
             <i class="fas fa-envelope"></i>
@@ -1201,12 +1203,16 @@
       </div>
       <div class="btm">
         <div class="first-row">
-          <img src="./assets/imgs/tnw-hero-logo.jpg" alt="" />
+          <img src="./assets/imgs/tnw-hero-logo.jpg" alt=""/>
+          <p>&copy; 2006-2020 The Next Web B.V</p>
         </div>
-        <p>Made with &#x2764; in Amsterdam.</p>
-        <p>Powered by</p>
-        <img src="./assets/imgs/stackpath.svg" alt="" />
+        <p class="made-with">Made with &#x2764; in Amsterdam.</p>
+        <div class="last-img-box">
+          <p>Powered by</p>
+          <img src="./assets/imgs/stackpath.svg" alt=""/>
+        </div>
       </div>
     </footer>
+
   </body>
 </html>

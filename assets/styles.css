@@ -5,6 +5,7 @@
   --gray-small-text: #555;
   --gray-currency: #aaa;
   --gray-social: #333;
+  --footer-background-top: #1b1b1b;
   --footer-background: rgb(7, 7, 7);
 }
 
@@ -236,8 +237,9 @@ h2 {
 /* === hero === */
 
 .hero {
-  width: 100vw;
-  height: 100vh;
+  width: 98%;
+  height: 85vh;
+  margin: 0 auto;
   grid-template-columns: 1;
   grid-template-rows: 1fr 1fr 1fr;
   row-gap: 8px;
@@ -251,6 +253,7 @@ h2 {
   /* border: 1px solid blue; */
   margin: 0 5px;
   padding: 4px;
+  /* background-size: cover; */
   background-size: 100% 120%;
   position: relative;
 }
@@ -265,18 +268,19 @@ h2 {
   background-image:
     linear-gradient(
       to left top,
-      rgba(0, 0, 0, 0.85),
+      rgba(0, 0, 0),
       rgba(0, 0, 0, 0.25)
     ),
     url(./imgs/1-22.jpg);
 }
+
 
 .hero section:nth-child(2) {
   /* border: 1px solid green; */
   background-image:
     linear-gradient(
       to left top,
-      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.25)
     ),
     url(./imgs/hero2.jpg);
@@ -287,20 +291,23 @@ h2 {
   background-image:
     linear-gradient(
       to left top,
-      rgba(0, 0, 0, 0.85),
+      rgba(0, 0, 0, 0.95),
       rgba(0, 0, 0, 0.25)
     ),
     url(./imgs/hero3.jpg);
 }
 
+.hero .cover-story-date {
+  display: none;
+}
+
 /* .hero section div:last-child { */
 .hero section .text-wrap {
-  border: 1px solid yellow;
   position: absolute;
 
   /* transform: translatey(50px); */
 
-  width: 100%;
+  width: 90%;
   bottom: 1px;
   left: 4px;
   right: 4px;
@@ -754,6 +761,98 @@ color: var(--orange);
 /* ======== ================================================
 ======= End of mobile view of latest-deals styles ========
 ============================================================ */
+/* ======== ================================================
+================== Mobile view of the footer ===============
+============================================================ */
+
+footer .top {
+  background-color: var(--footer-background-top);
+  height: 13rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+footer .top .first-row {
+  display: flex;
+  width: 85%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .top .first-row li {
+  background-color: var(--gray-social);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .top .first-row li i {
+  font-size: 18px;
+}
+
+footer .top ul {
+  display: flex;
+
+  /* height: 4.5rem; */
+  color: #fff;
+}
+
+footer .top .second-row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-transform: uppercase;
+  color: var(--gray-currency);
+}
+
+footer .btm {
+  background-color: var(--footer-background);
+  color: #fff;
+  display: flex;
+  height: 8rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem 0;
+}
+
+footer .btm div {
+  margin: 0.5rem 0;
+}
+
+footer .btm .first-row {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .btm .first-row img {
+  width: 10%;
+  margin-right: 0.4rem;
+}
+
+footer .btm .last-img-box {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .btm .last-img-box img {
+  width: 20%;
+  margin-left: 0.2rem;
+}
+
+/* ======== ================================================
+===============End of mobile view of the footer ============
+============================================================ */
+
 
 /* ======== ================================================
 ======================== iPad ================ ========
@@ -874,6 +973,16 @@ color: var(--orange);
     /* width: 31.510vw;
     height: 20.052vw; */
   }
+
+  .hero section:nth-child(3) .main-text-sub {
+    width: 98%;
+  }
+
+  .hero section:nth-child(3) .main-text-sub .share {
+    display: none;
+  }
+
+
 
      /* ================================ 
       === latest-news section iPad ===
@@ -1059,6 +1168,39 @@ color: var(--orange);
 /* ======== ===========================================
 ====== End of card-container styles @768px and above ======
 ========================================================= */
+/* ======== ================================================
+================ The footer styles @768px plus =============
+============================================================ */
+
+footer .btm {
+  flex-direction: row;
+  font-size: 0.8rem;
+  justify-content: center;
+}
+
+footer .btm .first-row {
+  width: 33%;
+}
+
+footer .btm .last-img-box {
+  margin: 0;
+  width: 20%;
+  padding: 0;
+}
+
+footer .btm .last-img-box img {
+  width: 40%;
+}
+
+footer .made-with {
+  width: 25%;
+  margin: 0;
+}
+
+/* ======== ================================================
+============== End of footer styles @768px plus ============
+============================================================ */
+
 
 }
 
@@ -1088,9 +1230,47 @@ color: var(--orange);
   }
   
  /* ============ hero DESKTOP ============= */
-  .hero section:first-child {
+/* ===========HERO desktop view =========== */
+
+.hero {
+  height: 65vh;
+}
+
+.hero section:nth-child(3) .main-text-sub .share {
+  display: inline-block;
+}
+
+.hero section:first-child {
+  /* border: 1px solid blue; */
+
     background-image: linear-gradient(160deg, rgba(255, 32, 32, 0.5), rgba(0, 0, 0, 1)),url(./imgs/1-22.jpg);
-  }
+  
+}
+
+.hero .hero-logo-box {
+  display: block;
+}
+
+.hero .hero-logo-box img {
+  width: 50%;
+  transform: translate(0.5rem, 1rem);
+}
+
+.hero .cover-story h2 {
+  font-size: 1.8rem;
+  line-height: 2rem;
+}
+
+.hero .cover-story-date {
+  display: block;
+  position: absolute;
+  top: 1.5rem;
+  right: 0.5rem;
+  font-size: 0.7rem;
+}
+
+/* ======= End of HERO desktop view ========= */
+
 
   /* == latest-news section DESKTOP == */
 
@@ -1261,4 +1441,56 @@ color: var(--orange);
 /* ======== ===========================================
 ====== End of latest deals styles @1024px and above =====
 ========================================================= */
+ /* ======== ================================================
+================ The footer styles @1024px plus =============
+============================================================ */
+
+footer .top {
+  height: 7rem;
+}
+
+footer .top .first-row {
+  width: 50%;
+}
+
+footer .top .second-row {
+  width: 45%;
+  margin: 0 auto;
+}
+
+footer .top .second-row li {
+  font-size: 0.6rem;
+}
+
+footer .btm {
+  height: 2rem;
+  text-align: center;
+}
+
+footer .btm .first-row {
+  width: 17%;
+}
+
+footer .btm .first-row p {
+  font-size: 0.5rem;
+}
+
+footer .made-with {
+  width: 13%;
+  font-size: 0.5rem;
+}
+
+footer .btm .last-img-box {
+  width: 10%;
+}
+
+footer .btm .last-img-box p {
+  font-size: 0.5rem;
+}
+
+/* ======== ================================================
+============== End of footer styles @1024px plus ============
+============================================================ */
+}
+
 }
