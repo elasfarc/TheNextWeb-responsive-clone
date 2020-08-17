@@ -18,10 +18,6 @@
   /* overflow-x: hidden;  */
 }
 
-footer {
-  border: 1px solid green;
-}
-
 *,
 *::before,
 *::after {
@@ -469,7 +465,7 @@ footer .btm .last-img-box img {
 /* === latest-funding mobile  === */
 
 .latest-funding {
-  width: 80%;
+  width: 65%;
   margin: 0 auto;
 }
 
@@ -513,11 +509,6 @@ footer .top .first-row li {
 .latest-funding .top ul li a:hover {
   text-decoration: none;
   color: black;
-}
-
-/* bottom-wrap G */
-.latest-funding .bottom-wrap {
-  border: 1px solid green;
 }
 
 .card-container-top .card {
@@ -1088,6 +1079,11 @@ footer .btm {
     margin-bottom: 1rem;
   }
 
+  .latest-funding {
+    width: 75%;
+    margin: 0 auto;
+  }
+
   .latest-deals .header h2 {
     margin: 1.5rem 0.2rem;
   }
@@ -1281,304 +1277,308 @@ footer .btm {
 ============================================================ */
 }
 
-  /* Desktop */
-  @media screen and (min-width: 1024px) {
-    /* ================================== */
+/* Desktop */
+@media screen and (min-width: 1024px) {
+  /* ================================== */
 
-    /* NAV(Desktop) */
+  /* NAV(Desktop) */
 
-    /* ================================== */
+  /* ================================== */
 
-    .black {
-      margin-left: 0;
-    }
+  .black {
+    margin-left: 0;
+  }
 
-    .tnw-box {
-      display: none;
-    }
+  .tnw-box {
+    display: none;
+  }
 
-    .nSections {
-      margin-left: 19px;
-    }
+  .nSections {
+    margin-left: 19px;
+  }
 
-    .yellow {
-      text-align: left;
-    }
+  .yellow {
+    text-align: left;
+  }
 
-    .yellow p {
-      font-size: 12.775px;
-      text-align: left;
-      margin-left: 32px;
-    }
+  .yellow p {
+    font-size: 12.775px;
+    text-align: left;
+    margin-left: 32px;
+  }
 
-    /* ============ hero DESKTOP ============= */
+  /* ============ hero DESKTOP ============= */
 
-    /* ===========HERO desktop view =========== */
+  /* ===========HERO desktop view =========== */
 
-    .hero {
-      height: 65vh;
-    }
+  .hero {
+    height: 65vh;
+  }
 
-    .hero section:nth-child(3) .main-text-sub .share {
-      display: inline-block;
-    }
+  .hero section:nth-child(3) .main-text-sub .share {
+    display: inline-block;
+  }
 
-    .hero section:first-child {
-      /* border: 1px solid blue; */
+  .hero section:first-child {
+    /* border: 1px solid blue; */
 
-      background-image: linear-gradient(160deg, rgba(255, 32, 32, 0.5), rgba(0, 0, 0, 1)), url(./imgs/1-22.jpg);
-    }
+    background-image: linear-gradient(160deg, rgba(255, 32, 32, 0.5), rgba(0, 0, 0, 1)), url(./imgs/1-22.jpg);
+  }
 
-    .hero .hero-logo-box {
-      display: block;
-    }
+  .hero .hero-logo-box {
+    display: block;
+  }
 
-    .hero .hero-logo-box img {
-      width: 50%;
-      transform: translate(0.5rem, 1rem);
-    }
+  .hero .hero-logo-box img {
+    width: 50%;
+    transform: translate(0.5rem, 1rem);
+  }
 
-    .hero .cover-story h2 {
-      font-size: 1.8rem;
-      line-height: 2rem;
-    }
+  .hero .cover-story h2 {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
 
-    .hero .cover-story-date {
-      display: block;
-      position: absolute;
-      top: 1.5rem;
-      right: 0.5rem;
-      font-size: 0.7rem;
-    }
+  .hero .cover-story-date {
+    display: block;
+    position: absolute;
+    top: 1.5rem;
+    right: 0.5rem;
+    font-size: 0.7rem;
+  }
 
-    /* ======= End of HERO desktop view ========= */
+  /* ======= End of HERO desktop view ========= */
 
 
-    /* == latest-news section DESKTOP == */
+  /* == latest-news section DESKTOP == */
 
-    .latest-news .content-wrap {
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: span 2;
-    }
+  .latest-news .content-wrap {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: span 2;
+  }
 
-    .latest-news .content-wrap article .left-most {
-      margin: 0.125rem 0 0.5125rem 0;
-    }
+  .latest-news .content-wrap article .left-most {
+    margin: 0.125rem 0 0.5125rem 0;
+  }
 
-    .latest-news .content-wrap article .left-most img {
-      /* border: 1px solid red; */
-      height: auto;
+  .latest-news .content-wrap article .left-most img {
+    /* border: 1px solid red; */
+    height: auto;
 
-      /* max-height: ; */
-      width: 100%;
-    }
+    /* max-height: ; */
+    width: 100%;
+  }
 
-    .latest-news .content-wrap article h2 {
-      margin-right: 0.625rem;
-      font-size: 16px;
-      line-height: 20px;
-      letter-spacing: 0.2px;
-    }
+  .latest-news .content-wrap article h2 {
+    margin-right: 0.625rem;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+  }
 
-    .main-text-sub {
-      font-size: 0.6rem;
-    }
+  .main-text-sub {
+    font-size: 0.6rem;
+  }
 
-    .latest-news .content-wrap article .main-text-sub {
-      font-size: 13px;
-      line-height: 20px;
-    }
+  .latest-news .content-wrap article .main-text-sub {
+    font-size: 13px;
+    line-height: 20px;
+  }
 
-    /* ================================
+  /* ================================
       === latest-funding section Desktop ===
      ================================  */
 
-    .latest-funding .bottom-wrap .card:last-child {
-      display: block;
-    }
+  .latest-funding {
+    width: 80%;
+    margin: 0 auto;
+  }
 
-    .latest-funding .bottom-wrap {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1;
-    }
+  .latest-funding .bottom-wrap .card:last-child {
+    display: block;
+  }
 
-    /* ======== ===========================================
+  .latest-funding .bottom-wrap {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1;
+  }
+
+  /* ======== ===========================================
 ========= card-container styles @1024px and above ========
 ========================================================= */
 
-    .card-container-top {
-      grid-template: repeat(3, 1fr) / repeat(3, 1fr);
-      grid-template-areas:
-        'card1 card2 card3'
-        'card4 card5 card6'
-        'card7 card8 card9';
-      grid-gap: 1rem;
-    }
+  .card-container-top {
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    grid-template-areas:
+      'card1 card2 card3'
+      'card4 card5 card6'
+      'card7 card8 card9';
+    grid-gap: 1rem;
+  }
 
-    .latest-deals .orange-heading {
-      font-size: 1.2rem;
-    }
+  .latest-deals .orange-heading {
+    font-size: 1.2rem;
+  }
 
-    .card-container-top .card .orange-heading {
-      font-size: 1.2rem;
-      margin-top: 1rem;
-      margin-bottom: 0.1rem;
-    }
+  .card-container-top .card .orange-heading {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 0.1rem;
+  }
 
-    .latest-deals .header i {
-      font-size: 0.8rem;
-    }
+  .latest-deals .header i {
+    font-size: 0.8rem;
+  }
 
-    .card-container-top .card .orange-heading i {
-      font-size: 0.8rem;
-    }
+  .card-container-top .card .orange-heading i {
+    font-size: 0.8rem;
+  }
 
-    .card1 {
-      grid-area: card1;
-    }
+  .card1 {
+    grid-area: card1;
+  }
 
-    .card2 {
-      grid-area: card2;
-    }
+  .card2 {
+    grid-area: card2;
+  }
 
-    .card3 {
-      grid-area: card3;
-    }
+  .card3 {
+    grid-area: card3;
+  }
 
-    .card4 {
-      grid-area: card4;
-    }
+  .card4 {
+    grid-area: card4;
+  }
 
-    .card5 {
-      grid-area: card5;
-    }
+  .card5 {
+    grid-area: card5;
+  }
 
-    .card6 {
-      grid-area: card6;
-    }
+  .card6 {
+    grid-area: card6;
+  }
 
-    .card7 {
-      grid-area: card7;
-    }
+  .card7 {
+    grid-area: card7;
+  }
 
-    .card8 {
-      grid-area: card8;
-    }
+  .card8 {
+    grid-area: card8;
+  }
 
-    .card9 {
-      grid-area: card9;
-    }
+  .card9 {
+    grid-area: card9;
+  }
 
-    .categories-content-wrap .categories-first-row {
-      height: 12rem;
-    }
+  .categories-content-wrap .categories-first-row {
+    height: 12rem;
+  }
 
-    .last-third-portion h3 {
-      width: 98%;
-    }
+  .last-third-portion h3 {
+    width: 98%;
+  }
 
-    .latest-deals a {
-      font-size: 0.6rem;
-    }
+  .latest-deals a {
+    font-size: 0.6rem;
+  }
 
-    .last-third-portion h3 a {
-      font-size: 0.8rem;
-    }
+  .last-third-portion h3 a {
+    font-size: 0.8rem;
+  }
 
-    .categories-second-row .left-most p {
-      font-size: 0.5rem;
-    }
+  .categories-second-row .left-most p {
+    font-size: 0.5rem;
+  }
 
-    .categories-content-wrap li a {
-      font-size: 0.5rem;
-    }
+  .categories-content-wrap li a {
+    font-size: 0.5rem;
+  }
 
-    .categories-second-row .left-most h3 a {
-      font-size: 0.5rem;
-    }
+  .categories-second-row .left-most h3 a {
+    font-size: 0.5rem;
+  }
 
-    .categories-content-wrap ul {
-      margin: 1rem 1rem;
-    }
+  .categories-content-wrap ul {
+    margin: 1rem 1rem;
+  }
 
-    /* ======== ===========================================
+  /* ======== ===========================================
 ====== End of card-container styles @1024px and above =====
 ========================================================= */
 
-    /* ======== ===========================================
+  /* ======== ===========================================
 ========= latest-deals styles @1024px and above ========
 ========================================================= */
 
-    .latest-deals {
-      width: 90%;
-      margin: 0 auto;
-    }
+  .latest-deals {
+    width: 90%;
+    margin: 0 auto;
+  }
 
-    .card-container-bottom {
-      grid-template: repeat(2, 1fr)/ repeat(4, 1fr);
-      grid-template-areas:
-        "card1 card2 card3 card4"
-        "card5 card6 card7 card8";
-      grid-gap: 0.3rem;
-    }
+  .card-container-bottom {
+    grid-template: repeat(2, 1fr)/ repeat(4, 1fr);
+    grid-template-areas:
+      "card1 card2 card3 card4"
+      "card5 card6 card7 card8";
+    grid-gap: 0.3rem;
+  }
 
-    .latest-deals .header {
-      width: 98%;
-    }
+  .latest-deals .header {
+    width: 98%;
+  }
 
-    .latest-deals-card .content-box {
-      font-size: 0.7rem;
-    }
+  .latest-deals-card .content-box {
+    font-size: 0.7rem;
+  }
 
-    /* ======== ===========================================
+  /* ======== ===========================================
 ====== End of latest deals styles @1024px and above =====
 ========================================================= */
 
-    footer .top {
-      height: 7rem;
-    }
-
-    footer .top .first-row {
-      width: 50%;
-    }
-
-    footer .top .second-row {
-      width: 45%;
-      margin: 0 auto;
-    }
-
-    footer .top .second-row li {
-      font-size: 0.6rem;
-    }
-
-    footer .btm {
-      height: 2rem;
-      text-align: center;
-    }
-
-    footer .btm .first-row {
-      width: 17%;
-    }
-
-    footer .btm .first-row p {
-      font-size: 0.5rem;
-    }
-
-    footer .made-with {
-      width: 13%;
-      font-size: 0.5rem;
-    }
-
-    footer .btm .last-img-box {
-      width: 10%;
-    }
-
-    footer .btm .last-img-box p {
-      font-size: 0.5rem;
-    }
-
-    /* ======== ================================================
-============== End of footer styles @1024px plus ============
-============================================================ */
+  footer .top {
+    height: 7rem;
   }
 
+  footer .top .first-row {
+    width: 50%;
+  }
+
+  footer .top .second-row {
+    width: 45%;
+    margin: 0 auto;
+  }
+
+  footer .top .second-row li {
+    font-size: 0.6rem;
+  }
+
+  footer .btm {
+    height: 2rem;
+    text-align: center;
+  }
+
+  footer .btm .first-row {
+    width: 17%;
+  }
+
+  footer .btm .first-row p {
+    font-size: 0.5rem;
+  }
+
+  footer .made-with {
+    width: 13%;
+    font-size: 0.5rem;
+  }
+
+  footer .btm .last-img-box {
+    width: 10%;
+  }
+
+  footer .btm .last-img-box p {
+    font-size: 0.5rem;
+  }
+
+  /* ======== ================================================
+============== End of footer styles @1024px plus ============
+============================================================ */
+}
