@@ -43,22 +43,6 @@ li {
   list-style: none;
 }
 
-a:link,
-a:visited {
-  text-decoration: none;
-  color: black;
-}
-
-a:hover {
-  text-decoration: underline;
-  color: var(--orange);
-}
-
-li {
-  list-style: none;
-}
-
-
 /* base style */
 body {
   font-family: '.', sans-serif;
@@ -109,80 +93,133 @@ h2 {
 /* mobile style */
 
 /* nav */
-  /* ================================== */
-       /* Nonsticky-top (Black) */
-  /* ================================== */
-  .black {
-    display: none;
-    justify-content: space-between;
-    background-color: black;
-  }
-  .black > ul {
-    display: flex;
-  }
-  .black > ul:first-child {
-    margin-left: 20px;
-  }
-  .black > ul:last-child {
-    margin-right: 20px;
-  }
-  .black ul li {
-    padding-left: 12px;  
-    font-size: 13px;
-    line-height: 32px;
-  }
-  .black > ul li a,
-  .nSections li a {
-    color: rgb(156, 156, 156);
-  }
-  .black > ul li a:hover {
-    color: white;
-    text-decoration: none;
-  }
-  
+
 /* ================================== */
-       /* sticky-top (white) */
+
+/* Nonsticky-top (Black) */
+
 /* ================================== */
-.white {
-  background-color: white;
-
-  position: sticky;
-  top: 0;
-  z-index: 1;
-
-  justify-content: space-between;
-
-
-}
-.nSections {
+.black {
   display: none;
-  font-family: 'Shentox';
-  font-size: 0.875rem;
-  line-height: 0.875rem;
+  justify-content: space-between;
+  background-color: black;
+}
+
+.black > ul {
+  display: flex;
+}
+
+.categories-content-wrap ul {
+  margin: 2rem 1rem;
+  width: 80%;
+  list-style: none;
+}
+
+footer .top ul {
+  display: flex;
+
+  /* height: 4.5rem; */
+  color: #fff;
+}
+
+.black > ul:first-child {
   margin-left: 20px;
 }
+
+.black > ul:last-child {
+  margin-right: 20px;
+}
+
 .nSections li {
   /* padding-left: 15px; */
   padding: 0.7rem 0.625rem;
 }
+
+.categories-content-wrap li {
+  margin: 1rem 0;
+}
+
+.categories-content-wrap li a {
+  text-decoration: none;
+  color: var(--gray-small-text);
+  font-size: 0.9rem;
+}
+
+.black ul li {
+  padding-left: 12px;
+  font-size: 13px;
+  line-height: 32px;
+}
+
+.last-third-portion h3 a {
+  color: var(--white);
+}
+
+.nSections li a,
+.black > ul li a {
+  color: rgb(156, 156, 156);
+}
+
+.latest-deals .header a {
+  color: var(--orange);
+}
+
 .nSections li a:hover {
   color: black;
   text-decoration: none;
 }
+
+.categories-second-row .left-most h3 a {
+  color: var(--orange);
+}
+
+.black > ul li a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/* ================================== */
+
+/* sticky-top (white) */
+
+/* ================================== */
+.white {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  justify-content: space-between;
+}
+
+.nSections {
+  display: none;
+  font-family: 'Shentox', sans-serif;
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  margin-left: 20px;
+}
+
 .nav-icon i {
   font-size: 18px;
   border-left: 1px solid rgb(236, 236, 236);
   padding: 15px;
   cursor: pointer;
 }
+
+.latest-news > h2 i {
+  font-weight: 2px;
+}
+
 .nav-icon i:first-child {
   color: rgb(189, 189, 189);
- }
+}
+
 .nav-icon i:last-child {
- color: var(--orange)
+  color: var(--orange);
 }
 
 /* LOGO */
+
 /* NAV TNW logo mobile */
 
 .tnw-box {
@@ -191,53 +228,57 @@ h2 {
   width: 106px;
   max-width: 106px;
   min-width: 106px;
-  background-image: 
+  background-image:
     linear-gradient(
-    to right bottom,
-    rgba(212, 49, 144, 1),
-    rgba(253, 74, 44, 1)
-  );
+      to right bottom,
+      rgba(212, 49, 144, 1),
+      rgba(253, 74, 44, 1)
+    );
 }
+
 .tnw-box:hover {
-  background-image: 
-  linear-gradient(
-  to right bottom,
-    rgba(22, 49, 444, 1),
-  rgba(153, 44, 44, 1)
-);
+  background-image:
+    linear-gradient(
+      to right bottom,
+      rgba(22, 49, 444, 1),
+      rgba(153, 44, 44, 1)
+    );
 }
 
 .tnw-box img {
   width: 65%;
   height: 100%;
-  
   position: relative;
   top: 50%;
-  left:50%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 
- /* ================================== */
- /* ================================== */
-            /* yellow-sticky */
+/* ================================== */
+
+/* ================================== */
+
+/* yellow-sticky */
+
 /* ================================== */
 .yellow {
   height: 60px;
-  background-color: rgb(254, 220, 71) ;
+  background-color: rgb(254, 220, 71);
   text-align: center;
   position: sticky;
   top: 50.5px;
   z-index: 1;
 }
+
 .yellow p {
   position: relative;
- top: 50%; 
- transform: translateY(-50%);
- font-family: '.';
- font-size: 0.875rem;
- line-height: 1.3125rem;
- 
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: '.', sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
 }
+
 /* === hero === */
 
 .hero {
@@ -257,6 +298,7 @@ h2 {
   /* border: 1px solid blue; */
   margin: 0 5px;
   padding: 4px;
+
   /* background-size: cover; */
   background-size: 100% 120%;
   position: relative;
@@ -277,7 +319,6 @@ h2 {
     ),
     url(./imgs/1-22.jpg);
 }
-
 
 .hero section:nth-child(2) {
   /* border: 1px solid green; */
@@ -324,6 +365,10 @@ h2 {
   margin: 0.3rem;
 }
 
+footer .btm div {
+  margin: 0.5rem 0;
+}
+
 .hero section div div:last-child {
   /* border: 1px solid white; */
   height: 100%;
@@ -341,10 +386,6 @@ h2 {
   margin-top: 3.25rem;
 } */
 
-.latest-news > h2 i {
-  font-weight: 2px;
-}
-
 .latest-news .content-wrap {
   grid-template-columns: 1;
   grid-template-rows: sapn 1;
@@ -361,10 +402,16 @@ h2 {
 }
 
 .latest-news .content-wrap article h2 {
-  font-family: 'Avalon-reg';
+  font-family: 'Avalon-reg', sans-serif;
   font-size: 0.875rem;
   line-height: 1.125rem;
   margin-bottom: 1px;
+}
+
+.main-text-sub {
+  color: var(--gray-currency);
+  margin-top: 0.5rem;
+  width: 90%;
 }
 
 .latest-news .content-wrap article .main-text-sub {
@@ -374,9 +421,43 @@ h2 {
   margin-top: 0.5rem;
 }
 
+.categories-second-row .left-most {
+  width: 67%;
+  padding-left: 1rem;
+}
+
 .latest-news .content-wrap article .left-most {
   margin: 0 0.8125rem 0.5125rem 0;
   max-width: inherit;
+}
+
+.categories-second-row .right-most img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.latest-deals-card .img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+footer .btm .first-row img {
+  width: 10%;
+  margin-right: 0.4rem;
+}
+
+footer .btm .last-img-box {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .btm .last-img-box img {
+  width: 20%;
+  margin-left: 0.2rem;
 }
 
 .latest-news .content-wrap article .left-most img {
@@ -388,8 +469,8 @@ h2 {
 /* === latest-funding mobile  === */
 
 .latest-funding {
-  width: 90%;
-  margin: 0;
+  width: 80%;
+  margin: 0 auto;
 }
 
 /* top */
@@ -405,6 +486,16 @@ h2 {
 
 .latest-funding .top ul li {
   padding: 11px 0 0 0;
+}
+
+footer .top .first-row li {
+  background-color: var(--gray-social);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .latest-funding .top ul li:first-child {
@@ -426,8 +517,15 @@ h2 {
 
 /* bottom-wrap G */
 .latest-funding .bottom-wrap {
- border: 1px solid green;
+  border: 1px solid green;
 }
+
+.card-container-top .card {
+  /* border: 1px solid purple; */
+  width: 100%;
+  margin: 0 auto;
+}
+
 .latest-funding .bottom-wrap .card {
   /* border: 1px solid black;  */
   position: relative;
@@ -436,7 +534,23 @@ h2 {
 
 .latest-funding .bottom-wrap .card:last-child {
   display: none;
+
   /* border: 1px solid green; */
+}
+
+footer .top .first-row {
+  display: flex;
+  width: 85%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .btm .first-row {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* first row */
@@ -444,8 +558,24 @@ h2 {
   display: flex;
   flex-direction: column;
   height: 102px;
-  
+
   /* border: 5px solid yellow; */
+}
+
+.last-third-portion p {
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.categories-second-row .left-most p {
+  text-transform: uppercase;
+  color: var(--orange);
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.latest-deals-card .content-box p {
+  margin-top: 0.5rem;
 }
 
 .latest-funding .bottom-wrap .card .first-row > div:nth-child(1) > h4,
@@ -464,7 +594,7 @@ h2 {
   font-size: 1.125rem;
   line-height: 1.4rem;
   padding-top: 0.6625rem;
-  font-family: 'Shentox';
+  font-family: 'Shentox', sans-serif;
 }
 
 .latest-funding .bottom-wrap .card .first-row > div:nth-child(2) {
@@ -480,8 +610,8 @@ h2 {
 }
 
 .latest-funding .bottom-wrap .card .first-row .series-raised p:last-child {
-  font-family: 'Shentox';
-  font-size: 0.575rem; 
+  font-family: 'Shentox', sans-serif;
+  font-size: 0.575rem;
   line-height: 0.903rem;
   letter-spacing: 0.0275rem;
   color: var(--gray-small-text);
@@ -495,6 +625,22 @@ h2 {
   margin: 2vw 0 0 1.432vw;
 
   /* transform: translate(1.432vw, -7.813vw); */
+}
+
+footer .top .second-row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-transform: uppercase;
+  color: var(--gray-currency);
+}
+
+.latest-deals .header i {
+  font-size: 1.2rem;
+}
+
+footer .top .first-row li i {
+  font-size: 18px;
 }
 
 /* 2nd 3rd row */
@@ -541,16 +687,6 @@ h2 {
 
   /* border: 2px solid red; */
   margin: 0 auto;
-}
-
-.card-container-top .card {
-  /* border: 1px solid purple; */
-  width: 100%;
-  margin: 0 auto;
-}
-
-.card-container-top .card h2 {
-  margin-bottom: 1rem;
 }
 
 .categories-content-wrap .categories-first-row {
@@ -656,24 +792,9 @@ h2 {
   padding-left: 1rem;
 }
 
-.last-third-portion p {
-  color: var(--white);
-  text-transform: uppercase;
-}
-
 .last-third-portion h3 {
   color: var(--white);
   font-size: 1.3rem;
-}
-
-.last-third-portion h3 a {
-  color: var(--white);
-}
-
-.main-text-sub {
-  color: var(--gray-currency);
-  margin-top: 0.5rem;
-  width: 90%;
 }
 
 .categories-second-row {
@@ -692,34 +813,6 @@ h2 {
   justify-self: stretch;
 }
 
-.categories-second-row .right-most img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.categories-second-row .left-most {
-  width: 67%;
-  padding-left: 1rem;
-}
-
-.categories-second-row .left-most p {
-  text-transform: uppercase;
-  color: var(--orange);
-  font-size: 1rem;
-  margin: 0.5rem 0;
-}
-
-.categories-second-row .left-most h3 a {
-  color: var(--orange);
-}
-
-.categories-content-wrap ul {
-  margin: 2rem 1rem;
-  width: 80%;
-  list-style: none;
-}
-
 .categories-content-wrap li::before {
   content: '\2022';
   color: var(--orange);
@@ -727,16 +820,6 @@ h2 {
   display: inline-block;
   width: 1em;
   margin-left: -1em;
-}
-
-.categories-content-wrap li {
-  margin: 1rem 0;
-}
-
-.categories-content-wrap li a {
-  text-decoration: none;
-  color: var(--gray-small-text);
-  font-size: 0.9rem;
 }
 
 /* ======== ================================================
@@ -759,18 +842,6 @@ h2 {
   width: 95%;
 }
 
-.latest-deals .header h2 {
-  margin: 1.5rem 0.2rem;
-}
-
-.latest-deals .header i {
-  font-size: 1.2rem;
-}
-
-.latest-deals .header a {
-  color: var(--orange);
-}
-
 .latest-deals-card {
   display: flex;
   width: 95%;
@@ -782,18 +853,8 @@ h2 {
   width: 20%;
 }
 
-.latest-deals-card .img-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .latest-deals-card .content-box {
   width: 75%;
-}
-
-.latest-deals-card .content-box p {
-  margin-top: 0.5rem;
 }
 
 .latest-deals-card .content-box p span {
@@ -805,98 +866,6 @@ h2 {
 /* ======== ================================================
 ======= End of mobile view of latest-deals styles ========
 ============================================================ */
-/* ======== ================================================
-================== Mobile view of the footer ===============
-============================================================ */
-
-footer .top {
-  background-color: var(--footer-background-top);
-  height: 13rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-
-footer .top .first-row {
-  display: flex;
-  width: 85%;
-  margin: 0 auto;
-  justify-content: space-between;
-  align-items: center;
-}
-
-footer .top .first-row li {
-  background-color: var(--gray-social);
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-footer .top .first-row li i {
-  font-size: 18px;
-}
-
-footer .top ul {
-  display: flex;
-
-  /* height: 4.5rem; */
-  color: #fff;
-}
-
-footer .top .second-row {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  text-transform: uppercase;
-  color: var(--gray-currency);
-}
-
-footer .btm {
-  background-color: var(--footer-background);
-  color: #fff;
-  display: flex;
-  height: 8rem;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 1.2rem 0;
-}
-
-footer .btm div {
-  margin: 0.5rem 0;
-}
-
-footer .btm .first-row {
-  width: 80%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-footer .btm .first-row img {
-  width: 10%;
-  margin-right: 0.4rem;
-}
-
-footer .btm .last-img-box {
-  width: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-footer .btm .last-img-box img {
-  width: 20%;
-  margin-left: 0.2rem;
-}
-
-/* ======== ================================================
-===============End of mobile view of the footer ============
-============================================================ */
-
 
 /* ======== ================================================
 ================== Mobile view of the footer ===============
@@ -910,43 +879,6 @@ footer .top {
   justify-content: space-evenly;
 }
 
-footer .top .first-row {
-  display: flex;
-  width: 85%;
-  margin: 0 auto;
-  justify-content: space-between;
-  align-items: center;
-}
-
-footer .top .first-row li {
-  background-color: var(--gray-social);
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-footer .top .first-row li i {
-  font-size: 18px;
-}
-
-footer .top ul {
-  display: flex;
-
-  /* height: 4.5rem; */
-  color: #fff;
-}
-
-footer .top .second-row {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  text-transform: uppercase;
-  color: var(--gray-currency);
-}
-
 footer .btm {
   background-color: var(--footer-background);
   color: #fff;
@@ -956,34 +888,6 @@ footer .btm {
   align-items: center;
   justify-content: center;
   padding: 1.2rem 0;
-}
-
-footer .btm div {
-  margin: 0.5rem 0;
-}
-
-footer .btm .first-row {
-  width: 80%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-footer .btm .first-row img {
-  width: 10%;
-  margin-right: 0.4rem;
-}
-
-footer .btm .last-img-box {
-  width: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-footer .btm .last-img-box img {
-  width: 20%;
-  margin-left: 0.2rem;
 }
 
 /* ======== ================================================
@@ -997,48 +901,69 @@ footer .btm .last-img-box img {
   /* html {
     font-size: 20px;
   } */
+
   /* ================================== */
-            /* NAV iPad */
+
+  /* NAV iPad */
+
   /* ================================== */
+
   /* ================================== */
-       /* Nonsticky-top (Black) */
+
+  /* Nonsticky-top (Black) */
+
   /* ================================== */
   .black {
     display: flex;
     margin-left: 106px;
   }
+
   .black-left {
     max-height: 32px;
   }
+
+  .categories-content-wrap li a {
+    font-size: 0.7rem;
+  }
+
+  .categories-second-row .left-most a {
+    text-decoration: none;
+    color: var(--orange);
+    font-size: 0.8rem;
+  }
+
   .black-left li:first-child a {
     color: white;
-    
   }
+
   /* ================================== */
-       /* sticky nav -top (white) */
+
+  /* sticky nav -top (white) */
+
   /* ================================== */
+
   /* white ipad */
-/* logo */
-.tnw-box {
-  position: fixed;
-  top: 0; 
-   z-index: 5; 
-   min-height: 80px;  
-  
-}
-.tnw-box img {
-   width: 65%;
-  height: 100%;
-  
-  position: absolute;
-  top: 50%;
-  left:50%;
-  transform: translate(-50%, -65%);
-  z-index: 40; 
+
+  /* logo */
+  .tnw-box {
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    min-height: 80px;
+  }
+
+  .tnw-box img {
+    width: 65%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -65%);
+    z-index: 40;
 
 
 
-  /* width: 10%;
+    /* width: 10%;
   height: 100%;
   position: fixed;
   top: 50%;
@@ -1046,36 +971,45 @@ footer .btm .last-img-box img {
   transform: translate(-493%, -85%);
   z-index: 40; */
 
-  /* width: 60%;
+    /* width: 60%;
   height: 100%;
   position: sticky;
   top: 30%;
   left:50%;
   transform: translate(-50%, -50%);
   z-index: 90; */
-}
-/* sections */
-.nSections {
-  display: flex;
-  margin-left: 126px;
-}
-.nav-icon i:last-child {
-  display: none;
-}
+  }
+
+  /* sections */
+  .nSections {
+    display: flex;
+    margin-left: 126px;
+  }
+
+  .nav-icon i:last-child {
+    display: none;
+  }
+
   /* ================================== */
-       /* sticky annonc -top (yellow) */
+
+  /* sticky annonc -top (yellow) */
+
   /* ================================== */
   .yellow {
     top: 48px;
     height: 33px;
   }
+
   .yellow p {
     font-size: 12.775px;
     text-align: left;
     margin-left: 137px;
   }
-    /* ================================== */
-       /* Hero (iPad) */
+
+  /* ================================== */
+
+  /* Hero (iPad) */
+
   /* ================================== */
   .hero {
     height: 47vw;
@@ -1120,7 +1054,7 @@ footer .btm .last-img-box img {
 
 
 
-     /* ================================ 
+  /* ================================
       === latest-news section iPad ===
      ================================  */
 
@@ -1138,12 +1072,24 @@ footer .btm .last-img-box img {
     margin: 0 0.8125rem 0.5125rem 0;
   }
 
+  footer .btm .last-img-box img {
+    width: 40%;
+  }
+
   .latest-news .content-wrap article .left-most img {
     /* border: 1px solid red; */
     height: auto;
 
     /* max-height: ; */
     width: 100%;
+  }
+
+  .card-container-top .card h2 {
+    margin-bottom: 1rem;
+  }
+
+  .latest-deals .header h2 {
+    margin: 1.5rem 0.2rem;
   }
 
   .latest-news .content-wrap article h2 {
@@ -1153,33 +1099,42 @@ footer .btm .last-img-box img {
   /* ================================
       === latest-funding section iPad ===
      ================================  */
-     .latest-funding .top ul {
-      display: flex;
-      width: 40%;
-      justify-content: space-between;
-      align-items: center;
-      
-    }
-    .latest-funding .top ul li {
-      padding: 0 10px 0 0;
-      margin: 0 0 23px;
-      font-size: 16px;
-      border-right: 1px solid var(--orange);
-    }
-    .latest-funding .top ul li:last-child {
-      padding-bottom: 0;
-      border-right: none;
-    }
-    .latest-funding .top ul li:first-child {
-      padding-right: 10px;
-    }
-     .latest-funding .bottom-wrap {
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1;
-    }
-    /* .latest-funding .series-raised  {
+  .latest-funding .top ul {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .categories-content-wrap li {
+    margin: 0.2rem 0;
+  }
+
+  .latest-funding .top ul li {
+    padding: 0 10px 0 0;
+    margin: 0 0 23px;
+    font-size: 16px;
+    border-right: 1px solid var(--orange);
+  }
+
+  .latest-funding .top ul li:last-child {
+    padding-bottom: 0;
+    border-right: none;
+  }
+
+  .latest-funding .top ul li:first-child {
+    padding-right: 10px;
+  }
+
+  .latest-funding .bottom-wrap {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1;
+  }
+
+  /* .latest-funding .series-raised  {
       font-size: 13px;
     } */
+
   /* ======== ===========================================
 ========= card-container styles @768px and above ========
 ========================================================= */
@@ -1245,12 +1200,6 @@ footer .btm .last-img-box img {
     padding-top: 0;
   }
 
-  .categories-second-row .left-most a {
-    text-decoration: none;
-    color: var(--orange);
-    font-size: 0.8rem;
-  }
-
   .categories-second-row .left-most h3 a {
     font-size: 0.7rem;
   }
@@ -1262,14 +1211,6 @@ footer .btm .last-img-box img {
 
   .categories-second-row .left-most h3 {
     line-height: 0.6rem;
-  }
-
-  .categories-content-wrap li {
-    margin: 0.2rem 0;
-  }
-
-  .categories-content-wrap li a {
-    font-size: 0.7rem;
   }
 
   /* ======== ===========================================
@@ -1309,39 +1250,6 @@ footer .btm .last-img-box img {
   /* ======== ===========================================
 ====== End of card-container styles @768px and above ======
 ========================================================= */
-/* ======== ================================================
-================ The footer styles @768px plus =============
-============================================================ */
-
-footer .btm {
-  flex-direction: row;
-  font-size: 0.8rem;
-  justify-content: center;
-}
-
-footer .btm .first-row {
-  width: 33%;
-}
-
-footer .btm .last-img-box {
-  margin: 0;
-  width: 20%;
-  padding: 0;
-}
-
-footer .btm .last-img-box img {
-  width: 40%;
-}
-
-footer .made-with {
-  width: 25%;
-  margin: 0;
-}
-
-/* ======== ================================================
-============== End of footer styles @768px plus ============
-============================================================ */
-
 
   /* ======== ================================================
 ================ The footer styles @768px plus =============
@@ -1363,10 +1271,6 @@ footer .made-with {
     padding: 0;
   }
 
-  footer .btm .last-img-box img {
-    width: 40%;
-  }
-
   footer .made-with {
     width: 25%;
     margin: 0;
@@ -1377,346 +1281,304 @@ footer .made-with {
 ============================================================ */
 }
 
+  /* Desktop */
+  @media screen and (min-width: 1024px) {
+    /* ================================== */
 
-/* Desktop */
-@media screen and (min-width: 1024px) {
-  /* ================================== */
-           /* NAV(Desktop) */
-  /* ================================== */
+    /* NAV(Desktop) */
 
-  .black {
-    margin-left: 0;
-  }
-  .tnw-box {
-    display: none;
-  }
-  .nSections {
-    margin-left: 19px;
-  }
-  .yellow {
-    text-align: left;
-  }
-  .yellow p {
-    font-size: 12.775px;
-    text-align: left;
-    margin-left: 32px;
-  }
-  
- /* ============ hero DESKTOP ============= */
-/* ===========HERO desktop view =========== */
+    /* ================================== */
 
-.hero {
-  height: 65vh;
-}
+    .black {
+      margin-left: 0;
+    }
 
-.hero section:nth-child(3) .main-text-sub .share {
-  display: inline-block;
-}
+    .tnw-box {
+      display: none;
+    }
 
-.hero section:first-child {
-  /* border: 1px solid blue; */
+    .nSections {
+      margin-left: 19px;
+    }
 
-    background-image: linear-gradient(160deg, rgba(255, 32, 32, 0.5), rgba(0, 0, 0, 1)),url(./imgs/1-22.jpg);
-  
-}
+    .yellow {
+      text-align: left;
+    }
 
-.hero .hero-logo-box {
-  display: block;
-}
+    .yellow p {
+      font-size: 12.775px;
+      text-align: left;
+      margin-left: 32px;
+    }
 
-.hero .hero-logo-box img {
-  width: 50%;
-  transform: translate(0.5rem, 1rem);
-}
+    /* ============ hero DESKTOP ============= */
 
-.hero .cover-story h2 {
-  font-size: 1.8rem;
-  line-height: 2rem;
-}
+    /* ===========HERO desktop view =========== */
 
-.hero .cover-story-date {
-  display: block;
-  position: absolute;
-  top: 1.5rem;
-  right: 0.5rem;
-  font-size: 0.7rem;
-}
+    .hero {
+      height: 65vh;
+    }
 
-/* ======= End of HERO desktop view ========= */
+    .hero section:nth-child(3) .main-text-sub .share {
+      display: inline-block;
+    }
 
+    .hero section:first-child {
+      /* border: 1px solid blue; */
 
-  /* == latest-news section DESKTOP == */
+      background-image: linear-gradient(160deg, rgba(255, 32, 32, 0.5), rgba(0, 0, 0, 1)), url(./imgs/1-22.jpg);
+    }
 
-  .latest-news .content-wrap {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: span 2;
-  }
-
-  .latest-news .content-wrap article .left-most {
-    margin: 0.125rem 0 0.5125rem 0;
-  }
-
-  .latest-news .content-wrap article .left-most img {
-    /* border: 1px solid red; */
-    height: auto;
-
-    /* max-height: ; */
-    width: 100%;
-  }
-
-  .latest-news .content-wrap article h2 {
-    margin-right: 0.625rem;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.2px;
-  }
-
-  .latest-news .content-wrap article .main-text-sub {
-    font-size: 13px;
-    line-height: 20px;
-  }
-
-  /* ================================
-      === latest-funding section Desktop ===
-     ================================  */
-     .latest-funding .bottom-wrap .card:last-child {
+    .hero .hero-logo-box {
       display: block;
     }
-     .latest-funding .bottom-wrap {
+
+    .hero .hero-logo-box img {
+      width: 50%;
+      transform: translate(0.5rem, 1rem);
+    }
+
+    .hero .cover-story h2 {
+      font-size: 1.8rem;
+      line-height: 2rem;
+    }
+
+    .hero .cover-story-date {
+      display: block;
+      position: absolute;
+      top: 1.5rem;
+      right: 0.5rem;
+      font-size: 0.7rem;
+    }
+
+    /* ======= End of HERO desktop view ========= */
+
+
+    /* == latest-news section DESKTOP == */
+
+    .latest-news .content-wrap {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: span 2;
+    }
+
+    .latest-news .content-wrap article .left-most {
+      margin: 0.125rem 0 0.5125rem 0;
+    }
+
+    .latest-news .content-wrap article .left-most img {
+      /* border: 1px solid red; */
+      height: auto;
+
+      /* max-height: ; */
+      width: 100%;
+    }
+
+    .latest-news .content-wrap article h2 {
+      margin-right: 0.625rem;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.2px;
+    }
+
+    .main-text-sub {
+      font-size: 0.6rem;
+    }
+
+    .latest-news .content-wrap article .main-text-sub {
+      font-size: 13px;
+      line-height: 20px;
+    }
+
+    /* ================================
+      === latest-funding section Desktop ===
+     ================================  */
+
+    .latest-funding .bottom-wrap .card:last-child {
+      display: block;
+    }
+
+    .latest-funding .bottom-wrap {
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-template-rows: 1;
     }
-      /* ======== ===========================================
+
+    /* ======== ===========================================
 ========= card-container styles @1024px and above ========
 ========================================================= */
 
-  .card-container-top {
-    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
-    grid-template-areas:
-      'card1 card2 card3'
-      'card4 card5 card6'
-      'card7 card8 card9';
-    grid-gap: 1rem;
-  }
+    .card-container-top {
+      grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+      grid-template-areas:
+        'card1 card2 card3'
+        'card4 card5 card6'
+        'card7 card8 card9';
+      grid-gap: 1rem;
+    }
 
-  .card-container-top .card .orange-heading {
-    font-size: 1.2rem;
-    margin-top: 1rem;
-    margin-bottom: 0.1rem;
-  }
+    .latest-deals .orange-heading {
+      font-size: 1.2rem;
+    }
 
-  .card-container-top .card .orange-heading i {
-    font-size: 0.8rem;
-  }
+    .card-container-top .card .orange-heading {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      margin-bottom: 0.1rem;
+    }
 
-  .card1 {
-    grid-area: card1;
-  }
+    .latest-deals .header i {
+      font-size: 0.8rem;
+    }
 
-  .card2 {
-    grid-area: card2;
-  }
+    .card-container-top .card .orange-heading i {
+      font-size: 0.8rem;
+    }
 
-  .card3 {
-    grid-area: card3;
-  }
+    .card1 {
+      grid-area: card1;
+    }
 
-  .card4 {
-    grid-area: card4;
-  }
+    .card2 {
+      grid-area: card2;
+    }
 
-  .card5 {
-    grid-area: card5;
-  }
+    .card3 {
+      grid-area: card3;
+    }
 
-  .card6 {
-    grid-area: card6;
-  }
+    .card4 {
+      grid-area: card4;
+    }
 
-  .card7 {
-    grid-area: card7;
-  }
+    .card5 {
+      grid-area: card5;
+    }
 
-  .card8 {
-    grid-area: card8;
-  }
+    .card6 {
+      grid-area: card6;
+    }
 
-  .card9 {
-    grid-area: card9;
-  }
+    .card7 {
+      grid-area: card7;
+    }
 
-  .categories-content-wrap .categories-first-row {
-    height: 12rem;
-  }
+    .card8 {
+      grid-area: card8;
+    }
 
-  .last-third-portion h3 {
-    width: 98%;
-  }
+    .card9 {
+      grid-area: card9;
+    }
 
-  .last-third-portion h3 a {
-    font-size: 0.8rem;
-  }
+    .categories-content-wrap .categories-first-row {
+      height: 12rem;
+    }
 
-  .main-text-sub {
-    font-size: 0.6rem;
-  }
+    .last-third-portion h3 {
+      width: 98%;
+    }
 
-  .categories-second-row .left-most p {
-    font-size: 0.5rem;
-  }
+    .latest-deals a {
+      font-size: 0.6rem;
+    }
 
-  .categories-second-row .left-most h3 a {
-    font-size: 0.5rem;
-  }
+    .last-third-portion h3 a {
+      font-size: 0.8rem;
+    }
 
-  .categories-content-wrap ul {
-    margin: 1rem 1rem;
-  }
+    .categories-second-row .left-most p {
+      font-size: 0.5rem;
+    }
 
-  .categories-content-wrap li a {
-    font-size: 0.5rem;
-  }
+    .categories-content-wrap li a {
+      font-size: 0.5rem;
+    }
 
-  /* ======== ===========================================
+    .categories-second-row .left-most h3 a {
+      font-size: 0.5rem;
+    }
+
+    .categories-content-wrap ul {
+      margin: 1rem 1rem;
+    }
+
+    /* ======== ===========================================
 ====== End of card-container styles @1024px and above =====
 ========================================================= */
 
-  /* ======== ===========================================
+    /* ======== ===========================================
 ========= latest-deals styles @1024px and above ========
 ========================================================= */
 
-  .latest-deals {
-    width: 90%;
-    margin: 0 auto;
-  }
+    .latest-deals {
+      width: 90%;
+      margin: 0 auto;
+    }
 
-  .card-container-bottom {
-    grid-template: repeat(2, 1fr)/ repeat(4, 1fr);
-    grid-template-areas:
-      "card1 card2 card3 card4"
-      "card5 card6 card7 card8";
-    grid-gap: 0.3rem;
-  }
+    .card-container-bottom {
+      grid-template: repeat(2, 1fr)/ repeat(4, 1fr);
+      grid-template-areas:
+        "card1 card2 card3 card4"
+        "card5 card6 card7 card8";
+      grid-gap: 0.3rem;
+    }
 
-  .latest-deals .header {
-    width: 98%;
-  }
+    .latest-deals .header {
+      width: 98%;
+    }
 
-  .latest-deals .header i {
-    font-size: 0.8rem;
-  }
+    .latest-deals-card .content-box {
+      font-size: 0.7rem;
+    }
 
-  .latest-deals .orange-heading {
-    font-size: 1.2rem;
-  }
-
-  .latest-deals a {
-    font-size: 0.6rem;
-  }
-
-  .latest-deals-card .content-box {
-    font-size: 0.7rem;
-  }
-
-  /* ======== ===========================================
+    /* ======== ===========================================
 ====== End of latest deals styles @1024px and above =====
 ========================================================= */
 
-  footer .top {
-    height: 7rem;
-  }
+    footer .top {
+      height: 7rem;
+    }
 
-  footer .top .first-row {
-    width: 50%;
-  }
+    footer .top .first-row {
+      width: 50%;
+    }
 
-  footer .top .second-row {
-    width: 45%;
-    margin: 0 auto;
-  }
+    footer .top .second-row {
+      width: 45%;
+      margin: 0 auto;
+    }
 
-  footer .top .second-row li {
-    font-size: 0.6rem;
-  }
+    footer .top .second-row li {
+      font-size: 0.6rem;
+    }
 
-  footer .btm {
-    height: 2rem;
-    text-align: center;
-  }
+    footer .btm {
+      height: 2rem;
+      text-align: center;
+    }
 
-  footer .btm .first-row {
-    width: 17%;
-  }
+    footer .btm .first-row {
+      width: 17%;
+    }
 
-  footer .btm .first-row p {
-    font-size: 0.5rem;
-  }
+    footer .btm .first-row p {
+      font-size: 0.5rem;
+    }
 
-  footer .made-with {
-    width: 13%;
-    font-size: 0.5rem;
-  }
+    footer .made-with {
+      width: 13%;
+      font-size: 0.5rem;
+    }
 
-  footer .btm .last-img-box {
-    width: 10%;
-  }
+    footer .btm .last-img-box {
+      width: 10%;
+    }
 
-  footer .btm .last-img-box p {
-    font-size: 0.5rem;
-  }
+    footer .btm .last-img-box p {
+      font-size: 0.5rem;
+    }
 
-  /* ======== ================================================
+    /* ======== ================================================
 ============== End of footer styles @1024px plus ============
 ============================================================ */
+  }
 
- /* ======== ================================================
-================ The footer styles @1024px plus =============
-============================================================ */
-
-footer .top {
-  height: 7rem;
-}
-
-footer .top .first-row {
-  width: 50%;
-}
-
-footer .top .second-row {
-  width: 45%;
-  margin: 0 auto;
-}
-
-footer .top .second-row li {
-  font-size: 0.6rem;
-}
-
-footer .btm {
-  height: 2rem;
-  text-align: center;
-}
-
-footer .btm .first-row {
-  width: 17%;
-}
-
-footer .btm .first-row p {
-  font-size: 0.5rem;
-}
-
-footer .made-with {
-  width: 13%;
-  font-size: 0.5rem;
-}
-
-footer .btm .last-img-box {
-  width: 10%;
-}
-
-footer .btm .last-img-box p {
-  font-size: 0.5rem;
-}
-
-/* ======== ================================================
-============== End of footer styles @1024px plus ============
-============================================================ */
-}
