@@ -15,8 +15,9 @@
   padding: 0;
   box-sizing: border-box;
 
-   /* overflow-x: hidden;  */
+  /* overflow-x: hidden;  */
 }
+
 footer {
   border: 1px solid green;
 }
@@ -32,10 +33,12 @@ a:visited {
   text-decoration: none;
   color: black;
 }
+
 a:hover {
   text-decoration: underline;
   color: var(--orange);
 }
+
 li {
   list-style: none;
 }
@@ -104,13 +107,15 @@ h2 {
 }
 
 /* mobile style */
+
 /* nav */
 
 nav .sticky-nav .sub {
   height: 60px;
-  background-color: rgb(254, 220, 71) ;
+  background-color: rgb(254, 220, 71);
   border: 1px solid blue;
 }
+
 .nav .sticky-nav .sub p {
   display: inline-block;
   position: relative;
@@ -120,14 +125,14 @@ nav .sticky-nav .sub {
   font-family: '.';
   font-size: 0.675rem;
   line-height: 1.3125rem;
-  
 }
 
 /* === hero === */
 
 .hero {
-  width: 100vw;
-  height: 100vh;
+  width: 98%;
+  height: 85vh;
+  margin: 0 auto;
   grid-template-columns: 1;
   grid-template-rows: 1fr 1fr 1fr;
   row-gap: 8px;
@@ -141,7 +146,7 @@ nav .sticky-nav .sub {
   /* border: 1px solid blue; */
   margin: 0 5px;
   padding: 4px;
-  background-size: 100% 120%;
+  background-size: cover;
   position: relative;
 }
 
@@ -183,6 +188,10 @@ nav .sticky-nav .sub {
     url(./imgs/hero3.jpg);
 }
 
+.hero .cover-story-date {
+  display: none;
+}
+
 /* .hero section div:last-child { */
 .hero section .text-wrap {
   border: 1px solid yellow;
@@ -190,7 +199,7 @@ nav .sticky-nav .sub {
 
   /* transform: translatey(50px); */
 
-  width: 100%;
+  width: 90%;
   bottom: 1px;
   left: 4px;
   right: 4px;
@@ -211,44 +220,58 @@ nav .sticky-nav .sub {
   line-height: 1rem;
 }
 
-  /* === latest news section === */
+/* === latest news section === */
+
 /* .latest-news > h2 {
-  
+
   margin-bottom: 0.875rem;
   margin-left: 0.975rem;
   margin-top: 3.25rem;
 } */
+
+.latest-funding {
+  width: 85%;
+}
+
 .latest-news > h2 i {
   font-weight: 2px;
-   border: 1px solid green; 
+  border: 1px solid green;
 }
+
 .latest-news .content-wrap {
   grid-template-columns: 1;
   grid-template-rows: sapn 1;
   max-width: 100%;
+
   /* border: 1px solid green; */
 }
+
 .latest-news .content-wrap article {
   display: flex;
   padding: 0.5rem 0 0 0.9375rem;
+
   /* border: 1px solid green; */
 }
+
 .latest-news .content-wrap article h2 {
   font-family: 'Avalon-reg';
   font-size: 0.875rem;
   line-height: 1.125rem;
   margin-bottom: 1px;
 }
+
 .latest-news .content-wrap article .main-text-sub {
-  color:rgb(170, 170, 170);
+  color: rgb(170, 170, 170);
   font-size: 0.75rem;
   line-height: 1.25rem;
   margin-top: 0.5rem;
 }
-.latest-news .content-wrap article .left-most { 
+
+.latest-news .content-wrap article .left-most {
   margin: 0 0.8125rem 0.5125rem 0;
-   max-width: inherit;
+  max-width: inherit;
 }
+
 .latest-news .content-wrap article .left-most img {
   /* border: 1px solid red; */
   height: 75px;
@@ -256,59 +279,73 @@ nav .sticky-nav .sub {
 }
 
 /* === latest-funding mobile  === */
+
 /* top */
 .latest-funding .top h1 {
   margin-top: 2.8rem;
 }
+
 .latest-funding .top ul {
   padding-left: 17px;
-  font-size: 14px; 
+  font-size: 14px;
   line-height: 18px;
 }
+
 .latest-funding .top ul li {
   padding: 11px 0 0 0;
 }
+
 .latest-funding .top ul li:first-child {
   padding: 0;
 }
+
 .latest-funding .top ul li:last-child {
   padding-bottom: 16px;
 }
+
 .latest-funding .top ul li a {
-color: var(--orange);
+  color: var(--orange);
 }
+
 .latest-funding .top ul li a:hover {
   text-decoration: none;
   color: black;
 }
 
 /* bottom-wrap G */
+
 /* .latest-funding .bottom-wrap {
- 
+
 } */
 .latest-funding .bottom-wrap .card {
- /* border: 1px solid black;  */
+  /* border: 1px solid black;  */
   position: relative;
   margin-bottom: 8px;
 }
+
 .latest-funding .bottom-wrap .card:last-child {
   display: none;
   border: 1px solid green;
 }
+
 /* first row */
 .latest-funding .bottom-wrap .card .first-row {
   display: flex;
   flex-direction: column;
   height: 102px;
+
   /* border: 5px solid yellow; */
 }
-.latest-funding .bottom-wrap .card .first-row > div:nth-child(1) > h4 ,
+
+.latest-funding .bottom-wrap .card .first-row > div:nth-child(1) > h4,
 .latest-funding .bottom-wrap .card .first-row > div:nth-child(2) > p {
   /* border: 1px solid green; */
   transform: translateX(5.25rem);
 }
+
 .latest-funding .bottom-wrap .card .first-row div:first-child {
   /* h4 host */
+
   /* border: 1px solid black; */
   height: 54%;
   background-color: var(--orange);
@@ -318,16 +355,19 @@ color: var(--orange);
   padding-top: 0.6625rem;
   font-family: 'Shentox';
 }
+
 .latest-funding .bottom-wrap .card .first-row > div:nth-child(2) {
   background-color: rgba(255, 68, 34, 0.08);
   height: 70.3%;
 }
+
 .latest-funding .bottom-wrap .card .first-row .series-raised p:first-child {
   font-size: 1.125rem;
   line-height: 1.4rem;
   font-weight: bold;
   padding-top: 0.6625rem;
 }
+
 .latest-funding .bottom-wrap .card .first-row .series-raised p:last-child {
   font-family: 'Shentox';
   font-size: 0.7875rem;
@@ -335,34 +375,41 @@ color: var(--orange);
   letter-spacing: 0.0275rem;
   color: var(--gray-small-text);
 }
+
 .latest-funding .bottom-wrap .card .logo-box img {
   max-height: 60px;
   position: absolute;
   top: 0;
   left: 0;
   margin: 2vw 0 0 1.432vw;
+
   /* transform: translate(1.432vw, -7.813vw); */
 }
+
 /* 2nd 3rd row */
 .latest-funding .bottom-wrap .card .second-row,
 .latest-funding .bottom-wrap .card .third-row {
   background-color: rgb(255, 250, 248);
 }
+
 .latest-funding .bottom-wrap .card .second-row {
   border-bottom: 0.5px solid rgb(254, 205, 198);
   padding: 1rem 1rem 1rem 1rem;
   height: 53px;
 }
+
 .latest-funding .bottom-wrap .card .second-row .value {
   font-size: 0.8125rem;
   line-height: 1.3rem;
   margin-bottom: 0.875rem;
   color: var(--gray-small-text);
 }
+
 .latest-funding .bottom-wrap .card .second-row i {
   margin-right: 0.625rem;
   color: black;
 }
+
 .latest-funding .bottom-wrap .card .third-row {
   padding: 0.625rem 1rem 1rem;
   max-height: 17%;
@@ -370,6 +417,7 @@ color: var(--orange);
   line-height: 18px;
   color: var(--gray-small-text);
 }
+
 /* end of latest-funding mobile */
 
 /* ======== ==========================
@@ -551,7 +599,7 @@ color: var(--orange);
   margin: 0.5rem 0;
 }
 
-.categories-second-row .left-most h3 a{
+.categories-second-row .left-most h3 a {
   color: var(--orange);
 }
 
@@ -569,6 +617,7 @@ color: var(--orange);
   width: 1em;
   margin-left: -1em;
 }
+
 .categories-content-wrap li {
   margin: 1rem 0;
 }
@@ -582,6 +631,7 @@ color: var(--orange);
 /* ======== ================================================
 ======= End of mobile view of card-container styles ========
 ============================================================ */
+
 /* ======== ==========================
 ======= .latest-deals styles mobile =========
 ====================================== */
@@ -598,15 +648,15 @@ color: var(--orange);
   width: 95%;
 }
 
-.latest-deals .header h2{
+.latest-deals .header h2 {
   margin: 1.5rem 0.2rem;
 }
 
-.latest-deals .header i{
+.latest-deals .header i {
   font-size: 1.2rem;
 }
 
-.latest-deals .header a{
+.latest-deals .header a {
   color: var(--orange);
 }
 
@@ -631,11 +681,11 @@ color: var(--orange);
   width: 75%;
 }
 
-.latest-deals-card .content-box p{
+.latest-deals-card .content-box p {
   margin-top: 0.5rem;
 }
 
-.latest-deals-card .content-box p span{
+.latest-deals-card .content-box p span {
   color: var(--gray-currency);
   margin-right: 0.5rem;
   text-decoration: line-through;
@@ -665,7 +715,7 @@ footer .top .first-row {
   align-items: center;
 }
 
-footer .top .first-row li{
+footer .top .first-row li {
   background-color: var(--gray-social);
   width: 3rem;
   height: 3rem;
@@ -675,22 +725,23 @@ footer .top .first-row li{
   align-items: center;
 }
 
-footer .top .first-row li i{
+footer .top .first-row li i {
   font-size: 18px;
 }
 
-footer .top ul{
+footer .top ul {
   display: flex;
+
   /* height: 4.5rem; */
   color: #fff;
 }
 
 footer .top .second-row {
-display: flex;
-justify-content: space-evenly;
-align-items: center;
-text-transform: uppercase;
-color: var(--gray-currency);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-transform: uppercase;
+  color: var(--gray-currency);
 }
 
 footer .btm {
@@ -704,7 +755,7 @@ footer .btm {
   padding: 1.2rem 0;
 }
 
-footer .btm div{
+footer .btm div {
   margin: 0.5rem 0;
 }
 
@@ -725,13 +776,13 @@ footer .btm .last-img-box {
   display: flex;
   justify-content: center;
   align-items: center;
-} 
+}
 
-footer .btm .last-img-box img{
+footer .btm .last-img-box img {
   width: 20%;
   margin-left: 0.2rem;
 }
- 
+
 /* ======== ================================================
 ===============End of mobile view of the footer ============
 ============================================================ */
@@ -776,7 +827,7 @@ footer .btm .last-img-box img{
     height: 20.052vw; */
   }
 
-     /* ================================ 
+  /* ================================
       === latest-news section iPad ===
      ================================  */
 
@@ -784,41 +835,49 @@ footer .btm .last-img-box img{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: span 3;
   }
+
   .latest-news .content-wrap article {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
   }
-  .latest-news .content-wrap article .left-most { 
+
+  .latest-news .content-wrap article .left-most {
     margin: 0 0.8125rem 0.5125rem 0;
   }
+
   .latest-news .content-wrap article .left-most img {
     /* border: 1px solid red; */
     height: auto;
+
     /* max-height: ; */
     width: 100%;
   }
+
   .latest-news .content-wrap article h2 {
     margin-right: 0.625rem;
   }
 
-       /* ================================ 
+  /* ================================
       === latest-funding section iPad ===
      ================================  */
-     .latest-funding .top ul {
-      display: flex;
-      justify-content: start;
-      align-items: center;
-      border: 1px solid green;
-    }
-    .latest-funding .top ul li {
-      padding: 0;
-      margin: 0;
-      padding-bottom: 0;
-    }
-     .latest-funding .bottom-wrap {
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1;
-    }
+  .latest-funding .top ul {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border: 1px solid green;
+  }
+
+  .latest-funding .top ul li {
+    padding: 0;
+    margin: 0;
+    padding-bottom: 0;
+  }
+
+  .latest-funding .bottom-wrap {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1;
+  }
+
   /* ======== ===========================================
 ========= card-container styles @768px and above ========
 ========================================================= */
@@ -890,7 +949,7 @@ footer .btm .last-img-box img{
     font-size: 0.8rem;
   }
 
-  .categories-second-row .left-most h3 a{
+  .categories-second-row .left-most h3 a {
     font-size: 0.7rem;
   }
 
@@ -899,7 +958,7 @@ footer .btm .last-img-box img{
     margin: 0;
   }
 
-  .categories-second-row .left-most h3{
+  .categories-second-row .left-most h3 {
     line-height: 0.6rem;
   }
 
@@ -915,73 +974,72 @@ footer .btm .last-img-box img{
 ====== End of card-container styles @768px and above ======
 ========================================================= */
 
-/* ======== ===========================================
+  /* ======== ===========================================
 ========= latest-deals styles @768px and above ========
 ======================================================= */
 
-.card-container-bottom {
-  grid-template: repeat(3, 1fr)/ repeat(3, 1fr);
-  grid-template-areas: 
-  "card1 card2 card3"
-  "card4 card5 card6"
-  "card7 card8 .";
-  grid-gap: 0.3rem;
-  font-size: 10px;
-}
+  .card-container-bottom {
+    grid-template: repeat(3, 1fr)/ repeat(3, 1fr);
+    grid-template-areas:
+      "card1 card2 card3"
+      "card4 card5 card6"
+      "card7 card8 .";
+    grid-gap: 0.3rem;
+    font-size: 10px;
+  }
 
-.latest-deals-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  margin: 0 auto;
-}
+  .latest-deals-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0 auto;
+  }
 
-.latest-deals-card .img-box{
-  width: 100%;
-}
+  .latest-deals-card .img-box {
+    width: 100%;
+  }
 
-.latest-deals-card .content-box{
-  width: 99%;
-  font-size: 0.8rem;
-}
+  .latest-deals-card .content-box {
+    width: 99%;
+    font-size: 0.8rem;
+  }
 
-/* ======== ===========================================
+  /* ======== ===========================================
 ====== End of card-container styles @768px and above ======
 ========================================================= */
 
-/* ======== ================================================
+  /* ======== ================================================
 ================ The footer styles @768px plus =============
 ============================================================ */
 
-footer .btm {
-  flex-direction: row;
-  font-size: 0.8rem;
-  justify-content: center;
-}
+  footer .btm {
+    flex-direction: row;
+    font-size: 0.8rem;
+    justify-content: center;
+  }
 
-footer .btm .first-row {
-  width: 33%;
-}
+  footer .btm .first-row {
+    width: 33%;
+  }
 
-footer .btm .last-img-box {
-  margin: 0;
-  width: 20%;
-  padding: 0;
-}
+  footer .btm .last-img-box {
+    margin: 0;
+    width: 20%;
+    padding: 0;
+  }
 
-footer .btm .last-img-box img{
-  width: 40%;
-}
+  footer .btm .last-img-box img {
+    width: 40%;
+  }
 
-footer .made-with {
-  width: 25%;
-  margin: 0;
-}
+  footer .made-with {
+    width: 25%;
+    margin: 0;
+  }
 
-/* ======== ================================================
+  /* ======== ================================================
 ============== End of footer styles @768px plus ============
 ============================================================ */
-
 }
 
 
@@ -993,39 +1051,46 @@ footer .made-with {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: span 2;
     border: 0.5px solid tomato;
-    
   }
-  .latest-news .content-wrap article .left-most { 
+
+  .latest-news .content-wrap article .left-most {
     margin: 0.125rem 0 0.5125rem 0;
   }
+
   .latest-news .content-wrap article .left-most img {
     /* border: 1px solid red; */
     height: auto;
+
     /* max-height: ; */
     width: 100%;
   }
+
   .latest-news .content-wrap article h2 {
     margin-right: 0.625rem;
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 0.2px;
   }
+
   .latest-news .content-wrap article .main-text-sub {
     font-size: 13px;
     line-height: 20px;
   }
-         /* ================================ 
+
+  /* ================================
       === latest-funding section Desktop ===
      ================================  */
-     .latest-funding .bottom-wrap .card:last-child {
-      display: block;
-      border: 1px solid green;
-    }
-     .latest-funding .bottom-wrap {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1;
-    }
-      /* ======== ===========================================
+  .latest-funding .bottom-wrap .card:last-child {
+    display: block;
+    border: 1px solid green;
+  }
+
+  .latest-funding .bottom-wrap {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1;
+  }
+
+  /* ======== ===========================================
 ========= card-container styles @1024px and above ========
 ========================================================= */
 
@@ -1120,94 +1185,95 @@ footer .made-with {
 ====== End of card-container styles @1024px and above =====
 ========================================================= */
 
-/* ======== ===========================================
+  /* ======== ===========================================
 ========= latest-deals styles @1024px and above ========
 ========================================================= */
 
-.latest-deals {
-  width: 90%;
-  margin: 0 auto;
-}
+  .latest-deals {
+    width: 90%;
+    margin: 0 auto;
+  }
 
-.card-container-bottom {
-  grid-template: repeat(2, 1fr)/ repeat(4, 1fr);
-  grid-template-areas: 
-  "card1 card2 card3 card4"
-  "card5 card6 card7 card8";
-  grid-gap: 0.3rem;
-}
+  .card-container-bottom {
+    grid-template: repeat(2, 1fr)/ repeat(4, 1fr);
+    grid-template-areas:
+      "card1 card2 card3 card4"
+      "card5 card6 card7 card8";
+    grid-gap: 0.3rem;
+  }
 
-.latest-deals .header{
-  width: 98%;
-}
+  .latest-deals .header {
+    width: 98%;
+  }
 
-.latest-deals .header i{
-  font-size: 0.8rem;
-}
+  .latest-deals .header i {
+    font-size: 0.8rem;
+  }
 
-.latest-deals .orange-heading {
-  font-size: 1.2rem;
-}
+  .latest-deals .orange-heading {
+    font-size: 1.2rem;
+  }
 
-.latest-deals a {
-  font-size: 0.6rem;
-}
+  .latest-deals a {
+    font-size: 0.6rem;
+  }
 
-.latest-deals-card .content-box {
-  font-size: 0.7rem;
-}
-/* ======== ===========================================
+  .latest-deals-card .content-box {
+    font-size: 0.7rem;
+  }
+
+  /* ======== ===========================================
 ====== End of latest deals styles @1024px and above =====
 ========================================================= */
 
-/* ======== ================================================
+  /* ======== ================================================
 ================ The footer styles @1024px plus =============
 ============================================================ */
 
-footer .top {
-  height: 7rem;
-}
+  footer .top {
+    height: 7rem;
+  }
 
-footer .top .first-row {
-  width: 50%;
-}
+  footer .top .first-row {
+    width: 50%;
+  }
 
-footer .top .second-row {
-  width: 45%;
-  margin: 0 auto;
-}
+  footer .top .second-row {
+    width: 45%;
+    margin: 0 auto;
+  }
 
-footer .top .second-row li {
-  font-size: 0.6rem;
-}
+  footer .top .second-row li {
+    font-size: 0.6rem;
+  }
 
-footer .btm {
-  height: 2rem;
-  text-align: center;
-}
+  footer .btm {
+    height: 2rem;
+    text-align: center;
+  }
 
-footer .btm .first-row {
-  width: 17%;
-}
+  footer .btm .first-row {
+    width: 17%;
+  }
 
-footer .btm .first-row p {
-  font-size: 0.5rem;
-}
+  footer .btm .first-row p {
+    font-size: 0.5rem;
+  }
 
-footer .made-with {
-  width: 13%;
-  font-size: 0.5rem;
-} 
+  footer .made-with {
+    width: 13%;
+    font-size: 0.5rem;
+  }
 
-footer .btm .last-img-box {
-  width: 10%;
-}
+  footer .btm .last-img-box {
+    width: 10%;
+  }
 
-footer .btm .last-img-box p{
-  font-size: 0.5rem;
-}
+  footer .btm .last-img-box p {
+    font-size: 0.5rem;
+  }
 
-/* ======== ================================================
+  /* ======== ================================================
 ============== End of footer styles @1024px plus ============
 ============================================================ */
 }
