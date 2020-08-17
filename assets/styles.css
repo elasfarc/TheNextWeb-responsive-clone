@@ -160,7 +160,7 @@ nav .sticky-nav .sub {
   background-image:
     linear-gradient(
       to left top,
-      rgba(0, 0, 0, 0.85),
+      rgba(0, 0, 0),
       rgba(0, 0, 0, 0.25)
     ),
     url(./imgs/catagory7and1.jpg);
@@ -171,7 +171,7 @@ nav .sticky-nav .sub {
   background-image:
     linear-gradient(
       to left top,
-      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.25)
     ),
     url(./imgs/hero2.jpg);
@@ -182,7 +182,7 @@ nav .sticky-nav .sub {
   background-image:
     linear-gradient(
       to left top,
-      rgba(0, 0, 0, 0.85),
+      rgba(0, 0, 0, 0.95),
       rgba(0, 0, 0, 0.25)
     ),
     url(./imgs/hero3.jpg);
@@ -194,7 +194,6 @@ nav .sticky-nav .sub {
 
 /* .hero section div:last-child { */
 .hero section .text-wrap {
-  border: 1px solid yellow;
   position: absolute;
 
   /* transform: translatey(50px); */
@@ -228,10 +227,6 @@ nav .sticky-nav .sub {
   margin-left: 0.975rem;
   margin-top: 3.25rem;
 } */
-
-.latest-funding {
-  width: 85%;
-}
 
 .latest-news > h2 i {
   font-weight: 2px;
@@ -827,6 +822,14 @@ footer .btm .last-img-box img {
     height: 20.052vw; */
   }
 
+  .hero section:nth-child(3) .main-text-sub {
+    width: 98%;
+  }
+
+  .hero section:nth-child(3) .main-text-sub .share {
+    display: none;
+  }
+
   /* ================================
       === latest-news section iPad ===
      ================================  */
@@ -1045,6 +1048,52 @@ footer .btm .last-img-box img {
 
 /* Desktop */
 @media screen and (min-width: 1024px) {
+  /* ===========HERO desktop view =========== */
+
+  .hero {
+    height: 65vh;
+  }
+
+  .hero section:nth-child(3) .main-text-sub .share {
+    display: inline-block;
+  }
+
+  .hero section:first-child {
+    /* border: 1px solid blue; */
+    background-image:
+      linear-gradient(
+        to left top,
+        rgba(0, 0, 0, 0.95),
+        rgba(0, 0, 0, 0.05)
+      ),
+      linear-gradient(to bottom right, rgb(238, 74, 87), rgb(0, 0, 0, 0)),
+      url(./imgs/catagory7and1.jpg);
+  }
+
+  .hero .hero-logo-box {
+    display: block;
+  }
+
+  .hero .hero-logo-box img {
+    width: 50%;
+  }
+
+  .hero .cover-story h2 {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+
+  .hero .cover-story-date {
+    display: block;
+    position: absolute;
+    top: 1.5rem;
+    right: 0.5rem;
+    font-size: 0.7rem;
+  }
+
+  /* ======= End of HERO desktop view ========= */
+
+
   /* == latest-news section DESKTOP == */
 
   .latest-news .content-wrap {
