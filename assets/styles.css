@@ -469,6 +469,10 @@ footer .btm .last-img-box img {
   margin: 0 auto;
 }
 
+.latest-funding .orange-heading {
+  font-size: 1.2rem;
+}
+
 /* top */
 .latest-funding .top h1 {
   margin-top: 2.8rem;
@@ -1080,8 +1084,12 @@ footer .btm {
   }
 
   .latest-funding {
-    width: 75%;
+    width: 72%;
     margin: 0 auto;
+  }
+
+  .latest-funding .orange-heading {
+    font-size: 1.5rem;
   }
 
   .latest-deals .header h2 {
