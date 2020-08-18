@@ -143,6 +143,10 @@ footer .top ul {
   color: var(--white);
 }
 
+footer .top a {
+  text-decoration: none;
+}
+
 .nSections li a,
 .black > ul li a {
   color: rgb(156, 156, 156);
@@ -159,6 +163,14 @@ footer .top ul {
 
 .categories-second-row .left-most h3 a {
   color: var(--orange);
+}
+
+footer .top .second-row a {
+  color: var(--gray-currency);
+}
+
+footer .top a:hover {
+  color: #fff;
 }
 
 .black > ul li a:hover {
@@ -577,7 +589,6 @@ footer .top .second-row {
   justify-content: space-evenly;
   align-items: center;
   text-transform: uppercase;
-  color: var(--gray-currency);
 }
 
 .latest-deals .header i {
