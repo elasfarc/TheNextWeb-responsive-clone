@@ -482,11 +482,10 @@ footer .top .first-row li {
   color: black;
 }
 
-.card-container-top .card {
-  width: 100%;
-  margin: 0 auto;
-}
-
+.latest-funding .card {
+    padding: 4px 0 4px;
+  }
+  
 .latest-funding .bottom-wrap .card {
   position: relative;
   margin-bottom: 8px;
@@ -1007,6 +1006,10 @@ footer .btm {
   /* ================================
       === latest-funding section iPad ===
      ================================  */
+  
+  .latest-funding .card {
+       padding: 0 6px 0;
+    }
   .latest-funding .top ul {
     display: flex;
     width: 40%;
@@ -1259,7 +1262,6 @@ footer .btm {
   .sections-great-wrapper {
     max-width: 1200px;
     margin: 0 auto;
-
   }
   /* == latest-news section DESKTOP == */
 
@@ -1297,6 +1299,9 @@ footer .btm {
       === latest-funding section Desktop ===
      ================================  */
 
+  .latest-funding .card {
+    padding: 0 10px 0;
+  }
   .latest-funding .bottom-wrap .card:last-child {
     display: block;
   }
@@ -1305,6 +1310,7 @@ footer .btm {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1;
   }
+
 
   /* ======== ===========================================
 ========= card-container styles @1024px and above ========
