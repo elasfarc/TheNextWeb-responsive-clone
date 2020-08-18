@@ -10,6 +10,7 @@
 }
 
 /* reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -228,6 +229,17 @@ footer .top .first-row a {
 
 .nav-icon i:last-child {
   color: var(--orange);
+}
+
+.categories-content-wrap .categories-first-row {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20rem;
+}
+
+img,
+.card-container-top .card .categories-first-row {
+  cursor: pointer;
 }
 
 /* LOGO */
@@ -512,9 +524,8 @@ footer .top .first-row li:hover {
   color: black;
 }
 
-.card-container-top .card {
-  width: 100%;
-  margin: 0 auto;
+.latest-funding .card {
+  padding: 4px 0 4px;
 }
 
 .latest-funding .bottom-wrap .card {
@@ -660,12 +671,6 @@ footer .top .first-row li i {
 .card-container-top {
   width: 95%;
   margin: 0 auto;
-}
-
-.categories-content-wrap .categories-first-row {
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 20rem;
 }
 
 .first-row-one {
@@ -861,6 +866,19 @@ footer .btm {
   padding: 1.2rem 0;
 }
 
+.blue-icon {
+  background-color: #155196;
+  width: 2.5rem;
+  height: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  font-size: 1.2rem;
+}
+
 /* ======== ================================================
 ===============End of mobile view of the footer ============
 ============================================================ */
@@ -1038,6 +1056,11 @@ footer .btm {
   /* ================================
       === latest-funding section iPad ===
      ================================  */
+
+  .latest-funding .card {
+    padding: 0 6px 0;
+  }
+
   .latest-funding .top ul {
     display: flex;
     width: 40%;
@@ -1053,7 +1076,14 @@ footer .btm {
     padding: 0 10px 0 0;
     margin: 0 0 23px;
     font-size: 16px;
-    border-right: 1px solid var(--orange);
+  }
+
+  .latest-funding .top ul li:first-child::after,
+  .latest-funding .top ul li:nth-child(2)::after {
+    content: "|";
+    display: inline-block;
+    transform: translateX(9px);
+    color: #f42 !important;
   }
 
   footer .top .first-row li {
@@ -1067,7 +1097,7 @@ footer .btm {
   }
 
   .latest-funding .top ul li:first-child {
-    padding-right: 10px;
+    padding-right: 5px;
   }
 
   .latest-funding .bottom-wrap {
@@ -1237,6 +1267,11 @@ footer .btm {
     color: var(--gray-currency);
   }
 
+  .blue-icon {
+    bottom: 1rem;
+    right: 1rem;
+  }
+
   /* ======== ================================================
 ============== End of footer styles @768px plus ============
 ============================================================ */
@@ -1354,6 +1389,42 @@ footer .btm {
       === latest-funding section Desktop ===
      ================================  */
 
+  .latest-funding .card {
+    padding: 0 10px 0;
+  }
+
+  .categories-content-wrap ul {
+    margin: 1rem 1rem;
+  }
+
+  .latest-funding .top ul {
+    transform: translate(62.5vw, -3.516vw);
+    width: 30%;
+  }
+
+  footer .top .second-row li {
+    font-size: 0.6rem;
+  }
+
+  .latest-funding .top ul li:first-child {
+    order: 2;
+  }
+
+  .latest-funding .top ul li:last-child {
+    order: -1;
+  }
+
+  .latest-funding .top ul li:first-child::after {
+    content: "";
+  }
+
+  .latest-funding .top ul li:last-child::after {
+    content: "|";
+    display: inline-block;
+    transform: translateX(9px);
+    color: #f42 !important;
+  }
+
   .latest-funding .bottom-wrap .card:last-child {
     display: block;
   }
@@ -1462,10 +1533,6 @@ footer .btm {
     font-size: 0.5rem;
   }
 
-  .categories-content-wrap ul {
-    margin: 1rem 1rem;
-  }
-
   /* ======== ===========================================
 ====== End of card-container styles @1024px and above =====
 ========================================================= */
@@ -1513,10 +1580,6 @@ footer .btm {
   footer .top .second-row {
     width: 25%;
     margin: 0 auto;
-  }
-
-  footer .top .second-row li {
-    font-size: 0.5rem;
   }
 
   footer .btm {
