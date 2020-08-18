@@ -1,0 +1,1631 @@
+/* var */
+:root {
+  --orange: #f42;
+  --white: #fff;
+  --gray-small-text: #555;
+  --gray-currency: #aaa;
+  --gray-social: #333;
+  --footer-background-top: #1b1b1b;
+  --footer-background: rgb(7, 7, 7);
+}
+
+/* reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--orange);
+}
+
+li {
+  list-style: none;
+}
+
+/* base style */
+body {
+  font-family: '.', sans-serif;
+}
+
+.grid {
+  display: grid;
+}
+
+.flex {
+  display: flex;
+}
+
+/* fonts */
+html {
+  font-size: calc(1vw + 0.6em);
+}
+
+h2 {
+  font-family: 'TNW Avalon', sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.375rem;
+  letter-spacing: -0.01875rem;
+  color: var(--white);
+}
+
+/* orange heading text -> latest-... */
+.orange-heading {
+  font-family: 'TNW Avalon', sans-serif;
+  color: var(--orange);
+  font-size: 1.75rem;
+  letter-spacing: -0.02625rem;
+  line-height: 1.875rem;
+  margin-bottom: 0.875rem;
+  margin-left: 0.975rem;
+  margin-top: 3.25rem;
+}
+
+.hero p {
+  font-family: 'Shentox', sans-serif;
+  color: var(--white);
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+  letter-spacing: 0.035rem;
+}
+
+/* mobile style */
+
+/* nav */
+
+/* ==================================
+ ========Nonsticky-top (Black) ======
+ ================================== */
+.black {
+  display: none;
+  justify-content: space-between;
+  background-color: black;
+}
+
+.black > ul {
+  display: flex;
+}
+
+.categories-content-wrap ul {
+  margin: 2rem 1rem;
+  width: 80%;
+  list-style: none;
+}
+
+footer {
+  margin-top: 1.5rem;
+}
+
+footer .top ul {
+  display: flex;
+  color: #fff;
+}
+
+.black > ul:first-child {
+  margin-left: 20px;
+}
+
+.black > ul:last-child {
+  margin-right: 20px;
+}
+
+.nSections li {
+  padding: 0.7rem 0.625rem;
+}
+
+.categories-content-wrap li {
+  margin: 1rem 0;
+}
+
+.categories-content-wrap li a {
+  text-decoration: none;
+  color: var(--gray-small-text);
+  font-size: 0.9rem;
+}
+
+.black ul li {
+  padding-left: 12px;
+  font-size: 13px;
+  line-height: 32px;
+}
+
+.last-third-portion h3 a {
+  color: var(--white);
+}
+
+footer .top a {
+  text-decoration: none;
+}
+
+.nSections li a,
+.black > ul li a {
+  color: rgb(156, 156, 156);
+}
+
+.latest-deals .header a {
+  color: var(--orange);
+}
+
+.nSections li a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.categories-second-row .left-most h3 a {
+  color: var(--orange);
+}
+
+footer .top .second-row a {
+  color: var(--gray-currency);
+}
+
+footer .top .second-row li {
+  font-size: 0.8rem;
+}
+
+footer .top a:hover {
+  color: var(--white);
+}
+
+footer .top .first-row a {
+  color: var(--white);
+}
+
+.black > ul li a:hover {
+  color: var(--white);
+  text-decoration: none;
+}
+
+/* ================================== */
+
+/* ======sticky-top (white) ========= */
+
+/* ================================== */
+.white {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  justify-content: space-between;
+}
+
+.nSections {
+  display: none;
+  font-family: 'Shentox', sans-serif;
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  margin-left: 20px;
+}
+
+.nav-icon i {
+  font-size: 18px;
+  border-left: 1px solid rgb(236, 236, 236);
+  padding: 15px;
+  cursor: pointer;
+}
+
+.latest-news > h2 i {
+  font-weight: 2px;
+}
+
+.nav-icon i:first-child {
+  color: rgb(189, 189, 189);
+}
+
+.nav-icon i:last-child {
+  color: var(--orange);
+}
+
+.categories-content-wrap .categories-first-row {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20rem;
+}
+
+img,
+.card-container-top .card .categories-first-row {
+  cursor: pointer;
+}
+
+/* LOGO */
+
+/* NAV TNW logo mobile */
+
+.tnw-box {
+  min-height: 55px;
+  max-height: 55px;
+  width: 106px;
+  max-width: 106px;
+  min-width: 106px;
+  background-image:
+    linear-gradient(
+      to right bottom,
+      rgba(212, 49, 144, 1),
+      rgba(253, 74, 44, 1)
+    );
+}
+
+.tnw-box:hover {
+  background-image:
+    linear-gradient(
+      to right bottom,
+      rgba(22, 49, 444, 1),
+      rgba(153, 44, 44, 1)
+    );
+}
+
+.tnw-box img {
+  width: 65%;
+  height: 100%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ================================== */
+
+/* ======== yellow-sticky =========== */
+
+/* ================================== */
+.yellow {
+  height: 60px;
+  background-color: rgb(254, 220, 71);
+  text-align: center;
+  position: sticky;
+  top: 50.5px;
+  z-index: 1;
+}
+
+.yellow p {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: '.', sans-serif;
+  font-size: 0.675rem;
+  line-height: 1.3125rem;
+}
+
+.yellow p::after {
+  content: "TNW X";
+  display: block;
+  width: 106px;
+  height: 21px;
+  background-color: black;
+  color: var(--gray-currency);
+  font-size: 9px;
+  position: absolute;
+  top: -21px;
+}
+
+/* === hero === */
+
+.hero {
+  width: 98%;
+  height: 85vh;
+  margin: 0 auto;
+  grid-template-columns: 1;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 8px;
+}
+
+.hero-logo-box {
+  display: none;
+}
+
+.hero > section {
+  margin: 0 5px;
+  padding: 4px;
+  background-size: 100% 120%;
+  position: relative;
+}
+
+.hero section:first-child {
+  background-image:
+    linear-gradient(
+      to left top,
+      rgba(0, 0, 0),
+      rgba(0, 0, 0, 0.25)
+    ),
+    url(./imgs/1-22.jpg);
+}
+
+.hero section:nth-child(2) {
+  background-image:
+    linear-gradient(
+      to left top,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.25)
+    ),
+    url(./imgs/hero2.jpg);
+}
+
+.hero section:nth-child(3) {
+  background-image:
+    linear-gradient(
+      to left top,
+      rgba(0, 0, 0, 0.95),
+      rgba(0, 0, 0, 0.25)
+    ),
+    url(./imgs/hero3.jpg);
+}
+
+.hero .cover-story-date {
+  display: none;
+}
+
+.hero section .text-wrap {
+  position: absolute;
+  width: 90%;
+  bottom: 1px;
+  left: 4px;
+  right: 4px;
+  padding: 0.875rem 0.75rem;
+}
+
+/* .main-text-sub */
+.main-text-sub > div {
+  display: inline-block;
+  margin: 0.3rem;
+}
+
+footer .btm div {
+  margin: 0.5rem 0;
+}
+
+.hero section div div:last-child {
+  height: 100%;
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+/* === latest news section === */
+
+.latest-news .content-wrap {
+  grid-template-columns: 1;
+  grid-template-rows: sapn 1;
+  max-width: 100%;
+}
+
+.latest-news .content-wrap article {
+  display: flex;
+  padding: 0.5rem 0 0 0.9375rem;
+}
+
+.latest-news .content-wrap article h2 {
+  font-family: 'Avalon-reg', sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  margin-bottom: 1px;
+}
+
+.main-text-sub {
+  color: var(--gray-currency);
+  margin-top: 0.5rem;
+  width: 90%;
+}
+
+.latest-news .content-wrap article .main-text-sub {
+  color: rgb(170, 170, 170);
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.categories-second-row .left-most {
+  width: 67%;
+  padding-left: 1rem;
+}
+
+.latest-news .content-wrap article .left-most {
+  margin: 0 0.8125rem 0.5125rem 0;
+  max-width: inherit;
+}
+
+.categories-second-row .right-most img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.latest-deals-card .img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+footer .btm .first-row img {
+  width: 10%;
+  margin-right: 0.4rem;
+}
+
+footer .btm .last-img-box {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .btm .last-img-box img {
+  width: 20%;
+  margin-left: 0.2rem;
+}
+
+.latest-news .content-wrap article .left-most img {
+  height: 75px;
+  width: 75px;
+}
+
+/* === latest-funding mobile  === */
+
+.last-third-portion p {
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.latest-funding .bottom-wrap .first-row .company-title h4,
+.latest-funding .series-raised p {
+  width: 50%;
+}
+
+.latest-funding .orange-heading {
+  font-size: 1.2rem;
+}
+
+/* top */
+.latest-funding .top h1 {
+  margin-top: 2.8rem;
+}
+
+.latest-funding .top ul {
+  padding-left: 17px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.latest-funding .top ul li {
+  padding: 11px 0 0 0;
+}
+
+footer .top .first-row li {
+  background-color: var(--gray-social);
+  border: 2px solid var(--gray-social);
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .top .first-row li:hover {
+  background-color: var(--footer-background-top);
+  border: 2px solid var(--gray-social);
+}
+
+.latest-funding .top ul li:first-child {
+  padding: 0;
+}
+
+.latest-funding .top ul li:last-child {
+  padding-bottom: 16px;
+}
+
+.latest-funding .top ul li a {
+  color: var(--orange);
+}
+
+.latest-funding .top ul li a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.latest-funding .card {
+  padding: 4px 0 4px;
+}
+
+.latest-funding .bottom-wrap .card {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.latest-funding .bottom-wrap .card:last-child {
+  display: none;
+}
+
+footer .top .first-row {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .btm .first-row {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* first row */
+.latest-funding .bottom-wrap .card .first-row {
+  display: flex;
+  flex-direction: column;
+  height: 102px;
+}
+
+.categories-second-row .left-most p {
+  text-transform: uppercase;
+  color: var(--orange);
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.latest-deals-card .content-box p {
+  margin-top: 0.5rem;
+}
+
+.latest-funding .bottom-wrap .card .first-row > div:nth-child(1) > h4,
+.latest-funding .bottom-wrap .card .first-row > div:nth-child(2) > p {
+  transform: translateX(5.25rem);
+}
+
+.latest-funding .bottom-wrap .card .first-row div:first-child {
+  height: 54%;
+  background-color: var(--orange);
+  color: var(--white);
+  font-size: 1.125rem;
+  line-height: 1.4rem;
+  padding-top: 0.6625rem;
+  font-family: 'Shentox', sans-serif;
+}
+
+.latest-funding .bottom-wrap .card .first-row > div:nth-child(2) {
+  background-color: rgba(255, 68, 34, 0.08);
+  height: 70.3%;
+}
+
+.latest-funding .bottom-wrap .card .first-row .series-raised p:first-child {
+  font-size: 1.125rem;
+  line-height: 1.4rem;
+  font-weight: bold;
+  padding-top: 0.6625rem;
+}
+
+.latest-funding .bottom-wrap .card .first-row .series-raised p:last-child {
+  font-family: 'Shentox', sans-serif;
+  font-size: 0.575rem;
+  line-height: 0.903rem;
+  letter-spacing: 0.0275rem;
+  color: var(--gray-small-text);
+}
+
+.latest-funding .bottom-wrap .card .logo-box img {
+  max-height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 2vw 0 0 1.432vw;
+}
+
+footer .top .second-row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-transform: uppercase;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.latest-deals .header i {
+  font-size: 1.2rem;
+}
+
+footer .top .first-row li i {
+  font-size: 1.2rem;
+}
+
+/* 2nd 3rd row */
+.latest-funding .bottom-wrap .card .second-row,
+.latest-funding .bottom-wrap .card .third-row {
+  background-color: rgb(255, 250, 248);
+}
+
+.latest-funding .bottom-wrap .card .second-row {
+  border-bottom: 0.5px solid rgb(254, 205, 198);
+  padding: 1rem 1rem 1rem 1rem;
+  height: 53px;
+}
+
+.latest-funding .bottom-wrap .card .second-row .value {
+  font-size: 0.7125rem;
+  line-height: 1.3rem;
+  margin-bottom: 0.875rem;
+  color: var(--gray-small-text);
+}
+
+.latest-funding .bottom-wrap .card .second-row i {
+  margin-right: 0.625rem;
+  color: black;
+}
+
+.latest-funding .bottom-wrap .card .third-row {
+  padding: 0.625rem 1rem 1rem;
+  max-height: 100%;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--gray-small-text);
+}
+
+/* end of latest-funding mobile */
+
+/* ======== ==========================
+======= card-container styles ========
+====================================== */
+
+.card-container-top {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.first-row-one {
+  background-image:
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.9),
+      rgba(256, 256, 256, 0.1)
+    ),
+    url('./imgs/catagory7and1.jpg');
+}
+
+.first-row-two {
+  background-image:
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.9),
+      rgba(256, 256, 256, 0.1)
+    ),
+    url('./imgs/catagory2.png');
+}
+
+.first-row-three {
+  background-image:
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.9),
+      rgba(256, 256, 256, 0.1)
+    ),
+    url('./imgs/catagory3.jpg');
+}
+
+.first-row-four {
+  background-image:
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.9),
+      rgba(256, 256, 256, 0.1)
+    ),
+    url('./imgs/Untitled-design-9.jpg');
+}
+
+.first-row-five {
+  background-image:
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.9),
+      rgba(256, 256, 256, 0.1)
+    ),
+    url('./imgs/catagory5.png');
+}
+
+.first-row-six {
+  background-image:
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.9),
+      rgba(256, 256, 256, 0.1)
+    ),
+    url('./imgs/catagory6.jpg');
+}
+
+.first-row-seven {
+  background-image:
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.9),
+      rgba(256, 256, 256, 0.1)
+    ),
+    url('./imgs/catagory7and1.jpg');
+}
+
+.first-row-eight {
+  background-image:
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.9),
+      rgba(256, 256, 256, 0.1)
+    ),
+    url('./imgs/catagory8.png');
+}
+
+.first-row-nine {
+  background-image:
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.9),
+      rgba(256, 256, 256, 0.1)
+    ),
+    url('./imgs/catagory9.png');
+}
+
+.last-third-portion {
+  width: 95%;
+  position: relative;
+  bottom: -60%;
+  padding-left: 1rem;
+}
+
+.last-third-portion h3 {
+  color: var(--white);
+  font-size: 1.3rem;
+}
+
+.categories-second-row {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #fff4f2;
+}
+
+.categories-second-row .right-most {
+  width: 30%;
+  height: 100%;
+  justify-self: stretch;
+}
+
+.categories-content-wrap li::before {
+  content: '\2022';
+  color: var(--orange);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* ======== ================================================
+======= End of mobile view of card-container styles ========
+============================================================ */
+
+/* ======== ==========================
+======= .latest-deals styles mobile =========
+====================================== */
+
+.latest-deals {
+  width: 95%;
+  margin: 0.5rem auto;
+}
+
+.latest-deals .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+}
+
+.latest-deals-card {
+  display: flex;
+  width: 95%;
+  justify-content: space-around;
+  margin-bottom: 1.2rem;
+}
+
+.latest-deals-card .img-box {
+  width: 20%;
+}
+
+.latest-deals-card .content-box {
+  width: 75%;
+}
+
+.latest-deals-card .content-box p span {
+  color: var(--gray-currency);
+  margin-right: 0.5rem;
+  text-decoration: line-through;
+}
+
+/* ======== ================================================
+======= End of mobile view of latest-deals styles ========
+============================================================ */
+
+/* ======== ================================================
+================== Mobile view of the footer ===============
+============================================================ */
+
+footer .top {
+  background-color: var(--footer-background-top);
+  height: 13rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+footer .btm {
+  background-color: var(--footer-background);
+  color: #fff;
+  display: flex;
+  height: 8rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem 0;
+}
+
+.blue-icon {
+  background-color: #155196;
+  width: 2.5rem;
+  height: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* ======== ================================================
+===============End of mobile view of the footer ============
+============================================================ */
+
+/* ======== ================================================
+======================== iPad ================ ========
+============================================================ */
+@media screen and (min-width: 768px) {
+  /* ================================== */
+
+  /* ===========NAV iPad ============== */
+
+  /* ================================== */
+
+  /* ================================== */
+
+  /* =======Nonsticky-top (Black) ===== */
+
+  /* ================================== */
+  .black {
+    display: flex;
+    margin-left: 106px;
+  }
+
+  .black-left {
+    max-height: 32px;
+  }
+
+  .categories-content-wrap li a {
+    font-size: 0.7rem;
+  }
+
+  .categories-second-row .left-most a {
+    text-decoration: none;
+    color: var(--orange);
+    font-size: 0.8rem;
+  }
+
+  .black-left li:first-child a {
+    color: white;
+  }
+
+  /* ================================== */
+
+  /* sticky nav -top (white) */
+
+  /* ================================== */
+
+  /* white ipad */
+
+  /* logo */
+  .tnw-box {
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    min-height: 80px;
+  }
+
+  .tnw-box img {
+    width: 65%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -65%);
+    z-index: 40;
+  }
+
+  /* sections */
+  .nSections {
+    display: flex;
+    margin-left: 126px;
+  }
+
+  .nav-icon i:last-child {
+    display: none;
+  }
+
+  /* ================================== */
+
+  /* ====sticky annonc -top (yellow) == */
+
+  /* ================================== */
+  .yellow {
+    top: 48px;
+    height: 33px;
+  }
+
+  .yellow p {
+    font-size: 12.775px;
+    text-align: left;
+    margin-left: 137px;
+  }
+
+  .yellow p::after {
+    display: none;
+  }
+
+  /* ================================== */
+
+  /* ========= Hero (iPad) ============ */
+
+  /* ================================== */
+  .hero {
+    height: 47vw;
+    width: 98vw;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .hero section:first-child {
+    grid-column: 1/3;
+    grid-row: 1/3;
+    font-size: 2rem;
+    line-height: -0.03rem;
+  }
+
+  .hero section:nth-child(2) {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+
+  .hero section:nth-child(3) {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+
+  .hero section:nth-child(3) .main-text-sub {
+    width: 98%;
+  }
+
+  .hero section:nth-child(3) .main-text-sub .share {
+    display: none;
+  }
+
+  /* ================================
+      === latest-news section iPad ===
+     ================================  */
+
+  .latest-news .content-wrap {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: span 3;
+  }
+
+  .latest-news .content-wrap article {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .latest-news .content-wrap article .left-most {
+    margin: 0 0.8125rem 0.5125rem 0;
+  }
+
+  footer .btm .last-img-box img {
+    width: 40%;
+  }
+
+  .latest-news .content-wrap article .left-most img {
+    height: auto;
+    width: 100%;
+  }
+
+  .card-container-top .card h2 {
+    margin-bottom: 1rem;
+  }
+
+  .latest-funding .orange-heading {
+    font-size: 1.5rem;
+  }
+
+  .latest-deals .header h2 {
+    margin: 1.5rem 0.2rem;
+  }
+
+  .latest-news .content-wrap article h2 {
+    margin-right: 0.625rem;
+  }
+
+  /* ================================
+      === latest-funding section iPad ===
+     ================================  */
+
+  .latest-funding .card {
+    padding: 0 6px 0;
+  }
+
+  .latest-funding .top ul {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .categories-content-wrap li {
+    margin: 0.2rem 0;
+  }
+
+  .latest-funding .top ul li {
+    padding: 0 10px 0 0;
+    margin: 0 0 23px;
+    font-size: 16px;
+  }
+
+  .latest-funding .top ul li:first-child::after,
+  .latest-funding .top ul li:nth-child(2)::after {
+    content: "|";
+    display: inline-block;
+    transform: translateX(9px);
+    color: #f42 !important;
+  }
+
+  footer .top .first-row li {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .latest-funding .top ul li:last-child {
+    padding-bottom: 0;
+    border-right: none;
+  }
+
+  .latest-funding .top ul li:first-child {
+    padding-right: 5px;
+  }
+
+  .latest-funding .bottom-wrap {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1;
+  }
+
+  /* ======== ===========================================
+========= card-container styles @768px and above ========
+========================================================= */
+
+  .card-container-top {
+    grid-template: repeat(5, 1fr) / repeat(2, 1fr);
+    grid-template-areas:
+      'card1 card2'
+      'card3 card4'
+      'card5 card6'
+      'card7 card8'
+      'card9 .';
+    grid-gap: 1rem;
+  }
+
+  .card1 {
+    grid-area: card1;
+  }
+
+  .card2 {
+    grid-area: card2;
+  }
+
+  .card3 {
+    grid-area: card3;
+  }
+
+  .card4 {
+    grid-area: card4;
+  }
+
+  .card5 {
+    grid-area: card5;
+  }
+
+  .card6 {
+    grid-area: card6;
+  }
+
+  .card7 {
+    grid-area: card7;
+  }
+
+  .card8 {
+    grid-area: card8;
+  }
+
+  .card9 {
+    grid-area: card9;
+  }
+
+  .categories-content-wrap .categories-first-row {
+    height: 15rem;
+  }
+
+  .last-third-portion {
+    bottom: -50%;
+  }
+
+  .last-third-portion h3 {
+    font-size: 1rem;
+    width: 95%;
+    padding-top: 0;
+  }
+
+  .categories-second-row .left-most h3 a {
+    font-size: 0.7rem;
+  }
+
+  .categories-second-row .left-most p {
+    padding: 0;
+    margin: 0;
+  }
+
+  .categories-second-row .left-most h3 {
+    line-height: 0.6rem;
+  }
+
+  /* ======== ===========================================
+====== End of card-container styles @768px and above ======
+========================================================= */
+
+  /* ======== ===========================================
+========= latest-deals styles @768px and above ========
+======================================================= */
+
+  .card-container-bottom {
+    grid-template: repeat(3, 1fr)/ repeat(3, 1fr);
+    grid-template-areas:
+      "card1 card2 card3"
+      "card4 card5 card6"
+      "card7 card8 .";
+    grid-gap: 0.3rem;
+    font-size: 10px;
+  }
+
+  .latest-deals-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0 auto;
+  }
+
+  .latest-deals-card .img-box {
+    width: 100%;
+  }
+
+  .latest-deals-card .content-box {
+    width: 99%;
+    font-size: 0.8rem;
+  }
+
+  /* ======== ===========================================
+====== End of card-container styles @768px and above ======
+========================================================= */
+
+  /* ======== ================================================
+================ The footer styles @768px plus =============
+============================================================ */
+
+  footer .top {
+    height: 10rem;
+  }
+
+  footer .top .first-row {
+    width: 45%;
+  }
+
+  footer .top .first-row li i {
+    font-size: 1rem;
+  }
+
+  footer .top .second-row {
+    width: 40%;
+    justify-content: space-between;
+  }
+
+  footer .btm {
+    flex-direction: row;
+    font-size: 0.8rem;
+    justify-content: center;
+    height: 4rem;
+  }
+
+  footer .btm .first-row {
+    width: 33%;
+    color: var(--gray-currency);
+  }
+
+  footer .btm .last-img-box {
+    margin: 0;
+    width: 20%;
+    padding: 0;
+    color: var(--gray-currency);
+  }
+
+  footer .made-with {
+    width: 28%;
+    margin: 0;
+    color: var(--gray-currency);
+  }
+
+  .blue-icon {
+    bottom: 1rem;
+    right: 1rem;
+  }
+
+  /* ======== ================================================
+============== End of footer styles @768px plus ============
+============================================================ */
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+  /* ================================== */
+
+  /* ======== NAV(Desktop) ============ */
+
+  /* ================================== */
+
+  .black {
+    margin-left: 0;
+  }
+
+  .tnw-box {
+    display: none;
+  }
+
+  .nSections {
+    margin-left: 19px;
+  }
+
+  .yellow {
+    text-align: left;
+  }
+
+  .yellow p {
+    font-size: 12.775px;
+    text-align: left;
+    margin-left: 32px;
+  }
+
+  /* ============ hero DESKTOP ============= */
+
+  /* ===========HERO desktop view =========== */
+
+  .hero {
+    height: 65vh;
+  }
+
+  .hero section:nth-child(3) .main-text-sub .share {
+    display: inline-block;
+  }
+
+  .hero section:first-child {
+    background-image: linear-gradient(160deg, rgba(255, 32, 32, 0.5), rgba(0, 0, 0, 1)), url(./imgs/1-22.jpg);
+  }
+
+  .hero .hero-logo-box {
+    display: block;
+  }
+
+  .hero .hero-logo-box img {
+    width: 50%;
+    transform: translate(0.5rem, 1rem);
+  }
+
+  .hero .cover-story h2 {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+
+  .hero .cover-story-date {
+    display: block;
+    position: absolute;
+    top: 1.5rem;
+    right: 0.5rem;
+    font-size: 0.7rem;
+  }
+
+  /* ======= End of HERO desktop view ========= */
+
+  /* sections-wrapper */
+  .sections-great-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* == latest-news section DESKTOP == */
+
+  .latest-news .content-wrap {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: span 2;
+  }
+
+  .latest-news .content-wrap article .left-most {
+    margin: 0.125rem 0 0.5125rem 0;
+  }
+
+  .latest-news .content-wrap article .left-most img {
+    height: auto;
+    width: 100%;
+  }
+
+  .latest-news .content-wrap article h2 {
+    margin-right: 0.625rem;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+  }
+
+  .main-text-sub {
+    font-size: 0.6rem;
+  }
+
+  .latest-news .content-wrap article .main-text-sub {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  /* ================================
+      === latest-funding section Desktop ===
+     ================================  */
+
+  .latest-funding .card {
+    padding: 0 10px 0;
+  }
+
+  .categories-content-wrap ul {
+    margin: 1rem 1rem;
+  }
+
+  .latest-funding .top ul {
+    transform: translate(62.5vw, -3.516vw);
+    width: 30%;
+  }
+
+  footer .top .second-row li {
+    font-size: 0.6rem;
+  }
+
+  .latest-funding .top ul li:first-child {
+    order: 2;
+  }
+
+  .latest-funding .top ul li:last-child {
+    order: -1;
+  }
+
+  .latest-funding .top ul li:first-child::after {
+    content: "";
+  }
+
+  .latest-funding .top ul li:last-child::after {
+    content: "|";
+    display: inline-block;
+    transform: translateX(9px);
+    color: #f42 !important;
+  }
+
+  .latest-funding .bottom-wrap .card:last-child {
+    display: block;
+  }
+
+  .latest-funding .bottom-wrap {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1;
+  }
+
+  /* ======== ===========================================
+========= card-container styles @1024px and above ========
+========================================================= */
+
+  .card-container-top {
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    grid-template-areas:
+      'card1 card2 card3'
+      'card4 card5 card6'
+      'card7 card8 card9';
+    grid-gap: 1rem;
+  }
+
+  .latest-deals .orange-heading {
+    font-size: 1.2rem;
+  }
+
+  .card-container-top .card .orange-heading {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 0.1rem;
+  }
+
+  .latest-deals .header i {
+    font-size: 0.8rem;
+  }
+
+  footer .top .first-row li i {
+    font-size: 0.7rem;
+  }
+
+  .card-container-top .card .orange-heading i {
+    font-size: 0.8rem;
+  }
+
+  .card1 {
+    grid-area: card1;
+  }
+
+  .card2 {
+    grid-area: card2;
+  }
+
+  .card3 {
+    grid-area: card3;
+  }
+
+  .card4 {
+    grid-area: card4;
+  }
+
+  .card5 {
+    grid-area: card5;
+  }
+
+  .card6 {
+    grid-area: card6;
+  }
+
+  .card7 {
+    grid-area: card7;
+  }
+
+  .card8 {
+    grid-area: card8;
+  }
+
+  .card9 {
+    grid-area: card9;
+  }
+
+  .categories-content-wrap .categories-first-row {
+    height: 12rem;
+  }
+
+  .last-third-portion h3 {
+    width: 98%;
+  }
+
+  .latest-deals a {
+    font-size: 0.6rem;
+  }
+
+  .last-third-portion h3 a {
+    font-size: 0.8rem;
+  }
+
+  .categories-second-row .left-most p {
+    font-size: 0.5rem;
+  }
+
+  .categories-content-wrap li a {
+    font-size: 0.5rem;
+  }
+
+  .categories-second-row .left-most h3 a {
+    font-size: 0.5rem;
+  }
+
+  /* ======== ===========================================
+====== End of card-container styles @1024px and above =====
+========================================================= */
+
+  /* ======== ===========================================
+========= latest-deals styles @1024px and above ========
+========================================================= */
+
+  .latest-deals {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* ======== ================================================
+================ The footer styles @1024px plus =============
+============================================================ */
+  .card-container-bottom {
+    grid-template: repeat(2, 1fr)/ repeat(4, 1fr);
+    grid-template-areas:
+      "card1 card2 card3 card4"
+      "card5 card6 card7 card8";
+    grid-gap: 0.3rem;
+  }
+
+  .latest-deals .header {
+    width: 98%;
+  }
+
+  .latest-deals-card .content-box {
+    font-size: 0.7rem;
+  }
+
+  /* ======== ===========================================
+====== End of latest deals styles @1024px and above =====
+========================================================= */
+
+  footer .top {
+    height: 7rem;
+  }
+
+  footer .top .first-row {
+    width: 35%;
+  }
+
+  footer .top .second-row {
+    width: 25%;
+    margin: 0 auto;
+  }
+
+  footer .btm {
+    height: 2rem;
+    text-align: center;
+  }
+
+  footer .btm .first-row {
+    width: 17%;
+  }
+
+  footer .btm .first-row p {
+    font-size: 0.5rem;
+  }
+
+  footer .made-with {
+    width: 15%;
+    font-size: 0.5rem;
+  }
+
+  footer .btm .last-img-box {
+    width: 10%;
+  }
+
+  footer .btm .last-img-box p {
+    font-size: 0.5rem;
+  }
+
+  /* ======== ================================================
+============== End of footer styles @1024px plus ============
+============================================================ */
+}
