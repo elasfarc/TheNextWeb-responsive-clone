@@ -27,17 +27,17 @@
 }
 
 @font-face {
-    font-family: 'ARS';
-    src:
-      url('./ARSMaquettePro-Black.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-  }
+  font-family: 'ARS';
+  src: url('./ARSMaquettePro-Black.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
-  @font-face {
-    font-family: 'Avalon-reg';
-    src: url('AvalonPlain.woff2') format('woff2'),
-        url('AvalonPlain.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+@font-face {
+  font-family: 'Avalon-reg';
+  src:
+    url('AvalonPlain.woff2') format('woff2'),
+    url('AvalonPlain.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }

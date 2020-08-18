@@ -15,8 +15,9 @@
   padding: 0;
   box-sizing: border-box;
 
-   /* overflow-x: hidden;  */
+  /* overflow-x: hidden;  */
 }
+
 footer {
   border: 1px solid green;
 }
@@ -32,10 +33,12 @@ a:visited {
   text-decoration: none;
   color: black;
 }
+
 a:hover {
   text-decoration: underline;
   color: var(--orange);
 }
+
 li {
   list-style: none;
 }
@@ -54,7 +57,6 @@ a:hover {
 li {
   list-style: none;
 }
-
 
 /* base style */
 body {
@@ -104,52 +106,61 @@ h2 {
 }
 
 /* mobile style */
+
 /* nav */
-  /* ================================== */
-       /* Nonsticky-top (Black) */
-  /* ================================== */
-  .black {
-    display: none;
-    justify-content: space-between;
-    background-color: black;
-  }
-  .black > ul {
-    display: flex;
-  }
-  .black > ul:first-child {
-    margin-left: 20px;
-  }
-  .black > ul:last-child {
-    margin-right: 20px;
-  }
-  .black ul li {
-    padding-left: 12px;  
-    font-size: 13px;
-    line-height: 32px;
-  }
-  .black > ul li a,
-  .nSections li a {
-    color: rgb(156, 156, 156);
-  }
-  .black > ul li a:hover {
-    color: white;
-    text-decoration: none;
-  }
-  
+
 /* ================================== */
-       /* sticky-top (white) */
+
+/* Nonsticky-top (Black) */
+
+/* ================================== */
+.black {
+  display: none;
+  justify-content: space-between;
+  background-color: black;
+}
+
+.black > ul {
+  display: flex;
+}
+
+.black > ul:first-child {
+  margin-left: 20px;
+}
+
+.black > ul:last-child {
+  margin-right: 20px;
+}
+
+.black ul li {
+  padding-left: 12px;
+  font-size: 13px;
+  line-height: 32px;
+}
+
+.nSections li a,
+.black > ul li a {
+  color: rgb(156, 156, 156);
+}
+
+.black > ul li a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/* ================================== */
+
+/* sticky-top (white) */
+
 /* ================================== */
 .white {
   background-color: white;
-
   position: sticky;
   top: 0;
   z-index: 1;
-
   justify-content: space-between;
-
-
 }
+
 .nSections {
   display: none;
   font-family: 'Shentox';
@@ -157,28 +168,34 @@ h2 {
   line-height: 0.875rem;
   margin-left: 20px;
 }
+
 .nSections li {
   /* padding-left: 15px; */
   padding: 0.7rem 0.625rem;
 }
+
 .nSections li a:hover {
   color: black;
   text-decoration: none;
 }
+
 .nav-icon i {
   font-size: 18px;
   border-left: 1px solid rgb(236, 236, 236);
   padding: 15px;
   cursor: pointer;
 }
+
 .nav-icon i:first-child {
   color: rgb(189, 189, 189);
- }
+}
+
 .nav-icon i:last-child {
- color: var(--orange)
+  color: var(--orange);
 }
 
 /* LOGO */
+
 /* NAV TNW logo mobile */
 
 .tnw-box {
@@ -187,53 +204,57 @@ h2 {
   width: 106px;
   max-width: 106px;
   min-width: 106px;
-  background-image: 
+  background-image:
     linear-gradient(
-    to right bottom,
-    rgba(212, 49, 144, 1),
-    rgba(253, 74, 44, 1)
-  );
+      to right bottom,
+      rgba(212, 49, 144, 1),
+      rgba(253, 74, 44, 1)
+    );
 }
+
 .tnw-box:hover {
-  background-image: 
-  linear-gradient(
-  to right bottom,
-    rgba(22, 49, 444, 1),
-  rgba(153, 44, 44, 1)
-);
+  background-image:
+    linear-gradient(
+      to right bottom,
+      rgba(22, 49, 444, 1),
+      rgba(153, 44, 44, 1)
+    );
 }
 
 .tnw-box img {
   width: 65%;
   height: 100%;
-  
   position: relative;
   top: 50%;
-  left:50%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 
- /* ================================== */
- /* ================================== */
-            /* yellow-sticky */
+/* ================================== */
+
+/* ================================== */
+
+/* yellow-sticky */
+
 /* ================================== */
 .yellow {
   height: 60px;
-  background-color: rgb(254, 220, 71) ;
+  background-color: rgb(254, 220, 71);
   text-align: center;
   position: sticky;
   top: 50.5px;
   z-index: 1;
 }
+
 .yellow p {
   position: relative;
- top: 50%; 
- transform: translateY(-50%);
- font-family: '.';
- font-size: 0.875rem;
- line-height: 1.3125rem;
- 
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: '.';
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
 }
+
 /* === hero === */
 
 .hero {
@@ -253,6 +274,7 @@ h2 {
   /* border: 1px solid blue; */
   margin: 0 5px;
   padding: 4px;
+
   /* background-size: cover; */
   background-size: 100% 120%;
   position: relative;
@@ -273,7 +295,6 @@ h2 {
     ),
     url(./imgs/1-22.jpg);
 }
-
 
 .hero section:nth-child(2) {
   /* border: 1px solid green; */
@@ -328,9 +349,10 @@ h2 {
   line-height: 1rem;
 }
 
-  /* === latest news section === */
+/* === latest news section === */
+
 /* .latest-news > h2 {
-  
+
   margin-bottom: 0.875rem;
   margin-left: 0.975rem;
   margin-top: 3.25rem;
@@ -338,33 +360,41 @@ h2 {
 .latest-news > h2 i {
   font-weight: 2px;
 }
+
 .latest-news .content-wrap {
   grid-template-columns: 1;
   grid-template-rows: sapn 1;
   max-width: 100%;
+
   /* border: 1px solid green; */
 }
+
 .latest-news .content-wrap article {
   display: flex;
   padding: 0.5rem 0 0 0.9375rem;
+
   /* border: 1px solid green; */
 }
+
 .latest-news .content-wrap article h2 {
   font-family: 'Avalon-reg';
   font-size: 0.875rem;
   line-height: 1.125rem;
   margin-bottom: 1px;
 }
+
 .latest-news .content-wrap article .main-text-sub {
-  color:rgb(170, 170, 170);
+  color: rgb(170, 170, 170);
   font-size: 0.75rem;
   line-height: 1.25rem;
   margin-top: 0.5rem;
 }
-.latest-news .content-wrap article .left-most { 
+
+.latest-news .content-wrap article .left-most {
   margin: 0 0.8125rem 0.5125rem 0;
-   max-width: inherit;
+  max-width: inherit;
 }
+
 .latest-news .content-wrap article .left-most img {
   /* border: 1px solid red; */
   height: 75px;
@@ -372,27 +402,34 @@ h2 {
 }
 
 /* === latest-funding mobile  === */
+
 /* top */
 .latest-funding .top h1 {
   margin-top: 2.8rem;
 }
+
 .latest-funding .top ul {
   padding-left: 17px;
-  font-size: 14px; 
+  font-size: 14px;
   line-height: 18px;
 }
+
 .latest-funding .top ul li {
   padding: 11px 0 0 0;
 }
+
 .latest-funding .top ul li:first-child {
   padding: 0;
 }
+
 .latest-funding .top ul li:last-child {
   padding-bottom: 16px;
 }
+
 .latest-funding .top ul li a {
-color: var(--orange);
+  color: var(--orange);
 }
+
 .latest-funding .top ul li a:hover {
   text-decoration: none;
   color: black;
@@ -400,32 +437,39 @@ color: var(--orange);
 
 /* bottom-wrap G */
 .latest-funding .bottom-wrap {
- border: 1px solid green;
+  border: 1px solid green;
 }
+
 .latest-funding .bottom-wrap .card {
- /* border: 1px solid black;  */
+  /* border: 1px solid black;  */
   position: relative;
   margin-bottom: 8px;
 }
+
 .latest-funding .bottom-wrap .card:last-child {
   display: none;
+
   /* border: 1px solid green; */
 }
+
 /* first row */
 .latest-funding .bottom-wrap .card .first-row {
   display: flex;
   flex-direction: column;
   height: 102px;
-  
+
   /* border: 5px solid yellow; */
 }
-.latest-funding .bottom-wrap .card .first-row > div:nth-child(1) > h4 ,
+
+.latest-funding .bottom-wrap .card .first-row > div:nth-child(1) > h4,
 .latest-funding .bottom-wrap .card .first-row > div:nth-child(2) > p {
   /* border: 1px solid green; */
   transform: translateX(5.25rem);
 }
+
 .latest-funding .bottom-wrap .card .first-row div:first-child {
   /* h4 host */
+
   /* border: 1px solid black; */
   height: 54%;
   background-color: var(--orange);
@@ -435,51 +479,61 @@ color: var(--orange);
   padding-top: 0.6625rem;
   font-family: 'Shentox';
 }
+
 .latest-funding .bottom-wrap .card .first-row > div:nth-child(2) {
   background-color: rgba(255, 68, 34, 0.08);
   height: 70.3%;
 }
+
 .latest-funding .bottom-wrap .card .first-row .series-raised p:first-child {
   font-size: 1.125rem;
   line-height: 1.4rem;
   font-weight: bold;
   padding-top: 0.6625rem;
 }
+
 .latest-funding .bottom-wrap .card .first-row .series-raised p:last-child {
   font-family: 'Shentox';
-  font-size: 0.575rem; 
+  font-size: 0.575rem;
   line-height: 0.903rem;
   letter-spacing: 0.0275rem;
   color: var(--gray-small-text);
 }
+
 .latest-funding .bottom-wrap .card .logo-box img {
   max-height: 60px;
   position: absolute;
   top: 0;
   left: 0;
   margin: 2vw 0 0 1.432vw;
+
   /* transform: translate(1.432vw, -7.813vw); */
 }
+
 /* 2nd 3rd row */
 .latest-funding .bottom-wrap .card .second-row,
 .latest-funding .bottom-wrap .card .third-row {
   background-color: rgb(255, 250, 248);
 }
+
 .latest-funding .bottom-wrap .card .second-row {
   border-bottom: 0.5px solid rgb(254, 205, 198);
   padding: 1rem 1rem 1rem 1rem;
   height: 53px;
 }
+
 .latest-funding .bottom-wrap .card .second-row .value {
   font-size: 0.7125rem;
   line-height: 1.3rem;
   margin-bottom: 0.875rem;
   color: var(--gray-small-text);
 }
+
 .latest-funding .bottom-wrap .card .second-row i {
   margin-right: 0.625rem;
   color: black;
 }
+
 .latest-funding .bottom-wrap .card .third-row {
   padding: 0.625rem 1rem 1rem;
   max-height: 100%;
@@ -487,6 +541,7 @@ color: var(--orange);
   line-height: 18px;
   color: var(--gray-small-text);
 }
+
 /* end of latest-funding mobile */
 
 /* ======== ==========================
@@ -668,7 +723,7 @@ color: var(--orange);
   margin: 0.5rem 0;
 }
 
-.categories-second-row .left-most h3 a{
+.categories-second-row .left-most h3 a {
   color: var(--orange);
 }
 
@@ -686,6 +741,7 @@ color: var(--orange);
   width: 1em;
   margin-left: -1em;
 }
+
 .categories-content-wrap li {
   margin: 1rem 0;
 }
@@ -699,6 +755,7 @@ color: var(--orange);
 /* ======== ================================================
 ======= End of mobile view of card-container styles ========
 ============================================================ */
+
 /* ======== ==========================
 ======= .latest-deals styles mobile =========
 ====================================== */
@@ -715,15 +772,15 @@ color: var(--orange);
   width: 95%;
 }
 
-.latest-deals .header h2{
+.latest-deals .header h2 {
   margin: 1.5rem 0.2rem;
 }
 
-.latest-deals .header i{
+.latest-deals .header i {
   font-size: 1.2rem;
 }
 
-.latest-deals .header a{
+.latest-deals .header a {
   color: var(--orange);
 }
 
@@ -748,11 +805,11 @@ color: var(--orange);
   width: 75%;
 }
 
-.latest-deals-card .content-box p{
+.latest-deals-card .content-box p {
   margin-top: 0.5rem;
 }
 
-.latest-deals-card .content-box p span{
+.latest-deals-card .content-box p span {
   color: var(--gray-currency);
   margin-right: 0.5rem;
   text-decoration: line-through;
@@ -761,6 +818,7 @@ color: var(--orange);
 /* ======== ================================================
 ======= End of mobile view of latest-deals styles ========
 ============================================================ */
+
 /* ======== ================================================
 ================== Mobile view of the footer ===============
 ============================================================ */
@@ -861,48 +919,59 @@ footer .btm .last-img-box img {
   /* html {
     font-size: 20px;
   } */
+
   /* ================================== */
-            /* NAV iPad */
+
+  /* NAV iPad */
+
   /* ================================== */
+
   /* ================================== */
-       /* Nonsticky-top (Black) */
+
+  /* Nonsticky-top (Black) */
+
   /* ================================== */
   .black {
     display: flex;
     margin-left: 106px;
   }
+
   .black-left {
     max-height: 32px;
   }
+
   .black-left li:first-child a {
     color: white;
-    
   }
+
   /* ================================== */
-       /* sticky nav -top (white) */
+
+  /* sticky nav -top (white) */
+
   /* ================================== */
+
   /* white ipad */
-/* logo */
-.tnw-box {
-  position: fixed;
-  top: 0; 
-   z-index: 5; 
-   min-height: 80px;  
-  
-}
-.tnw-box img {
-   width: 65%;
-  height: 100%;
-  
-  position: absolute;
-  top: 50%;
-  left:50%;
-  transform: translate(-50%, -65%);
-  z-index: 40; 
+
+  /* logo */
+  .tnw-box {
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    min-height: 80px;
+  }
+
+  .tnw-box img {
+    width: 65%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -65%);
+    z-index: 40;
 
 
 
-  /* width: 10%;
+    /* width: 10%;
   height: 100%;
   position: fixed;
   top: 50%;
@@ -910,36 +979,45 @@ footer .btm .last-img-box img {
   transform: translate(-493%, -85%);
   z-index: 40; */
 
-  /* width: 60%;
+    /* width: 60%;
   height: 100%;
   position: sticky;
   top: 30%;
   left:50%;
   transform: translate(-50%, -50%);
   z-index: 90; */
-}
-/* sections */
-.nSections {
-  display: flex;
-  margin-left: 126px;
-}
-.nav-icon i:last-child {
-  display: none;
-}
+  }
+
+  /* sections */
+  .nSections {
+    display: flex;
+    margin-left: 126px;
+  }
+
+  .nav-icon i:last-child {
+    display: none;
+  }
+
   /* ================================== */
-       /* sticky annonc -top (yellow) */
+
+  /* sticky annonc -top (yellow) */
+
   /* ================================== */
   .yellow {
     top: 48px;
     height: 33px;
   }
+
   .yellow p {
     font-size: 12.775px;
     text-align: left;
     margin-left: 137px;
   }
-    /* ================================== */
-       /* Hero (iPad) */
+
+  /* ================================== */
+
+  /* Hero (iPad) */
+
   /* ================================== */
   .hero {
     height: 47vw;
@@ -984,7 +1062,7 @@ footer .btm .last-img-box img {
 
 
 
-     /* ================================ 
+  /* ================================
       === latest-news section iPad ===
      ================================  */
 
@@ -992,53 +1070,62 @@ footer .btm .last-img-box img {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: span 3;
   }
+
   .latest-news .content-wrap article {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
   }
-  .latest-news .content-wrap article .left-most { 
+
+  .latest-news .content-wrap article .left-most {
     margin: 0 0.8125rem 0.5125rem 0;
   }
+
   .latest-news .content-wrap article .left-most img {
     /* border: 1px solid red; */
     height: auto;
     max-height: ;
     width: 100%;
   }
+
   .latest-news .content-wrap article h2 {
     margin-right: 0.625rem;
   }
 
-       /* ================================ 
+  /* ================================
       === latest-funding section iPad ===
      ================================  */
-     .latest-funding .top ul {
-      display: flex;
-      width: 40%;
-      justify-content: space-between;
-      align-items: center;
-      
-    }
-    .latest-funding .top ul li {
-      padding: 0 10px 0 0;
-      margin: 0 0 23px;
-      font-size: 16px;
-      border-right: 1px solid var(--orange);
-    }
-    .latest-funding .top ul li:last-child {
-      padding-bottom: 0;
-      border-right: none;
-    }
-    .latest-funding .top ul li:first-child {
-      padding-right: 10px;
-    }
-     .latest-funding .bottom-wrap {
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1;
-    }
-    /* .latest-funding .series-raised  {
+  .latest-funding .top ul {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .latest-funding .top ul li {
+    padding: 0 10px 0 0;
+    margin: 0 0 23px;
+    font-size: 16px;
+    border-right: 1px solid var(--orange);
+  }
+
+  .latest-funding .top ul li:last-child {
+    padding-bottom: 0;
+    border-right: none;
+  }
+
+  .latest-funding .top ul li:first-child {
+    padding-right: 10px;
+  }
+
+  .latest-funding .bottom-wrap {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1;
+  }
+
+  /* .latest-funding .series-raised  {
       font-size: 13px;
     } */
+
   /* ======== ===========================================
 ========= card-container styles @768px and above ========
 ========================================================= */
@@ -1110,7 +1197,7 @@ footer .btm .last-img-box img {
     font-size: 0.8rem;
   }
 
-  .categories-second-row .left-most h3 a{
+  .categories-second-row .left-most h3 a {
     font-size: 0.7rem;
   }
 
@@ -1119,7 +1206,7 @@ footer .btm .last-img-box img {
     margin: 0;
   }
 
-  .categories-second-row .left-most h3{
+  .categories-second-row .left-most h3 {
     line-height: 0.6rem;
   }
 
@@ -1135,141 +1222,146 @@ footer .btm .last-img-box img {
 ====== End of card-container styles @768px and above ======
 ========================================================= */
 
-/* ======== ===========================================
+  /* ======== ===========================================
 ========= latest-deals styles @768px and above ========
 ======================================================= */
 
-.card-container-bottom {
-  grid-template: repeat(3, 1fr)/ repeat(3, 1fr);
-  grid-template-areas: 
-  "card1 card2 card3"
-  "card4 card5 card6"
-  "card7 card8 .";
-  grid-gap: 0.3rem;
-  font-size: 10px;
-}
+  .card-container-bottom {
+    grid-template: repeat(3, 1fr)/ repeat(3, 1fr);
+    grid-template-areas:
+      "card1 card2 card3"
+      "card4 card5 card6"
+      "card7 card8 .";
+    grid-gap: 0.3rem;
+    font-size: 10px;
+  }
 
-.latest-deals-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  margin: 0 auto;
-}
+  .latest-deals-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0 auto;
+  }
 
-.latest-deals-card .img-box{
-  width: 100%;
-}
+  .latest-deals-card .img-box {
+    width: 100%;
+  }
 
-.latest-deals-card .content-box{
-  width: 99%;
-  font-size: 0.8rem;
-}
+  .latest-deals-card .content-box {
+    width: 99%;
+    font-size: 0.8rem;
+  }
 
-/* ======== ===========================================
+  /* ======== ===========================================
 ====== End of card-container styles @768px and above ======
 ========================================================= */
-/* ======== ================================================
+
+  /* ======== ================================================
 ================ The footer styles @768px plus =============
 ============================================================ */
 
-footer .btm {
-  flex-direction: row;
-  font-size: 0.8rem;
-  justify-content: center;
-}
+  footer .btm {
+    flex-direction: row;
+    font-size: 0.8rem;
+    justify-content: center;
+  }
 
-footer .btm .first-row {
-  width: 33%;
-}
+  footer .btm .first-row {
+    width: 33%;
+  }
 
-footer .btm .last-img-box {
-  margin: 0;
-  width: 20%;
-  padding: 0;
-}
+  footer .btm .last-img-box {
+    margin: 0;
+    width: 20%;
+    padding: 0;
+  }
 
-footer .btm .last-img-box img {
-  width: 40%;
-}
+  footer .btm .last-img-box img {
+    width: 40%;
+  }
 
-footer .made-with {
-  width: 25%;
-  margin: 0;
-}
+  footer .made-with {
+    width: 25%;
+    margin: 0;
+  }
 
-/* ======== ================================================
+  /* ======== ================================================
 ============== End of footer styles @768px plus ============
 ============================================================ */
-
-
 }
 
 
 /* Desktop */
 @media screen and (min-width: 1024px) {
   /* ================================== */
-           /* NAV(Desktop) */
+
+  /* NAV(Desktop) */
+
   /* ================================== */
 
   .black {
     margin-left: 0;
   }
+
   .tnw-box {
     display: none;
   }
+
   .nSections {
     margin-left: 19px;
   }
+
   .yellow {
     text-align: left;
   }
+
   .yellow p {
     font-size: 12.775px;
     text-align: left;
     margin-left: 32px;
   }
-  
- /* ============ hero DESKTOP ============= */
-/* ===========HERO desktop view =========== */
 
-.hero {
-  height: 65vh;
-}
+  /* ============ hero DESKTOP ============= */
 
-.hero section:nth-child(3) .main-text-sub .share {
-  display: inline-block;
-}
+  /* ===========HERO desktop view =========== */
 
-.hero section:first-child {
-  /* border: 1px solid blue; */
+  .hero {
+    height: 65vh;
+  }
 
-    background-image: linear-gradient(160deg, rgba(255, 32, 32, 0.5), rgba(0, 0, 0, 1)),url(./imgs/1-22.jpg);
-  
-}
+  .hero section:nth-child(3) .main-text-sub .share {
+    display: inline-block;
+  }
 
-.hero .hero-logo-box {
-  display: block;
-}
+  .hero section:first-child {
+    /* border: 1px solid blue; */
 
-.hero .hero-logo-box img {
-  width: 50%;
-  transform: translate(0.5rem, 1rem);
-}
+    background-image: linear-gradient(160deg, rgba(255, 32, 32, 0.5), rgba(0, 0, 0, 1)), url(./imgs/1-22.jpg);
+  }
 
-.hero .cover-story h2 {
-  font-size: 1.8rem;
-  line-height: 2rem;
-}
+  .hero .hero-logo-box {
+    display: block;
+  }
 
-.hero .cover-story-date {
-  display: block;
-  position: absolute;
-  top: 1.5rem;
-  right: 0.5rem;
-  font-size: 0.7rem;
-}
+  .hero .hero-logo-box img {
+    width: 50%;
+    transform: translate(0.5rem, 1rem);
+  }
 
-/* ======= End of HERO desktop view ========= */
+  .hero .cover-story h2 {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+
+  .hero .cover-story-date {
+    display: block;
+    position: absolute;
+    top: 1.5rem;
+    right: 0.5rem;
+    font-size: 0.7rem;
+  }
+
+  /* ======= End of HERO desktop view ========= */
 
 
   /* == latest-news section DESKTOP == */
@@ -1278,36 +1370,44 @@ footer .made-with {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: span 2;
   }
-  .latest-news .content-wrap article .left-most { 
+
+  .latest-news .content-wrap article .left-most {
     margin: 0.125rem 0 0.5125rem 0;
   }
+
   .latest-news .content-wrap article .left-most img {
     /* border: 1px solid red; */
     height: auto;
     max-height: ;
     width: 100%;
   }
+
   .latest-news .content-wrap article h2 {
     margin-right: 0.625rem;
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 0.2px;
   }
+
   .latest-news .content-wrap article .main-text-sub {
     font-size: 13px;
     line-height: 20px;
   }
-         /* ================================ 
+
+  /* ================================
       === latest-funding section Desktop ===
      ================================  */
-     .latest-funding .bottom-wrap .card:last-child {
-      display: block;
-    }
-     .latest-funding .bottom-wrap {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1;
-    }
-      /* ======== ===========================================
+
+  .latest-funding .bottom-wrap .card:last-child {
+    display: block;
+  }
+
+  .latest-funding .bottom-wrap {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1;
+  }
+
+  /* ======== ===========================================
 ========= card-container styles @1024px and above ========
 ========================================================= */
 
@@ -1402,95 +1502,95 @@ footer .made-with {
 ====== End of card-container styles @1024px and above =====
 ========================================================= */
 
-/* ======== ===========================================
+  /* ======== ===========================================
 ========= latest-deals styles @1024px and above ========
 ========================================================= */
 
-.latest-deals {
-  width: 90%;
-  margin: 0 auto;
-}
+  .latest-deals {
+    width: 90%;
+    margin: 0 auto;
+  }
 
-.card-container-bottom {
-  grid-template: repeat(2, 1fr)/ repeat(4, 1fr);
-  grid-template-areas: 
-  "card1 card2 card3 card4"
-  "card5 card6 card7 card8";
-  grid-gap: 0.3rem;
-}
+  .card-container-bottom {
+    grid-template: repeat(2, 1fr)/ repeat(4, 1fr);
+    grid-template-areas:
+      "card1 card2 card3 card4"
+      "card5 card6 card7 card8";
+    grid-gap: 0.3rem;
+  }
 
-.latest-deals .header{
-  width: 98%;
-}
+  .latest-deals .header {
+    width: 98%;
+  }
 
-.latest-deals .header i{
-  font-size: 0.8rem;
-}
+  .latest-deals .header i {
+    font-size: 0.8rem;
+  }
 
-.latest-deals .orange-heading {
-  font-size: 1.2rem;
-}
+  .latest-deals .orange-heading {
+    font-size: 1.2rem;
+  }
 
-.latest-deals a {
-  font-size: 0.6rem;
-}
+  .latest-deals a {
+    font-size: 0.6rem;
+  }
 
-.latest-deals-card .content-box {
-  font-size: 0.7rem;
-}
-/* ======== ===========================================
+  .latest-deals-card .content-box {
+    font-size: 0.7rem;
+  }
+
+  /* ======== ===========================================
 ====== End of latest deals styles @1024px and above =====
 ========================================================= */
- /* ======== ================================================
+
+  /* ======== ================================================
 ================ The footer styles @1024px plus =============
 ============================================================ */
 
-footer .top {
-  height: 7rem;
-}
+  footer .top {
+    height: 7rem;
+  }
 
-footer .top .first-row {
-  width: 50%;
-}
+  footer .top .first-row {
+    width: 50%;
+  }
 
-footer .top .second-row {
-  width: 45%;
-  margin: 0 auto;
-}
+  footer .top .second-row {
+    width: 45%;
+    margin: 0 auto;
+  }
 
-footer .top .second-row li {
-  font-size: 0.6rem;
-}
+  footer .top .second-row li {
+    font-size: 0.6rem;
+  }
 
-footer .btm {
-  height: 2rem;
-  text-align: center;
-}
+  footer .btm {
+    height: 2rem;
+    text-align: center;
+  }
 
-footer .btm .first-row {
-  width: 17%;
-}
+  footer .btm .first-row {
+    width: 17%;
+  }
 
-footer .btm .first-row p {
-  font-size: 0.5rem;
-}
+  footer .btm .first-row p {
+    font-size: 0.5rem;
+  }
 
-footer .made-with {
-  width: 13%;
-  font-size: 0.5rem;
-}
+  footer .made-with {
+    width: 13%;
+    font-size: 0.5rem;
+  }
 
-footer .btm .last-img-box {
-  width: 10%;
-}
+  footer .btm .last-img-box {
+    width: 10%;
+  }
 
-footer .btm .last-img-box p {
-  font-size: 0.5rem;
-}
+  footer .btm .last-img-box p {
+    font-size: 0.5rem;
+  }
 
-/* ======== ================================================
+  /* ======== ================================================
 ============== End of footer styles @1024px plus ============
 ============================================================ */
-}
-
 }
