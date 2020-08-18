@@ -483,9 +483,9 @@ footer .top .first-row li {
 }
 
 .latest-funding .card {
-    padding: 4px 0 4px;
-  }
-  
+  padding: 4px 0 4px;
+}
+
 .latest-funding .bottom-wrap .card {
   position: relative;
   margin-bottom: 8px;
@@ -1006,10 +1006,11 @@ footer .btm {
   /* ================================
       === latest-funding section iPad ===
      ================================  */
-  
+
   .latest-funding .card {
-       padding: 0 6px 0;
-    }
+    padding: 0 6px 0;
+  }
+
   .latest-funding .top ul {
     display: flex;
     width: 40%;
@@ -1025,7 +1026,13 @@ footer .btm {
     padding: 0 10px 0 0;
     margin: 0 0 23px;
     font-size: 16px;
-    border-right: 1px solid var(--orange);
+  }
+  .latest-funding .top ul li:first-child::after,
+  .latest-funding .top ul li:nth-child(2)::after {
+    content: "|";
+    display: inline-block;
+    transform: translateX(9px);
+    color: #f42 !important;
   }
 
   .latest-funding .top ul li:last-child {
@@ -1034,7 +1041,7 @@ footer .btm {
   }
 
   .latest-funding .top ul li:first-child {
-    padding-right: 10px;
+    padding-right: 5px;
   }
 
   .latest-funding .bottom-wrap {
@@ -1263,6 +1270,7 @@ footer .btm {
     max-width: 1200px;
     margin: 0 auto;
   }
+
   /* == latest-news section DESKTOP == */
 
   .latest-news .content-wrap {
@@ -1302,6 +1310,28 @@ footer .btm {
   .latest-funding .card {
     padding: 0 10px 0;
   }
+
+  .latest-funding .top ul {
+    transform: translate(62.500vw, -3.516vw);
+    width: 30%;
+  }
+  .latest-funding .top ul li:first-child {
+    order: 2;
+  }
+  .latest-funding .top ul li:last-child {
+    order: -1;
+  }
+  
+  .latest-funding .top ul li:first-child::after {
+    content: "";
+  }
+  .latest-funding .top ul li:last-child::after {
+    content: "|";
+    display: inline-block;
+    transform: translateX(9px);
+    color: #f42 !important;
+  }
+
   .latest-funding .bottom-wrap .card:last-child {
     display: block;
   }
