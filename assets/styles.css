@@ -291,6 +291,7 @@ img,
   top: 50.5px;
   z-index: 1;
 }
+
 .yellow p {
   position: relative;
   top: 50%;
@@ -299,6 +300,7 @@ img,
   font-size: 0.675rem;
   line-height: 1.3125rem;
 }
+
 .yellow p::after {
   content: "TNW X";
   display: block;
@@ -887,6 +889,7 @@ footer .btm {
   bottom: 2rem;
   right: 2rem;
   font-size: 1.2rem;
+  cursor: pointer;
 }
 
 /* ======== ================================================
@@ -982,6 +985,7 @@ footer .btm {
     text-align: left;
     margin-left: 137px;
   }
+
   .yellow p::after {
     display: none;
   }
