@@ -1255,6 +1255,12 @@ footer .btm {
 
   /* ======= End of HERO desktop view ========= */
 
+  /* sections-wrapper */
+  .sections-great-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+
+  }
   /* == latest-news section DESKTOP == */
 
   .latest-news .content-wrap {
