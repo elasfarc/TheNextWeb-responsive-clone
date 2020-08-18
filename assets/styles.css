@@ -169,6 +169,10 @@ footer .top .second-row a {
   color: var(--gray-currency);
 }
 
+footer .top .second-row li {
+  font-size: 0.8rem;
+}
+
 footer .top a:hover {
   color: var(--white);
 }
@@ -469,8 +473,8 @@ footer .btm .last-img-box img {
 footer .top .first-row li {
   background-color: var(--gray-social);
   border: 2px solid var(--gray-social);
-  width: 3rem;
-  height: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -515,7 +519,7 @@ footer .top .first-row li:hover {
 
 footer .top .first-row {
   display: flex;
-  width: 85%;
+  width: 80%;
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
@@ -599,6 +603,8 @@ footer .top .second-row {
   justify-content: space-evenly;
   align-items: center;
   text-transform: uppercase;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .latest-deals .header i {
@@ -606,7 +612,7 @@ footer .top .second-row {
 }
 
 footer .top .first-row li i {
-  font-size: 18px;
+  font-size: 1.2rem;
 }
 
 /* 2nd 3rd row */
@@ -1472,12 +1478,12 @@ footer .btm {
   }
 
   footer .top .second-row {
-    width: 45%;
+    width: 55%;
     margin: 0 auto;
   }
 
   footer .top .second-row li {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
 
   footer .btm {
