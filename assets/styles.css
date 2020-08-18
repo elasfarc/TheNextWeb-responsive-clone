@@ -170,11 +170,15 @@ footer .top .second-row a {
 }
 
 footer .top a:hover {
-  color: #fff;
+  color: var(--white);
+}
+
+footer .top .first-row a {
+  color: var(--white);
 }
 
 .black > ul li a:hover {
-  color: white;
+  color: var(--white);
   text-decoration: none;
 }
 
@@ -464,12 +468,18 @@ footer .btm .last-img-box img {
 
 footer .top .first-row li {
   background-color: var(--gray-social);
+  border: 2px solid var(--gray-social);
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+footer .top .first-row li:hover {
+  background-color: var(--footer-background-top);
+  border: 2px solid var(--gray-social);
 }
 
 .latest-funding .top ul li:first-child {
