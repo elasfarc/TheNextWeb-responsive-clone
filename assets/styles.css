@@ -106,6 +106,10 @@ h2 {
   list-style: none;
 }
 
+footer {
+  margin-top: 1.5rem;
+}
+
 footer .top ul {
   display: flex;
   color: #fff;
@@ -1312,8 +1316,8 @@ footer .btm {
   .sections-great-wrapper {
     max-width: 1200px;
     margin: 0 auto;
-
   }
+
   /* == latest-news section DESKTOP == */
 
   .latest-news .content-wrap {
