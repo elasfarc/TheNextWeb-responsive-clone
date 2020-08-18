@@ -446,9 +446,14 @@ footer .btm .last-img-box img {
 
 /* === latest-funding mobile  === */
 
-.latest-funding {
-  width: 65%;
-  margin: 0 auto;
+.last-third-portion p {
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.latest-funding .bottom-wrap .first-row .company-title h4,
+.latest-funding .series-raised p {
+  width: 50%;
 }
 
 .latest-funding .orange-heading {
@@ -537,11 +542,6 @@ footer .btm .first-row {
   display: flex;
   flex-direction: column;
   height: 102px;
-}
-
-.last-third-portion p {
-  color: var(--white);
-  text-transform: uppercase;
 }
 
 .categories-second-row .left-most p {
@@ -1019,11 +1019,6 @@ footer .btm {
     margin-bottom: 1rem;
   }
 
-  .latest-funding {
-    width: 72%;
-    margin: 0 auto;
-  }
-
   .latest-funding .orange-heading {
     font-size: 1.5rem;
   }
@@ -1313,6 +1308,12 @@ footer .btm {
 
   /* ======= End of HERO desktop view ========= */
 
+  /* sections-wrapper */
+  .sections-great-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+
+  }
   /* == latest-news section DESKTOP == */
 
   .latest-news .content-wrap {
@@ -1348,11 +1349,6 @@ footer .btm {
   /* ================================
       === latest-funding section Desktop ===
      ================================  */
-
-  .latest-funding {
-    width: 80%;
-    margin: 0 auto;
-  }
 
   .latest-funding .bottom-wrap .card:last-child {
     display: block;
@@ -1479,6 +1475,9 @@ footer .btm {
     margin: 0 auto;
   }
 
+  /* ======== ================================================
+================ The footer styles @1024px plus =============
+============================================================ */
   .card-container-bottom {
     grid-template: repeat(2, 1fr)/ repeat(4, 1fr);
     grid-template-areas:
