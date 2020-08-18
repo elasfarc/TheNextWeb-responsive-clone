@@ -267,14 +267,24 @@ img,
   top: 50.5px;
   z-index: 1;
 }
-
 .yellow p {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
   font-family: '.', sans-serif;
-  font-size: 0.875rem;
+  font-size: 0.675rem;
   line-height: 1.3125rem;
+}
+.yellow p::after {
+  content: "TNW X";
+  display: block;
+  width: 106px;
+  height: 21px;
+  background-color: black;
+  color: var(--gray-currency);
+  font-size: 9px;
+  position: absolute;
+  top: -21px;
 }
 
 /* === hero === */
@@ -927,6 +937,9 @@ footer .btm {
     font-size: 12.775px;
     text-align: left;
     margin-left: 137px;
+  }
+  .yellow p::after {
+    display: none;
   }
 
   /* ================================== */
