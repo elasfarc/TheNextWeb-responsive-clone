@@ -10,6 +10,7 @@
 }
 
 /* reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -204,6 +205,17 @@ footer .top ul {
 
 .nav-icon i:last-child {
   color: var(--orange);
+}
+
+.categories-content-wrap .categories-first-row {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20rem;
+}
+
+img,
+.card-container-top .card .categories-first-row {
+  cursor: pointer;
 }
 
 /* LOGO */
@@ -630,12 +642,6 @@ footer .top .first-row li i {
   margin: 0 auto;
 }
 
-.categories-content-wrap .categories-first-row {
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 20rem;
-}
-
 .first-row-one {
   background-image:
     linear-gradient(
@@ -1027,6 +1033,7 @@ footer .btm {
     margin: 0 0 23px;
     font-size: 16px;
   }
+
   .latest-funding .top ul li:first-child::after,
   .latest-funding .top ul li:nth-child(2)::after {
     content: "|";
@@ -1311,20 +1318,31 @@ footer .btm {
     padding: 0 10px 0;
   }
 
+  .categories-content-wrap ul {
+    margin: 1rem 1rem;
+  }
+
   .latest-funding .top ul {
-    transform: translate(62.500vw, -3.516vw);
+    transform: translate(62.5vw, -3.516vw);
     width: 30%;
   }
+
+  footer .top .second-row li {
+    font-size: 0.6rem;
+  }
+
   .latest-funding .top ul li:first-child {
     order: 2;
   }
+
   .latest-funding .top ul li:last-child {
     order: -1;
   }
-  
+
   .latest-funding .top ul li:first-child::after {
     content: "";
   }
+
   .latest-funding .top ul li:last-child::after {
     content: "|";
     display: inline-block;
@@ -1340,7 +1358,6 @@ footer .btm {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1;
   }
-
 
   /* ======== ===========================================
 ========= card-container styles @1024px and above ========
@@ -1437,9 +1454,7 @@ footer .btm {
     font-size: 0.5rem;
   }
 
-  .categories-content-wrap ul {
-    margin: 1rem 1rem;
-  }
+
 
   /* ======== ===========================================
 ====== End of card-container styles @1024px and above =====
@@ -1488,10 +1503,6 @@ footer .btm {
   footer .top .second-row {
     width: 45%;
     margin: 0 auto;
-  }
-
-  footer .top .second-row li {
-    font-size: 0.6rem;
   }
 
   footer .btm {
