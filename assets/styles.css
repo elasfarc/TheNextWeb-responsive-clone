@@ -1390,6 +1390,10 @@ footer .btm {
     font-size: 0.8rem;
   }
 
+  footer .top .first-row li i {
+    font-size: 0.7rem;
+  }
+
   .card-container-top .card .orange-heading i {
     font-size: 0.8rem;
   }
@@ -1500,16 +1504,16 @@ footer .btm {
   }
 
   footer .top .first-row {
-    width: 50%;
+    width: 35%;
   }
 
   footer .top .second-row {
-    width: 55%;
+    width: 25%;
     margin: 0 auto;
   }
 
   footer .top .second-row li {
-    font-size: 0.8rem;
+    font-size: 0.5rem;
   }
 
   footer .btm {
@@ -1526,7 +1530,7 @@ footer .btm {
   }
 
   footer .made-with {
-    width: 13%;
+    width: 15%;
     font-size: 0.5rem;
   }
 
